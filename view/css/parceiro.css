@@ -1,0 +1,97 @@
+@import "style.css";
+@import "estrutura.css";
+
+.border-right,.border-left{
+    display: block;
+    background-color: white;
+    height: 355px;
+    width: 48px;
+    transform: skewX(-9.2deg);
+    position: relative;
+}
+.border-right{
+    transform: skewX(-7.2deg);
+    margin-right: -41px;
+}
+.border-left{
+    transform: skewX(7.4deg);
+    margin-left: -23px;
+}
+#seja-parceiro{
+    position: absolute;
+    width: 30%;
+    height: 355px;
+    z-index: 10;
+}
+#seja-parceiro button{padding: 10px;margin: 23px 0px 23px 0px;}
+#seja-parceiro p {
+    font-size: 0.8em;
+}
+#seja-parceiro img{
+    margin-top: 36px;
+}
+.viewSlide .painel{
+    height: 562px;
+    background-size: cover;
+}
+.viewSlide .painel .desc{
+    padding-left: 27px;
+    height: auto;
+    padding-top: 19px;
+    padding-bottom: 7px;
+    max-height: 300px;
+    margin-top: 37px;
+    width: 40%;
+    float: right;
+    background-color: rgba(183, 183, 183, 0.82);
+    -webkit-box-shadow: -20px 22px 125px 12px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: -20px 22px 125px 12px rgba(0,0,0,0.09);
+    box-shadow: -20px 22px 125px 12px rgba(0, 0, 0, 0.09);
+    border-radius: 20px 0px 0px 20px;
+}
+.viewSlide .painel .desc h2{
+    color: #404040;
+    font-weight: 400;
+}
+.viewSlide .painel .desc p{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    color: #292525;
+    font-size: .92em;
+}
+.viewSlide .painel .desc img{
+    width: auto;
+    height: 43px;
+    margin-right: 4px;
+    margin-left: 4px;
+    max-width: 126px;
+}
+.beneficio{top: 0;padding-top: 15px;padding-bottom: 2px;margin-bottom: 15px;margin-top: 19px;border: 1px solid #eee;width: 255px;border-radius: 8px;height: 275px;}
+.beneficio .img{
+    background-color: #000;
+    max-width: 220px;
+    height: 138px;
+    overflow: hidden;
+    display: flex;
+}
+.beneficio .img img{
+    max-width: 218px;
+    /* margin-top: 3px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.beneficio .titulo{
+    font-size: 1.2em;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: #37bf21;
+}
+.beneficio .desc{
+    font-size: 0.9em;
+    height: 89px;
+    overflow: hidden;
+}
+#beficiosBox{
+    width: 1200px;
+}

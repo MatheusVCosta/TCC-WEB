@@ -1,0 +1,561 @@
+
+@import "style.css";
+@import "estrutura.css";
+
+.btn_padrao{
+    background-color: #008039;
+    border-radius: 8pnx;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+#principal{
+    width:100%;
+    height:auto;
+    min-height: 6077px;
+    background-color: #fff;
+    /* overflow:auto; */
+}
+.conteudo{
+    width:100%;
+    height: auto;
+    min-height: 5500px;
+
+}
+.fundo_site_top{
+    width: 100%;
+    height: auto;
+    min-height: 1650px;
+    background-color: #dcdcdc;
+}
+.section_anuncios{
+    width: 100%;
+    height: auto;
+    min-height: 880px;
+    margin: 0px auto;
+}
+.menu_home{
+    width:100%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu_home a{
+    color:#000;
+    font-family: "Roboto-regular";
+    /* font-weight: bold;   */
+    font-size: 18px;
+}
+.menu_home a:hover{
+    color:#008039;
+    font-size: 19px;
+}
+.menu_central{
+    width:1100px;
+    height: 80px;
+    padding-top:20px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_central li{
+    float: left;
+    margin-left: 30px; 
+}
+
+#div_anuncio{
+    width:1200px;
+    height: auto;
+    min-height: 650px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+
+}
+
+.titulo_section{
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 50px;
+    color:#469048;
+}
+.alugar_veiculo{
+    width: 1200px;
+    height: auto;
+    min-height: 500px; 
+    padding: 25px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.imagem_alugar_veiculo{
+    width:500px;
+    height: 450px;
+    margin-left: 20px;
+    float: left;
+}
+.imagem_alugar_veiculo img{
+    width:500px;
+    height: 450px;
+}
+.area_texto{
+    width:623px;
+    height: auto;
+    min-height: 450px; 
+    float: left;
+
+    margin-left: 5px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 200px;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    color:#000;
+    line-height: 25px;
+}
+
+.section_conteudo{
+    width: 100%;
+    height: auto;
+    min-height: 670px;
+    margin: 0px auto;
+}
+
+/* section2 */
+.como_funciona{
+    width:1200px;
+    height: auto;
+    min-height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+}
+#segura_como_funciona{
+    width:1200px;
+    height: auto;
+    min-height: 550px;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.area_texto_maior{
+    height: auto;
+    float: left;
+    width:600px;
+    min-height: 450px; 
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    color:#000;
+    line-height: 25px;
+
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.imagem_como_funciona{
+    float: left;
+    width: 520px;
+    height: 400px;
+    margin-top: 0px;
+    margin-left: 30px;
+    border-radius: 5px;
+
+}
+/* fim section 2 */
+/* section 3 */
+.area_tipo_veiculo{
+    width:1300px;
+    height: auto;
+    min-height: 430px;
+    margin: 80px auto;
+    padding-left:50px;
+}
+.tipos_veiculos{
+    width: 340px;
+    height: auto;
+    min-height: 420px;
+    float: left;
+    margin-top:15px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+.imagem_tipo{
+    width: 240px;
+    height: 240px;
+    background: #277b21;
+    border-radius: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.imagem_tipo:hover{
+    background: #2f9428;
+}
+.tipos_veiculos h3{
+    font-family: "Roboto-medium";
+    font-weight: bold;  
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+.tipos_veiculos p{
+    font-family: "Roboto-medium";
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 25px
+}
+
+/* fim section 3 */
+
+/* section 4 */
+.section_conteudo_anuncios{
+    width: 100%;
+    height: auto;
+    min-height: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    background-color: #dcdcdc;
+    box-shadow: -7px -8px 91px 0px #848484;
+}
+#area_anuncios{
+    width:1200px;
+    height: auto;
+    min-height: 800px;
+    margin: 0px auto;
+    
+}
+.titulo_left{
+    margin: 20px 10px;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 40px;
+    /* font-weight: 900; */
+}
+#explicao_como_alugar{
+    width:800px;
+    height: auto;
+    min-height: 200px;
+    /* border:1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+}
+#explicao_como_alugar h3{
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+#explicao_como_alugar p{
+    padding-left: 20px;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+/* #segura_filtro{
+    width:1020px;
+    height: 90px;
+    border-radius: 15px;
+    margin:40px auto;
+    padding: 15px 60px;
+}
+.btn_filtro{
+    width: 180px;
+    height: 45px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 7px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    cursor: pointer;
+}
+.btn_filtro:hover{
+    transition: 0.2s;
+    background-color: rgb(77, 77, 77);
+}
+.combo_box{
+    float: left;
+    width: 220px;
+    height: 75px;   
+}
+.combo_box label{
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 17px;
+}
+.combo_box select{
+    width:215px;
+    height: 35px;
+    margin-top:5px;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 15px;
+} */
+
+#segura_anuncios{
+    width:1100px;
+    height: auto;
+    min-height: 905px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 9px;
+    overflow: hidden;
+}
+
+.anuncios{
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    float: left;
+    margin: 30px 30px;
+    background-color: #ffffff;
+    /* border:2px solid #277b21; */
+}
+#segura_anuncios a{
+    color:#000;
+}
+.anuncios:hover{
+    transition: 1s;
+    box-shadow:4px 4px 20px 0px rgb(142, 142, 142);
+    /* transform: scale(1.1) */
+}
+.img_anuncio{
+    width: 300px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+.img_anuncio img{
+    width: 297px;
+    height: 188px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    display: block;
+    border-radius: 2px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.info_anuncio{
+    width:300px;
+    height: auto;
+    min-height: 150px;
+    padding: 8px 15px;
+}
+.nome_veiculo{
+    font-family: "Roboto-medium";
+    font-size: 20px;
+}
+.info_veiculo{
+    font-family: "Roboto-regular";
+    font-size: 16px;
+    line-height: 22px;
+    /* font-weight: bold; */
+}
+.stars_avaliacao{
+    width:210px;
+    height: 35px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+.stars_avaliacao img{
+    width:28px;
+    height: 28px;
+    float: left;
+}
+.percentual_avaliacao{
+    font-family: "Roboto-medium";
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-left:15px;
+    float: left;
+}
+.star_left{
+    margin-left: 2px;
+    
+}
+/* fim section 4 */
+
+/* section 5 */
+.section_anunciar{
+    width: 100%;
+    height: auto;
+    min-height: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#segura_conteudo{
+    width: 1250px;
+    height: auto;
+    min-height: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+.anunciar_veiculo{
+    width: 1100px;
+    height: auto;
+    min-height: 1600px;
+    padding: 25px;
+    overflow: hidden;
+    margin-top: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.anunciar_veiculo h2{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;  
+    margin-top: 40px;
+}
+.div_passos{
+    width:1000px;
+    height: auto;
+    min-height: 300px;
+    margin-top: 70px; 
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.bolinha_passos{
+    width:60px;
+    height: 60px;
+    border-radius:50px;;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color:#008039;
+}
+.numero_bolinhas{
+    font-size: 25px;
+    text-align: center;
+    font-family: "OpenSans-bold";
+    margin-top: 13px;
+    color: #fff;
+}
+.texto_passos{
+    width:600px;
+    height: auto;
+    min-height: 250px;
+    font-family: "Roboto";
+    font-weight: bold;  
+    float: left;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.texto_passos h3{
+    font-family: "Roboto";
+    font-weight: bold;  
+    margin-top: 25px;
+}
+.texto_passos p{
+    font-family: "Roboto";
+    font-weight: bold;  
+    margin-top: 35px;
+}
+.img_bolinha{
+    width:270px;
+    height: 250px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    background-color: #ececec;
+}
+.img_bolinha img{
+    width:270px;
+    height: 250px;
+    border-radius: 8px;
+}
+/* fim section 5 */
+/* section 6 */
+.section_fale_conosco{
+    width: 100%;
+    height: 650px;
+    margin: 0px auto;
+    padding-top:50px;
+    background-color: #dcdcdc;
+    box-shadow: -7px -8px 91px 0px #848484;
+}
+
+.section_fale_conosco h2{
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;  
+    color:#000;
+    font-size: 30px;
+   
+}
+.fale_conosco{
+    width: 500px;
+    height:520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.input_form{
+    width: 400px;
+    overflow: hidden;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 17px;
+    font-size: 20px;
+    padding: 5px 0;
+    margin: 25px 0;
+    border-bottom: 1px solid black;
+}
+.input_form input, textarea{
+    outline: none;
+    border: none;
+    background: none;
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 17px;
+    font-size: 18px;
+    width: 400px;
+    margin: 10px;
+    resize: none;
+}
+#buttonEnviar{
+    border:none;
+    outline: none;
+    width:400px;
+    height: 50px;   
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #008039;
+    font-family: "Roboto-regular";
+    /* font-weight: bold;   */
+    font-size: 17px;
+    color:#fff;
+}
+#buttonEnviar:hover{
+   background-color: #2f9428;
+}
+

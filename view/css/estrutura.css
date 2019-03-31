@@ -1,0 +1,381 @@
+@font-face{
+    font-family: "OpenSans-bold";
+    src:url("../font/Open_Sans/OpenSans-SemiBold.ttf");
+}
+@font-face{
+    font-family: "OpenSans-Regular";
+    src:url("../font/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roboto";
+    src:url("../font/GeoSans/Roboto-Thin.ttf");
+}
+@font-face{
+    font-family: "Roboto-medium";
+    src:url("../font/roboto/Roboto-Medium.ttf");
+}
+@font-face{
+    font-family: "Roboto-regular";
+    src:url("../font/roboto/Roboto-Regular.ttf");
+}
+.cor_site_padrao{
+    background-color: #000000;
+}
+.cor_detalhe_site_padrao{
+    background-color: #306b2c;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Cabeçalho */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; 
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../imagem/fundo.jpg);
+}
+.texto_chamativo{
+    width: 550px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.501);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin-left: -520px;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+.texto_primario{
+    color:#ffffff;
+    font-size: 28px;
+    text-align: center;
+    font-family: "Roboto-regular";
+    /* font-weight: bold; */
+}
+.texto_secundario{
+    color:#ffffff;
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Roboto";;
+    font-weight: bold;
+}
+.btn_anunciar{
+    width:150px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #306b2c;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 350px;
+    padding: 15px 35px;;
+}
+.btn_anunciar:hover{
+    transition: 1s;
+    background: #34b236;
+}
+.btn_anunciar a{
+    color: #fff;
+    font-family: "Roboto";;
+    font-weight: bold;
+}
+nav{
+    width:100%;
+    height: 100px;
+}
+#segura_nav{
+    width:1300px;
+    height: inherit;
+    margin: 0 auto;
+}
+#logo{
+    width:140px;
+    height: 100px;
+    /* border:1px solid black; */
+    float: left;
+    /* margin-top:px; */
+    
+}
+#logo img{
+    width:inherit;
+    height: inherit;
+    margin:auto auto;
+    display: block;
+}
+.segura_menu{
+    width: 895px;
+    height: inherit;
+    float: left;
+    padding-top: 45px;
+}
+.segura_menu a{
+   color:white;
+}
+.segura_menu a:hover{
+    color:#306b2c;
+}
+.segura_menu li{
+    float: left;
+    margin-left: 30px;
+    font-family: "Roboto";
+    font-weight: bold;    
+    font-size: 16px;   
+}
+.menu_mais{
+    color:white;
+    cursor: pointer;
+
+}
+.sub_menu{
+    width: 181px;
+    height: 160px;
+    color: #fff;
+    position: relative;
+    display: none;
+    background-color: #306b2c;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+.seta-baixo::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: -2px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+}
+.sub_menu li{
+    width:181px;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: #272727;
+    margin-left: 0px;
+    font-size: 14px;
+}
+.sub_menu li:hover{
+    background: rgb(128, 128, 128);
+}
+.sub_menu a:hover{
+    color:#ffffff; 
+}
+.menu_mais:hover > .sub_menu{
+    display: block;
+}
+
+
+.segura_login{
+    width: 256px;
+    height: inherit;
+    float: left;
+    padding-top: 35px;
+    
+}
+#btnLogin{
+    border:none;
+    outline: none;
+    float: left;
+    color:white;
+    width:100px;
+    height: 43px;
+    border-radius:7px;
+    font-family: "Roboto";
+    font-weight: bold;  
+    cursor: pointer;
+}
+#btnLogin:hover{
+    transition: 1s;
+    background: #34b236;
+}
+#btnCadastro{
+    border:none;
+    outline: none;
+    float: left;
+    color:white;
+    width:130px;
+    height: 43px;
+    border-radius:7px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-weight: bold;  
+}
+#btnCadastro:hover{
+    transition: 1s;
+    background: #34b236;
+   
+/* Fim cabeçalho */
+
+}
+/* footer */
+
+footer{
+    width:100%;
+    height: 375px;
+}
+.newsletter{
+    width: 1300px;
+    height: 120px;
+    margin: 0px auto;
+}
+.logo_mob{
+    width:150px;
+    height: 120px;
+    float: left;
+    margin-top: 10px;
+}
+.logo_mob img{
+    width:130px;
+    height: 100px;
+}
+.segura_newsletter{
+    width:450px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 700px;
+    float: left;
+
+    padding: 5px 15px; 
+}
+.segura_newsletter h3{
+   font-family: Arial;
+    font-size: 16px;
+    color:#fff;
+}
+.input_newsletter{
+    width:325px;
+    height: 35px;
+    border-radius:5px;
+    margin-top: 10px;
+    border:none;
+
+    padding-left: 6px;
+    font-family: arial;
+    font-size: 15px;
+    outline: none;
+}
+.botao_newsletter{
+    width:80px;
+    height: 35px;
+    margin-left: 5px;
+    border-radius:5px;
+    border:none;
+    background-color: #306b2c;
+    color:#fff;
+    outline: none;
+}
+.contatos{
+    width: 1300px;
+    height: 235px;
+    margin: 10px auto;
+}
+.segura_mapa_contato{
+    width: 832px;
+    height: 235px;
+    float:left;
+    /* border:1px solid #fff; */
+    /* margin: 30px auto; */
+}
+.segura_contatos{
+    width: 350px;
+    height: 235px;
+    color: white;
+    /* border:1px solid #fff; */
+    padding: 25px 0px;
+    float: left;
+}
+.segura_contatos h3{
+    /* text-align: center; */
+    font-family: arial;
+    font-size: 18px;
+}
+#telefone_email{
+    width: 340px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 10px 0px;
+    /* border:1px solid #fff; */
+    line-height: 30px;
+    font-family: arial;
+    font-size: 16px;
+}
+.mapa_site{
+    width: 480px;
+    height: 235px;
+    float: left;
+    color: white;
+    padding: 20px 0px;
+  
+    /* border:1px solid red; */
+}
+.mapa_site h3{
+    /* text-align: center; */
+    font-family: arial;
+    font-size: 18px;
+}
+.coluna_mapa{
+    width:230px;
+    height: 200px;
+    padding: 25px 0px;
+    /* margin-left: 5px; */
+    float: left;
+    /* border:1px solid #fff; */
+}
+.coluna_mapa p{
+    line-height: 30px;
+    /* margin-left: 20px; */
+    font-family: arial;
+}
+.redes_sociais{
+    width: 465px;
+    height: 235px;
+    float:left;
+    padding: 25px 0px;
+}
+.redes_sociais p{
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+}
+.segura_rs{
+    width:465px;
+    height: 50px;
+    /* border:1px solid black;  */
+    padding: 5px 150px;
+    margin: 10px 0px;
+   
+}
+.segura_rs img{
+  float:left;
+  width:40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.playstore{
+    width:465px;
+    height: 50px;
+}
+.playstore img{
+    width:165px;
+    height: 50px;
+    margin: 10px auto;
+}
+/* fim section 6 */

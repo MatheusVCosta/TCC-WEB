@@ -1,0 +1,91 @@
+.font_white{
+    color:#fff;
+}
+.font_black{
+    color:#000;
+}
+.font_green{
+    color:#519853;
+}
+
+.fundo_white{
+    background-color:#fff;
+}
+.fundo_gray{
+    background-color: #ececec;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; 
+    text-decoration: none;
+}
+
+
+
+
+/* Classes bases */
+button{
+    background-color:transparent;
+    border:solid 1px #6b6868;
+    padding:4px;
+    border-radius: 4px;
+}
+.row{
+    width: 100%;
+    display: block;
+    overflow: auto;
+    height: auto;
+}
+.cold10,.cold9,.cold8,.cold7,.cold6,.cold5,.cold4,.cold3,.cold2,.cold1{
+    display: inline-block;
+}
+.cold10{
+    width: 95%;
+}
+.cold9{
+    width: 85%;
+}
+.cold8{
+    width: 75%;
+}
+.cold7{
+    width: 65%;
+}
+.cold6{
+    width: 55%;
+}
+.cold5{
+    width: 45%;
+}
+.cold4{
+    width: 35%;
+}
+.cold3{
+    width: 25%;
+}
+.cold2{
+    width: 15%;
+}
+.cold1{
+    width: 5%;
+}
+.center{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+}
+.esquerda{
+    float:left;
+}
+.direita{
+    float:right;
+}
+.borda_embaixo{
+    border-bottom:solid 1px;
+}
+button:hover{
+    font-weight:bold;
+}

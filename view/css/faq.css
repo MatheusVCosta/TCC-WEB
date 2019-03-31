@@ -1,0 +1,77 @@
+@import "style.css";
+@import "estrutura.css";
+
+
+/* Classes  e IDs da pagina */
+#faq-painel-topicos{
+    text-align: center;
+    margin-top: 18px;
+}
+#faq-painel-topicos button{
+    padding: 18px;
+    background-color: white;
+    font-size: 1.4em;
+    margin: 0px 9px 0px 9px;
+}
+#faq-painel-perguntas{
+    text-align: center;
+    margin: 42px 0px 11px 0px;
+}
+.pergunta{
+    border: solid 1px #dad6d6;
+    max-width: 44%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 105px;
+    overflow: auto;
+    height: auto;
+    padding: 7px 2px 16px 0px;
+}
+.pergunta .desc{
+    float: left;
+    text-align: left;
+    padding-left: 40px;
+    padding-top:10px;
+}
+.pergunta .scroll{
+    position: relative;
+    top: 34px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 6px;
+    width: auto;
+    float: right;
+    margin-right: 26px;
+    cursor: pointer;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 13%, rgba(254,254,254,1) 52%, rgba(246,246,246,1) 92%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 13%, rgba(254,254,254,1) 52%, rgba(246,246,246,1) 92%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 13%, rgba(254,254,254,1) 52%, rgba(246,246,246,1) 92%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f6f6f6",GradientType=1);
+}
+.pergunta .scroll:hover{
+    background: rgb(254,254,254);
+background: -moz-linear-gradient(0deg, rgba(254,254,254,1) 11%, rgba(255,255,255,1) 51%, rgba(246,246,246,1) 90%);
+background: -webkit-linear-gradient(0deg, rgba(254,254,254,1) 11%, rgba(255,255,255,1) 51%, rgba(246,246,246,1) 90%);
+background: linear-gradient(0deg, rgba(254,254,254,1) 11%, rgba(255,255,255,1) 51%, rgba(246,246,246,1) 90%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefefe",endColorstr="#f6f6f6",GradientType=1);
+}
+.pergunta .scroll i{
+    color: black;
+    font-size: 1em;
+}
+.pergunta .scroll img{
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+#faq-painel-paginete{
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    padding: 4px 0px 13px 0px;
+    color: black;
+}
+#faq-painel-paginete  i{
+    color:black;
+}

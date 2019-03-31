@@ -1,0 +1,84 @@
+@import "style.css";
+@import "estrutura.css";
+
+
+/*CSS*/
+#main{
+    width: 1200px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+}
+#sobreEmpresaImgText{
+    height: 400px;
+    background-color: pink;
+}
+#textSobreEmpresa{
+    width: 560px;
+    height: 360px;
+    padding: 20px;
+    float: left;
+}
+#textSobreEmpresa h2{
+    text-align: center;
+}
+#textSobreEmpresa p{
+    text-align: justify;
+}
+#imgEmpresa{
+    width: 560px;
+    padding: 20px;
+    float: left;
+}
+#banner{
+    width: 100%;
+    height: 200px;
+    background-image: url(../imagem/28.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 30px;
+}
+#conteudo_banner{
+    width: 600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#caixa_banner{
+    width: 700px;
+    height: 170px;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
+}
+#texto_banner{
+    width: 700px;
+    height: 130px;
+    z-index: 2;
+    position: absolute;
+    margin-top: -150px;
+    text-align: center;
+    font-family: verdana;
+    color: aliceblue;
+    font-size: 37px
+    
+}
+.imgTextMVV{
+    height: 400px;
+    width: 375px;
+    background-color: pink;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.imgTextMVV h2{
+    text-align: center;
+}
+.imgTextMVV p{
+    text-align: justify;
+    margin: 20px;
+}

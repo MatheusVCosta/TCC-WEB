@@ -1,0 +1,160 @@
+@import "style.css";
+@import "estrutura.css";
+
+
+#conteudo [data-model="legend"]{
+    text-align: center;
+    font-size: 1.4em;
+    color: #2d2a2a;
+    padding: 4px;
+    /* border: solid 0.2px; */
+    border-bottom: solid .001rem;
+    background-color: white;
+}
+#conteudo form[role="search"] i{
+    color:#000;
+    text-align:center;
+}
+#conteudo form[role="search"]{
+    
+}
+#conteudo form[role="search"] div[data-model="caixa-pesquisa"]{
+   width: 68%;
+   padding: 3px;
+}
+#conteudo form[role="search"] div[data-model="caixa-pesquisa"] input{
+    border-radius: 4px 0px 0px 5px;border: 1px solid #666;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;padding: 4px;/* margin:2px; */}
+#conteudo form[role="search"] div[data-model="caixa-pesquisa"] i{
+    font-size: 0.99em;
+    /* display: block; */
+    line-height: 1.5;
+    border-radius: 0px 4px 4px 0px;
+    border: solid .06rem #aba2a2;
+    padding: 0px 2px 0px 2px;
+    background: rgb(240,238,238);
+    background: -moz-linear-gradient(90deg, rgba(240,238,238,1) 8%, rgba(240,237,237,1) 52%, rgba(251,249,249,1) 88%);
+    background: -webkit-linear-gradient(90deg, rgba(240,238,238,1) 8%, rgba(240,237,237,1) 52%, rgba(251,249,249,1) 88%);
+    background: linear-gradient(90deg, rgba(240,238,238,1) 8%, rgba(240,237,237,1) 52%, rgba(251,249,249,1) 88%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0eeee",endColorstr="#fbf9f9",GradientType=1);
+    color: #006D5C;
+    text-shadow: 0px 0px 0.1px #006D5C;
+    text-decoration: none;
+    margin: 0px;
+    }
+#conteudo div[data-model="AnunciosBox"]{
+  display: grid;
+  grid-template-columns: 280px 280px 280px;
+  justify-content: center;
+    align-items: center;
+}
+/* Formatação dos anuncios */
+#conteudo div[data-model="AnunciosBox"] .anuncio{
+        max-width: 254px;
+        margin: 10px 10px;
+        padding-bottom: 12px;
+        background: #fff;
+        border: solid 0.01rem #d4d4d4;
+        -webkit-box-shadow: 0px 0px 31px -1px rgba(171,171,171,1);
+        -moz-box-shadow: 0px 0px 31px -1px rgba(171,171,171,1);
+        box-shadow: 0px 0px 42px -1px rgb(238, 238, 238);
+}
+
+#conteudo div[data-model="AnunciosBox"] .anuncio .titulo{
+        text-align: center;
+        /* padding-top: 5px; */
+}
+#conteudo div[data-model="AnunciosBox"] .anuncio .img{
+        margin: 8px;
+        background-color: black;
+}
+#conteudo div[data-model="AnunciosBox"] .anuncio .img img{
+    width: 100%;
+    height: 164px;
+    padding-top: 4px;
+}
+#conteudo div[data-model="AnunciosBox"] .anuncio .desc{
+    font-size: 0.9em;
+}
+#conteudo div[data-model="AnunciosBox"] .anuncio .desc div[data-meta]{
+
+}
+#conteudo div[data-model="AnunciosBox"] .anuncio .desc div[data-meta] label{
+    /* display: inline-block; */
+}
+#conteudo div[data-model="AnunciosBox"] .anuncio .desc div[data-meta] label:nth-child(1){
+    color: #1f1f1f;
+    padding-left: 8px;
+    min-width: 21%;
+    text-align: left;
+    font-weight: bold;
+}
+#conteudo div[data-model="AnunciosBox"] .anuncio .desc div[data-meta] label:nth-child(2){
+    text-align: end;
+    min-width: 60%;
+    max-width: 60%;
+    /* overflow-x: auto; */
+    word-wrap: break-word;
+    height: auto;
+    /* display: inline-grid; */
+}
+
+#conteudo div[data-model="AnunciosBox"] .anuncio button[onclick]{
+    display: block;
+    background-color: #1451ff;
+    color: white;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    padding: 8px;
+    letter-spacing: .02rem;
+    border-width: .09rem;
+    border-color: black;
+}
+
+[data-model~="paginate"]{
+    max-width: 110px;
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    height: 28px;
+}
+[data-model="paginate center"]{
+    display:block;
+    margin-left:auto;
+    width: 76px;
+    margin-right:auto;
+}
+.paginate-number{
+    padding: 0px 10px;
+    font-weight:bold;
+    /* font-size: 1.2em; */
+    height: 100%;
+    float: left;
+    font-size: 1.2em;
+    line-height: 0.8;
+}
+.paginate-circulo.select{
+    background-color:white;
+    border-width: 3px;
+    margin-bottom: -1px;
+}
+.paginate-circulo{
+    height: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16px;
+    border-radius: 100px;
+    display: inline-block;
+    border: solid 0.1rem black;
+    background-color: black;
+}
+.paginate-next,.paginate-prev{
+    font-family:;
+}
+.paginate-prev{
+    float: left;
+}
+.paginate-next{float: left;}
