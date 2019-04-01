@@ -9,8 +9,7 @@
 </head>
 <body>
     <div id="principal">
-        <header >
-            <!-- <img src="imagem/fundo.jpg" alt="" title="">  -->
+        <header>
             <nav class="cor_site_padrao">
                 <div id="segura_nav">
                     <div id="logo">
@@ -21,8 +20,8 @@
                         <ul>
                             <li><a href="../index.php">Home</a></li>
                             <li><a href="melhores_anuncios.php">Destaques</a></li>
-                            <li><a href="tabela_valor.php">Veículos a venda</a></li>
-                            <li><a href="sobre.php">Tabela de preços</a></li>
+                            <li><a href="principais_anuncios.php">Veículos a venda</a></li>
+                            <li><a href="tabela_valor.php">Tabela de preços</a></li>
                             <li><a href="como_ganhar_dinheiro.php">Como ganhar dinheiro</a></li>
                             <li class="menu_mais">
                                 <a href="#">Mais <span class="seta-baixo"></span></a>
@@ -51,57 +50,19 @@
                 </div>
             </div>
         </header>
-        <div id="conteudo">
-            <p class="center cold7 termos-titulo"> Abaixo, você encontra um resumo das principais regras do uso
-            do contrato com a MobShare, para conseguir ler rapidinho e entender
-            o mais importante. </p>
-            <div class="row">
-                <div class="center termo-destaque">
-                    <div class="image cold2 esquerda">
-                        <img src="imagem/selo4.png" alt="sdssd" width="92">
-                    </div>
-                    <div class="number cold1 esquerda">
-                        1
-                    </div>
-                    <div class="desc cold8 esquerda">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque enim et orci lobortis, vel posuere est aliquam. Aliquam vel erat nisi. Proin elementum auctor purus, vel pharetra est venenatis tincidunt. Mauris imperdiet arcu vitae ex malesuada fermentum. Maecenas scelerisque ligula nunc, nec blandit leo porta sit amet.
-                    </div>
+        <section class="section_termos_uso">
+            <h2>Termos de uso</h2>
+            <div class="conteudo">
+                <div class="texto_termos">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat
+                    Lorem ipsu</p>
                 </div>
-                <div class="center termo-destaque">
-                    <div class="image cold2 esquerda">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="number cold1 esquerda">
-                        2
-                    </div>
-                    <div class="desc cold8 esquerda">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque enim et orci lobortis, vel posuere est aliquam. Aliquam vel erat nisi. Proin elementum auctor purus, vel pharetra est venenatis tincidunt. Mauris imperdiet arcu vitae ex malesuada fermentum. Maecenas scelerisque ligula nunc, nec blandit leo porta sit amet.
-                    </div>
-                </div>
-                <div class="center termo-destaque">
-                    <div class="image cold2 esquerda">
-                        <i class="fas fa-bicycle"></i>
-                    </div>
-                    <div class="number cold1 esquerda">
-                        3
-                    </div>
-                    <div class="desc cold8 esquerda">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque enim et orci lobortis, vel posuere est aliquam. Aliquam vel erat nisi. Proin elementum auctor purus, vel pharetra est venenatis tincidunt. Mauris imperdiet arcu vitae ex malesuada fermentum. Maecenas scelerisque ligula nunc, nec blandit leo porta sit amet.
-                    </div>
+                <div class="termos">
+                    
                 </div>
             </div>
-            <div id="termos-documento" class="center">
-                <h2> Termos de uso MobShare</h2>
-                <div class="desc">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque enim et orci lobortis, vel posuere est aliquam. Aliquam vel erat nisi. Proin elementum auctor purus, vel pharetra est venenatis tincidunt. Mauris imperdiet arcu vitae ex malesuada fermentum. Maecenas scelerisque ligula nunc, nec blandit leo porta sit amet. Nulla malesuada justo non tellus mattis, at aliquet ipsum condimentum.</p>
-                    <p> Proin orci elit, maximus sit amet egestas id, malesuada pellentesque turpis. Nunc bibendum consectetur posuere. Proin posuere, lorem a cursus posuere, orci massa posuere lectus, ac suscipit purus ex ac est. Vestibulum a urna nibh. Nam ultricies suscipit risus id laoreet. Nulla ac interdum orci, at posuere diam.</p>
-                    <p> Proin orci elit, maximus sit amet egestas id, malesuada pellentesque turpis. Nunc bibendum consectetur posuere. Proin posuere, lorem a cursus posuere, orci massa posuere lectus, ac suscipit purus ex ac est. Vestibulum a urna nibh. Nam ultricies suscipit risus id laoreet. Nulla ac interdum orci, at posuere diam.</p>
-                    <p> Proin orci elit, maximus sit amet egestas id, malesuada pellentesque turpis. Nunc bibendum consectetur posuere. Proin posuere, lorem a cursus posuere, orci massa posuere lectus, ac suscipit purus ex ac est. Vestibulum a urna nibh. Nam ultricies suscipit risus id laoreet. Nulla ac interdum orci, at posuere diam.</p>
-                    <p> Proin orci elit, maximus sit amet egestas id, malesuada pellentesque turpis. Nunc bibendum consectetur posuere. Proin posuere, lorem a cursus posuere, orci massa posuere lectus, ac suscipit purus ex ac est. Vestibulum a urna nibh. Nam ultricies suscipit risus id laoreet. Nulla ac interdum orci, at posuere diam.</p>
-                    <p> Proin orci elit, maximus sit amet egestas id, malesuada pellentesque turpis. Nunc bibendum consectetur posuere. Proin posuere, lorem a cursus posuere, orci massa posuere lectus, ac suscipit purus ex ac est. Vestibulum a urna nibh. Nam ultricies suscipit risus id laoreet. Nulla ac interdum orci, at posuere diam.</p>
-                </div>
-            </div>
-         </div>
+        </section>
     </div>
     <footer class="cor_site_padrao">
         <?php require_once('footer.php')?>

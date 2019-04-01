@@ -18,8 +18,8 @@
                             <ul>
                                 <li><a href="../index.php">Home</a></li>
                                 <li><a href="melhores_anuncios.php">Destaques</a></li>
-                                <li><a href="tabela_valor.php">Veículos a venda</a></li>
-                                <li><a href="sobre.php">Tabela de preços</a></li>
+                                <li><a href="principais_anuncios.php">Veículos a venda</a></li>
+                                <li><a href="tabela_valor.php">Tabela de preços</a></li>
                                 <li><a href="como_ganhar_dinheiro.php">Como ganhar dinheiro</a></li>
                                 <li class="menu_mais">
                                     <a href="#">Mais <span class="seta-baixo"></span></a>

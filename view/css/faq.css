@@ -2,76 +2,162 @@
 @import "estrutura.css";
 
 
-/* Classes  e IDs da pagina */
-#faq-painel-topicos{
-    text-align: center;
-    margin-top: 18px;
+#principal{
+    width:100%;
+    height: auto;
+    min-height: 1300px;
+    background-color: #cecece;
+    /* border:1px solid black; */
 }
-#faq-painel-topicos button{
-    padding: 18px;
-    background-color: white;
-    font-size: 1.4em;
-    margin: 0px 9px 0px 9px;
+
+.conteudo_faq{
+    width: 100%;
+    height: auto;
+    min-height: 1350px;
+    padding-top: 50px;
 }
-#faq-painel-perguntas{
-    text-align: center;
-    margin: 42px 0px 11px 0px;
+.menu_faq{
+    width:100%;
+    height: 60px;
+    background-color: black;
 }
-.pergunta{
-    border: solid 1px #dad6d6;
-    max-width: 44%;
+.segura_item{
+    width:1200px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 105px;
-    overflow: auto;
-    height: auto;
-    padding: 7px 2px 16px 0px;
 }
-.pergunta .desc{
+.menu_item{
+    width:200px;
+    height: 60px;
     float: left;
-    text-align: left;
-    padding-left: 40px;
-    padding-top:10px;
-}
-.pergunta .scroll{
-    position: relative;
-    top: 34px;
-    text-align: center;
-    border: solid 1px;
-    border-radius: 6px;
-    width: auto;
-    float: right;
-    margin-right: 26px;
     cursor: pointer;
-    background: rgb(255,255,255);
-    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 13%, rgba(254,254,254,1) 52%, rgba(246,246,246,1) 92%);
-    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 13%, rgba(254,254,254,1) 52%, rgba(246,246,246,1) 92%);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 13%, rgba(254,254,254,1) 52%, rgba(246,246,246,1) 92%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f6f6f6",GradientType=1);
 }
-.pergunta .scroll:hover{
-    background: rgb(254,254,254);
-background: -moz-linear-gradient(0deg, rgba(254,254,254,1) 11%, rgba(255,255,255,1) 51%, rgba(246,246,246,1) 90%);
-background: -webkit-linear-gradient(0deg, rgba(254,254,254,1) 11%, rgba(255,255,255,1) 51%, rgba(246,246,246,1) 90%);
-background: linear-gradient(0deg, rgba(254,254,254,1) 11%, rgba(255,255,255,1) 51%, rgba(246,246,246,1) 90%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefefe",endColorstr="#f6f6f6",GradientType=1);
-}
-.pergunta .scroll i{
-    color: black;
-    font-size: 1em;
-}
-.pergunta .scroll img{
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-#faq-painel-paginete{
-    font-size: 1em;
-    display: block;
+.menu_item p{
     text-align: center;
-    padding: 4px 0px 13px 0px;
-    color: black;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
 }
-#faq-painel-paginete  i{
-    color:black;
+.menu_item:hover{
+    transition: 1s;
+    background-color: #306b2c;
+}
+.conteudo_faq h2{
+    text-align: center;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+}
+#conteudo{
+    width:1300px;
+    height: auto;
+    min-height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.texto_faq{
+    width:800px;
+    height: auto;
+    min-height: 280px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.texto_faq p{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.caixa_faq{
+    width:1000px;
+    height: auto;
+    min-height: 500px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border:2px solid black;
+}
+.titulos_perguntas{
+    width:1000px;
+    height: auto;
+    min-height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: bold;
+    color:#ffffff;
+    font-size: 16px;
+    padding-top: 30px;
+    background-color: #000000;
+}
+.linha_perguntas{
+    width:999px;
+    height: auto;
+    min-height: 120px;
+    border-top:2px solid black;
+}
+.segura_perguntas{
+    width:900px;
+    height: auto;
+    min-height: 100px;
+    padding-left: 30px;
+    padding-top: 10px;
+    float: left;
+
+}
+.linha_perguntas img{
+    width: 60px;
+    height: 70px;
+    cursor: pointer;
+    margin-top:15px;
+    margin-left: 15px;
+    float: left;
+}
+.segura_perguntas h3{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 19px;
+    /* line-height: 25px; */
+}
+.segura_perguntas p{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.paginacao{
+    width:663px;
+    height:50px;
+    /* border:1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.paginacao_item{
+    width:60px;
+    height:50px;
+    float: left;
+    /* border-right:1px solid rgb(186, 186, 186); */
+    
+    text-align: center;
+    font-family: Roboto-regular;
+    font-size: 17px;
+    padding-top: 15px;
+    
+}
+.paginacao_item p {
+    cursor: pointer;
 }
