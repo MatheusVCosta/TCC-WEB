@@ -1,20 +1,45 @@
+/*CSS*/
 @import "style.css";
 @import "estrutura.css";
 
-
-/*CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 #main{
-    width: 1200px;
-    height: 1000px;
+    width: 100%;
+    height: 2010px;
     margin-left: auto;
     margin-right: auto;
+    float: left;
 }
 h1{
     text-align: center;
 }
 #sobreEmpresaImgText{
+    width: 1200px;
     height: 400px;
-    background-color: pink;
+    background-color: #efefef;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
 }
 #textSobreEmpresa{
     width: 560px;
@@ -30,21 +55,28 @@ h1{
 }
 #imgEmpresa{
     width: 560px;
+    height: 360px;
     padding: 20px;
     float: left;
+    background-image: url(../imagem/sobre_empresa.jpg);
+    background-size: 580px 360px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
 }
 #banner{
     width: 100%;
-    height: 200px;
-    background-image: url(../imagem/28.jpg);
+    height: 300px;
+    background-image: url(../imagem/banner_empresa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 #conteudo_banner{
     width: 600px;
     height: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -67,18 +99,39 @@ h1{
     font-size: 37px
     
 }
-.imgTextMVV{
+#alignMVV{
+    margin-top: 20px;
     height: 400px;
+    width: 1200px;
+    background-color: #efefef;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgTextMVV{
+    height: 355px;
     width: 375px;
-    background-color: pink;
     float: left;
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
+}
+figure{
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+figure img{
+    border-radius: 20px;
 }
 .imgTextMVV h2{
     text-align: center;
 }
 .imgTextMVV p{
+    width: 200px;
     text-align: justify;
     margin: 20px;
+    text-align: center;
+    margin-left: 80px;
 }

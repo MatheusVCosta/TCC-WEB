@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3a3a3a;
+}
+.principal{
+    width:100%;
+    height: 100%;
+    padding-top: 30px;
+}
+#container{
+    width: 1350px;
+    height: 900px;
+    /* border:1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+
+}
+header{
+    width:1348px;
+    height: 180px;
+    background-color: #585858;
+    padding-top: 1px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+#logo{
+    width:180px;
+    height: 150px;
+    /* border:1px solid black; */
+    margin-top: 10px;
+    margin-left: 25px;
+    float: left;
+}
+#logo img{
+    width:180px;
+    height: 150px;
+}
+#info_usuario{
+    width: 400px;
+    height: 150px;
+    border: 1px solid #fff;
+    margin-top: 14px;
+    margin-left: 900px;
+    background-color: #7b7b7b;
+    border-radius: 30px;
+}
+
+
+#sobre_usuario{
+    width:240px;
+    height: 140px;
+    margin-left: 1px;
+    margin-top: 3px;
+    padding-top: 15px;
+    /* border:1px solid black; */
+    float:left;
+}
+.segura_info{
+    width:150px;
+    height: auto;
+    min-height: 50px;
+    float:left;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: verdana;
+    font-size: 17px;
+    text-align: center;
+    color: #fff; 
+    line-height: 30px;
+    letter-spacing: 2px;
+    /* border:1px solid black; */
+}
+.segura_info a{
+    text-decoration: none;
+    color: #fff; 
+    font-size: 18px;
+}
+.segura_info a:hover{  
+    transition: 0.5s;
+    color: rgb(0, 0, 0); 
+}
+.imagem_home{
+    width:50px;
+    height: 50px;
+    border-radius: 60px;
+    background-color: white;
+    padding-top: 5px;
+    margin-top: 75px;
+    margin-left: 220px;
+}
+.imagem_home img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 35px;
+    height: 35px; 
+    cursor: pointer;
+ }
+ .imagem_home img:hover{
+    transition: 0.5s;
+    transform:  scale(1.1)
+ }
+ #imagem_usuario{
+    width: 140px;
+    height: 140px;
+
+    /* border: 1px solid black; */
+    float: left;
+    border-radius: 80px;
+    margin-top: 3px;
+    margin-left: 10px;
+    background-color: white;
+}
+#imagem_usuario img{
+    width:130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+nav{
+    width: 236px;
+    height: 718px;
+    border-right: 1px solid black;
+    float: left;
+    background-color: #7b7b7b;
+    border-bottom-left-radius: 10px;
+}
+#texto_menu{
+    font-family: verdana;
+    font-size: 19px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-bottom:1px solid black;
+}
+.menu_lateral{
+    width: 235px;
+    height: 645px;
+    /* border:1px solid black; */
+}
+.item_menu{
+    width: 235px;
+    height: auto;
+    min-height: 60px;
+    border-bottom:1px solid black;
+    padding: 10px;
+    background-color: #7b7b7b;
+    cursor: pointer;
+    transition: 1s;
+}
+.item_menu:hover, .item_sub_menu:hover{
+    background-color: #8f8f8f;
+}
+.item_menu img, .item_sub_menu img{
+    width: 35px;
+    height: 40px;
+    background-color: #7b7b7b;
+    cursor: pointer;
+    float: left;
+    margin-left: 5px;
+}
+.item_menu p{
+    font-size: 16px;
+    font-family: verdana;
+    margin-top: 10px;
+    margin-left: 50px;
+    color:#fff;
+
+}
+.item_sub_menu{
+    width: 235px;
+    height: auto;
+    min-height: 60px;
+    border-bottom:1px solid black;
+    padding: 10px 20px;
+    background-color: #7b7b7b;
+    cursor: pointer;
+}
+.item_sub_menu p{
+    font-size: 15px;
+    font-family: verdana;
+    margin-top: 10px;
+    margin-left: 50px;
+    color:#fff;
+}
+.sub_menu{
+    width:235px;
+    height: 0px;
+    /* border:1px solid black; */
+    display: none;
+}
+
+.conteudo{
+    width: 1112px;
+    height: 718px;
+    border-bottom-right-radius: 10px;
+    float: left;
+    background-color: #b3b3b3;
+}
+
+
+
+
+
+
+
+/* area de cadastro de nivel */
+.titulo_pagina{
+    width:180px;
+    margin-top:-12px;
+    padding-left: 15px;
+    margin-left: 10px;
+    background-color: #b3b3b3;
+    font-family: Verdana;
+    font-size: 17px;
+    color:#fff
+}
+.segura_form{
+    width:1050px;
+    height: 670px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border:1px solid black;
+    border-radius: 5px;
+    /* display: none; */
+}
+form{
+    width:600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border:1px solid black;
+    border-radius: 10px;
+}
+::-webkit-input-placeholder {
+    color: rgb(253, 253, 253);
+ }
+.nome_nivel{
+    height: 35px;
+    outline: none;
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-family: "verdana";
+    /* font-weight: bold; */
+    font-size: 17px;
+    font-size: 18px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 25px 10px;
+    display: block;
+    resize: none;
+    border-radius: 1px;
+    border-bottom: 1px solid black;
+}
+.nome_nivel_slc{
+     height: 35px;
+     /* outline: none; */
+     border: none;
+     background: none;
+     color: rgb(255, 255, 255);
+     font-family: "verdana";
+     /* font-weight: bold; */
+     font-size: 17px;
+     font-size: 18px;
+     width: 400px;
+     margin: 20px auto;
+     /* padding: 25px 10px; */
+     display: block;
+     resize: none;
+     border-radius: 1px;
+     border-bottom: 1px solid black;
+}
+.nome_nivel_slc option{
+    color:black;
+}
+/* Usuario */
+.tbl_usuarios{
+    width: 600px;
+    height: 280px;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.titulo_menu{
+    font-family: verdana;
+    font-size: 16px;
+    margin-left: 20px;
+
+}
+.check_box_menus{
+    width: 540px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border:1px solid black; */
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.check_box_menus label{
+    font-family: verdana;
+    font-size: 16px;
+    margin-left: 5px;
+}
+input[type='checkbox']{
+    position: absolute;
+    left:-1000em;
+
+}
+input[type='checkbox'] + label:before{
+    background-image: url(../imagem/icones/check0.png);
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    padding-left: 5px;
+    position: relative;
+    vertical-align: top;
+    width:20px;
+
+}
+input[type='checkbox']:checked + label:before{
+    background-image: url(../imagem/icones/check1.png);
+}
+.btn_padrao{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    border:none;
+    margin-top: 10px;
+    margin-left: 230px;
+    font-family: verdana;
+    font-size: 15px;
+}
+
+/* Tabela */
+.tbl_niveis{
+    width:600px;
+    height: 280px;
+    border:1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.linha_titulo{
+    width:600px;
+    height: 40px;
+    border-bottom: 1px solid black;
+}
+.col_titulo{
+    /* width:440px; */
+    height: 40px;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    font-family: verdana;
+}
+.linha_resposta{
+    width:600px;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+.col_resposta{
+    /* width:440px; */
+    height: 50px;
+    text-align: center;
+    font-family: verdana;
+    float: left;
+}
+.col_resposta img{
+    width:42px;
+    height: 45px;
+    margin-left: 15px;
+    margin-top: 5px;
+    float: left;
+}

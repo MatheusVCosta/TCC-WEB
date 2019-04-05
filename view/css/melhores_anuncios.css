@@ -1,30 +1,35 @@
 @import "style.css";
 @import "estrutura.css";
 
-
-#conteudo [data-model="legend"]{
+#conteudo .legend{
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: #2d2a2a;
     padding: 4px;
+    font-family: Arial;
     /* border: solid 0.2px; */
     border-bottom: solid .001rem;
     background-color: white;
+    color: #469048;
 }
-#conteudo form[role="search"] i{
+#conteudo #pesquisa{
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 18px;
+    height: auto;
+    overflow: auto;
+}
+#conteudo #pesquisa i{
     color:#000;
     text-align:center;
 }
-#conteudo form[role="search"]{
-    
-}
-#conteudo form[role="search"] div[data-model="caixa-pesquisa"]{
+
+#conteudo #pesquisa #caixa-pesquisa{
    width: 68%;
    padding: 3px;
 }
-#conteudo form[role="search"] div[data-model="caixa-pesquisa"] input{
+#conteudo #pesquisa #caixa-pesquisa input{
     border-radius: 4px 0px 0px 5px;border: 1px solid #666;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;padding: 4px;/* margin:2px; */}
-#conteudo form[role="search"] div[data-model="caixa-pesquisa"] i{
+#conteudo #pesquisa #caixa-pesquisa i{
     font-size: 0.99em;
     /* display: block; */
     line-height: 1.5;
@@ -41,14 +46,15 @@
     text-decoration: none;
     margin: 0px;
     }
-#conteudo div[data-model="AnunciosBox"]{
-  display: grid;
-  grid-template-columns: 280px 280px 280px;
+#conteudo #AnunciosBox{
   justify-content: center;
-    align-items: center;
+  align-items: center;
+  height: auto;
+  overflow: auto;
+  text-align: center;
 }
 /* Formatação dos anuncios */
-#conteudo div[data-model="AnunciosBox"] .anuncio{
+#conteudo #AnunciosBox .anuncio{
   max-width: 254px;
   margin: 10px 10px;
   padding-bottom: 12px;
@@ -56,58 +62,52 @@
   border: solid 0.01rem #d4d4d4;
   -webkit-box-shadow: 0px 0px 31px -1px rgba(171,171,171,1);
   -moz-box-shadow: 0px 0px 31px -1px rgba(171,171,171,1);
+  /* float: left; */
   box-shadow: 0px 0px 42px -1px rgb(238, 238, 238);
-  opacity:0;
+  display: inline-block;
+  align-self: center;
 }
-
-#conteudo div[data-model="AnunciosBox"].action-animated .anuncio{
+#conteudo #AnunciosBox.action-animated .anuncio{
   animation: slideInLeft 3s 1;
   -webkit-animation: slideInLeft 3s 1;
   transition: opacity 2s;
-  opacity:1;
+  /* float: left; */
+  margin: 10px 20px 10px 20px;
 }
 
-#conteudo div[data-model="AnunciosBox"] .anuncio .titulo{
+#conteudo #AnunciosBox .anuncio .titulo{
         text-align: center;
-        /* padding-top: 5px; */
 }
-#conteudo div[data-model="AnunciosBox"] .anuncio .img{
+#conteudo #AnunciosBox .anuncio .img{
         margin: 8px;
         display: flex;
         background-color: black;
 }
-#conteudo div[data-model="AnunciosBox"] .anuncio .img img{
+#conteudo #AnunciosBox .anuncio .img img{
     width: 100%;
     height: 164px;
-    /* padding-top: 4px; */
 }
-#conteudo div[data-model="AnunciosBox"] .anuncio .desc{
+#conteudo #AnunciosBox .anuncio .desc{
     font-size: 0.9em;
+    text-align: initial;
 }
-#conteudo div[data-model="AnunciosBox"] .anuncio .desc div[data-meta]{
-
-}
-#conteudo div[data-model="AnunciosBox"] .anuncio .desc div[data-meta] label{
-    /* display: inline-block; */
-}
-#conteudo div[data-model="AnunciosBox"] .anuncio .desc div[data-meta] label:nth-child(1){
+#conteudo #AnunciosBox .anuncio .desc .anuncio_dado .anuncio_atributo{
     color: #1f1f1f;
     padding-left: 8px;
     min-width: 21%;
     text-align: left;
     font-weight: bold;
 }
-#conteudo div[data-model="AnunciosBox"] .anuncio .desc div[data-meta] label:nth-child(2){
+#conteudo #AnunciosBox .anuncio .desc .anuncio_dado .anuncio_valor{
     text-align: end;
     min-width: 60%;
     max-width: 60%;
-    /* overflow-x: auto; */
     word-wrap: break-word;
     height: auto;
-    /* display: inline-grid; */
+
 }
 
-#conteudo div[data-model="AnunciosBox"] .anuncio button[onclick]{
+#conteudo #AnunciosBox .anuncio button{
     display: block;
     background-color: #4d854d;
     color: white;
@@ -121,7 +121,23 @@
     border-color: black;
 }
 
-[data-model~="paginate"]{
+#conteudo #AnunciosBox .anuncio:hover{
+  -webkit-box-shadow: 0px 3px 37px -1px rgba(87,87,87,1);
+  -moz-box-shadow: 0px 3px 37px -1px rgba(87,87,87,1);
+  box-shadow: 0px 3px 37px -1px rgba(87,87,87,1);
+  cursor:pointer;  
+}
+
+#conteudo #AnunciosBox.action-animated .anuncio{
+  animation: slideInLeft 3s 1;
+  -webkit-animation: slideInLeft 3s 1;
+  transition: all 2s;
+  /* float: left; */
+  display: inline-block;
+  margin: 10px 20px 10px 20px;
+}
+
+#paginate{
     max-width: 110px;
     display: block;
     width: auto;
@@ -129,12 +145,6 @@
     margin-right: auto;
     font-size: 1.2em;
     height: 28px;
-}
-[data-model="paginate center"]{
-    display:block;
-    margin-left:auto;
-    width: 76px;
-    margin-right:auto;
 }
 .paginate-number{
     padding: 0px 10px;
@@ -144,21 +154,6 @@
     float: left;
     font-size: 1.2em;
     line-height: 0.8;
-}
-.paginate-circulo.select{
-    background-color:white;
-    border-width: 3px;
-    margin-bottom: -1px;
-}
-.paginate-circulo{
-    height: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 16px;
-    border-radius: 100px;
-    display: inline-block;
-    border: solid 0.1rem black;
-    background-color: black;
 }
 .paginate-next i,.paginate-prev i{
     color: #000;
@@ -202,4 +197,160 @@
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
+}
+#explicao_como_alugar{
+    width:900px;
+    height: auto;
+    min-height: 00px;
+    /* border:1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+}
+#explicao_como_alugar h3{
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+#explicao_como_alugar p{
+    padding-left: 20px;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+ #segura_filtro{
+    width:1020px;
+    height: 90px;
+    border-radius: 15px;
+    margin:40px auto;
+    padding: 15px 60px;
+}
+.btn_filtro{
+    width: 180px;
+    height: 45px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 7px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    cursor: pointer;
+}
+.btn_filtro:hover{
+    transition: 0.2s;
+    background-color: rgb(77, 77, 77);
+}
+.combo_box{
+    float: left;
+    width: 220px;
+    height: 75px;   
+}
+.combo_box label{
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 17px;
+}
+.combo_box select{
+    width:215px;
+    height: 35px;
+    margin-top:5px;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 15px;
+}
+#segura_anuncios{
+    width:1100px;
+    height: auto;
+    min-height: 905px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 9px;
+    overflow: hidden;
+}
+
+.anuncios{
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    float: left;
+    margin: 30px 30px;
+    background-color: #ffffff;
+    /* border:2px solid #277b21; */
+}
+#segura_anuncios a{
+    color:#000;
+}
+.anuncios:hover{
+    transition: 1s;
+    box-shadow:4px 4px 20px 0px rgb(142, 142, 142);
+    /* transform: scale(1.1) */
+}
+.img_anuncio{
+    width: 300px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+.img_anuncio img{
+    width: 297px;
+    height: 188px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    display: block;
+    border-radius: 2px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.info_anuncio{
+    width:300px;
+    height: auto;
+    min-height: 150px;
+    padding: 8px 15px;
+}
+.nome_veiculo{
+    font-family: "Roboto-medium";
+    font-size: 20px;
+}
+.info_veiculo{
+    font-family: "Roboto-regular";
+    font-size: 16px;
+    line-height: 22px;
+    /* font-weight: bold; */
+}
+.stars_avaliacao{
+    width:210px;
+    height: 35px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+.stars_avaliacao img{
+    width:28px;
+    height: 28px;
+    float: left;
+}
+.percentual_avaliacao{
+    font-family: "Roboto-medium";
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-left:15px;
+    float: left;
+}
+.star_left{
+    margin-left: 2px;
+    
 }

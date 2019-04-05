@@ -8,7 +8,7 @@
     color: #2d2a2a;
     padding: 4px;
     /* border: solid 0.2px; */
-    border-bottom: solid .001rem;
+    /*border-bottom: solid .001rem;*/
     background-color: white;
 }
 #conteudo form[role="search"] i{
@@ -158,3 +158,149 @@
     float: left;
 }
 .paginate-next{float: left;}
+
+#explicao_como_alugar{
+    width:900px;
+    height: auto;
+    min-height: 00px;
+    /* border:1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+}
+#explicao_como_alugar h3{
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+#explicao_como_alugar p{
+    padding-left: 20px;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+ #segura_filtro{
+    width:1020px;
+    height: 90px;
+    border-radius: 15px;
+    margin:40px auto;
+    padding: 15px 60px;
+}
+.btn_filtro{
+    width: 180px;
+    height: 45px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 7px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    cursor: pointer;
+}
+.btn_filtro:hover{
+    transition: 0.2s;
+    background-color: rgb(77, 77, 77);
+}
+.combo_box{
+    float: left;
+    width: 220px;
+    height: 75px;   
+}
+.combo_box label{
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 17px;
+}
+.combo_box select{
+    width:215px;
+    height: 35px;
+    margin-top:5px;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Roboto";
+    font-weight: bold;  
+    font-size: 15px;
+} 
+.anuncios{
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    float: left;
+    margin: 30px 30px;
+    background-color: #ffffff;
+    /* border:2px solid #277b21; */
+}
+#segura_anuncios a{
+    color:#000;
+}
+.anuncios:hover{
+    transition: 1s;
+    box-shadow:4px 4px 20px 0px rgb(142, 142, 142);
+    /* transform: scale(1.1) */
+}
+.img_anuncio{
+    width: 300px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+.img_anuncio img{
+    width: 297px;
+    height: 188px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    display: block;
+    border-radius: 2px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.info_anuncio{
+    width:300px;
+    height: auto;
+    min-height: 150px;
+    padding: 8px 15px;
+}
+.nome_veiculo{
+    font-family: "Roboto-medium";
+    font-size: 20px;
+}
+.info_veiculo{
+    font-family: "Roboto-regular";
+    font-size: 16px;
+    line-height: 22px;
+    /* font-weight: bold; */
+}
+.stars_avaliacao{
+    width:210px;
+    height: 35px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+.stars_avaliacao img{
+    width:28px;
+    height: 28px;
+    float: left;
+}
+.percentual_avaliacao{
+    font-family: "Roboto-medium";
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-left:15px;
+    float: left;
+}
+.star_left{
+    margin-left: 2px;
+    
+}

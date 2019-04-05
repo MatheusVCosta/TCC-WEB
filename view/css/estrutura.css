@@ -37,9 +37,18 @@ html{
     list-style: none; 
     text-decoration: none;
 }
-header{
+#header_home{
     width: 100%;
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../imagem/fundo.jpg);
+}
+header{
+    width: 100%;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,6 +68,36 @@ header{
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 10px;
+}
+#imgPretaRgb{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.501);
+}
+.caixa_texto_pages_all{
+    width: 900px;
+    height: 140px;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    margin-left: -520px;
+    margin-top: -80px;
+
+}
+.texto_primario_h1{
+    color:#ffffff;
+    font-size: 78px;
+    text-align: center;
+    font-family: "Roboto-regular";
+    /* font-weight: bold; */
+}
+.texto_secundario_p{
+    color:#ffffff;
+    font-size: 28px;
+    text-align: center;
+    font-family: "Roboto-regular";
+/*    margin-left: 110px;*/
+    /* font-weight: bold; */
 }
 .texto_primario{
     color:#ffffff;
@@ -99,7 +138,7 @@ nav{
     height: 100px;
 }
 #segura_nav{
-    width:1300px;
+    width:1500px;
     height: inherit;
     margin: 0 auto;
 }

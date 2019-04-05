@@ -1,0 +1,54 @@
+/* Sobescrevendo parte do body  para essa pagina */
+body{
+    background-color: #929292;
+}
+
+.login_painel{
+    text-align: center;
+}
+.login_painel_form{
+    height: auto;
+    border-radius: 7px;
+    min-width: 196px;
+    margin-left: auto;
+    width: auto;
+    display: inline-block;
+    margin-right: auto;
+    text-align: center;
+    padding: 12px;
+    background-color: rgba(255, 252, 252, 0.71);
+    font-size: 1.3em;
+    border: none;
+}
+.login_painel_form_legend{
+    width: 100px;
+    padding: 6px;
+    background-color: #eaeaea;
+    border-radius: 13px;
+    position: relative;
+    margin-top: -27px;
+}
+.login_painel_form table{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 11px;
+    font-size: 0.9em;
+ }
+.login_painel_form input{
+    min-height: 32px;
+    width: 253px;
+ }
+.login_painel_form td{
+    text-align: initial;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.login_painel_form label{
+    text-align: initial;
+}
+.login_painel_form button{
+    padding: 8px;
+    float: right;
+    margin-top: 14px;
+}

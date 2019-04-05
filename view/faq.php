@@ -11,46 +11,36 @@
 <body>
     <div id="principal">
         <header>
-            <nav class="cor_site_padrao">
-                <div id="segura_nav">
-                    <div id="logo">
-                        <img src="imagem/mob.png" alt="logo" title="logo">
-                    </div>
+                <div id="imgPretaRgb">
+                    <nav class="cor_site_padrao">
+                        <div id="segura_nav">
+                            <div id="logo">
+                                <img src="view/imagem/mob.png" alt="logo" title="logo">
+                            </div>
 
-                    <div class="segura_menu">
-                        <ul>
-                            <li><a href="../index.php">Home</a></li>
-                            <li><a href="melhores_anuncios.php">Destaques</a></li>
-                            <li><a href="principais_anuncios.php">Veículos a venda</a></li>
-                            <li><a href="tabela_valor.php">Tabela de preços</a></li>
-                            <li><a href="como_ganhar_dinheiro.php">Como ganhar dinheiro</a></li>
-                            <li class="menu_mais">
-                                <a href="#">Mais <span class="seta-baixo"></span></a>
-                                <ul class="sub_menu"> 
-                                    <li style="border-radius:0px 10px 0px 0px;"><a href="parceiros.php">Parceiros</a></li> 
-                                    <li><a href="sobre.php">Sobre</a></li> 
-                                    <li><a href="faq.php">F.A.Q</a></li> 
-                                    <li style="border-radius:0px 0px 10px 10px;"><a href="termos_uso.php">Termos de uso</a></li>
-                                </ul> 
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="segura_login">
-                        <input type="button" name="btmLogin" id="btnLogin" class="cor_detalhe_site_padrao" value="Login">
-                        <input type="button" name="btmCadastro" id="btnCadastro" value="Cadastra-se" class="cor_detalhe_site_padrao">
-                    </div>
-                </div>    
-            </nav>
+                            <div class="segura_menu">
+                                <ul>
+									<li><a href="?home">Início</a></li>
+									<li><a href="?melhores_anuncios">Veículos em Destaques</a></li>
+									<li><a href="?principais_anuncios">Veículos à Venda</a></li>
+									<li><a href="?como_ganhar_dinheiro">Ganhe Dinheiro</a></li>
+									<li><a href="?parceiros">Seja um Parceiro</a></li>
+									<li><a href="?sobre">Sobre Nós</a></li>
+								</ul>
+                            </div>
 
-            <div class="texto_chamativo">
-                <p class="texto_primario">Ganhar dinheiro <span style="color:#306b2c;">compartilhando</span> seu veículo nunca foi tão fácil</p>
-                <p class="texto_secundario">O que acha de anúnciar ele AGORA!</p>
-                <div class="btn_anunciar">
-                    <a href="#">Anuncie-já!</a>
+                            <div class="segura_login">
+                                <input type="button" name="btmLogin" id="btnLogin" class="cor_detalhe_site_padrao" value="Login">
+                                <input type="button" name="btmCadastro" id="btnCadastro" value="Cadastra-se" class="cor_detalhe_site_padrao">
+                            </div>
+                        </div>    
+                    </nav>
+                    <div class="caixa_texto_pages_all">
+                        <h1 class="texto_primario_h1">Principais Anúncios</h1>
+                        <p class="texto_secundario_p"> Os Principais Anúncios  Principais Anúncios Principais Anúncios Principais Anúncios</p>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
         <div id="principal">
             <div class="menu_faq">
                 <div class="segura_item">
@@ -109,7 +99,7 @@
                                 Lorem ipsum dolor sit amet, consectetur 
                                 adipiscing elit. Nunc maximus, nulla ut </p>
                             </div>
-                            <img src="imagem/icones/seta_preta.png" alt="seta" onclick="mostrar_mais()">
+                            <img src="view/imagem/icones/arrow_down.png" alt="seta" onclick="mostrar_mais()">
                         </div>
                         <div class="linha_perguntas">
                             <div class="segura_perguntas">
@@ -121,7 +111,7 @@
                                 Lorem ipsum dolor sit amet, consectetur 
                                 adipiscing elit. Nunc maximus, nulla ut </p>
                             </div>
-                            <img src="imagem/icones/seta_preta.png" alt="seta">
+                            <img src="view/imagem/icones/arrow_down.png" alt="seta">
                         </div>
                         <div class="linha_perguntas">
                             <div class="segura_perguntas">
@@ -133,7 +123,7 @@
                                 Lorem ipsum dolor sit amet, consectetur 
                                 adipiscing elit. Nunc maximus, nulla ut </p>
                             </div>
-                            <img src="imagem/icones/seta_preta.png" alt="seta">
+                            <img src="view/imagem/icones/arrow_down.png" alt="seta">
                         </div>
                         <div class="linha_perguntas">
                             <div class="segura_perguntas">
@@ -145,7 +135,7 @@
                                 Lorem ipsum dolor sit amet, consectetur 
                                 adipiscing elit. Nunc maximus, nulla ut </p>
                             </div>
-                            <img src="imagem/icones/seta_preta.png" alt="seta">
+                            <img src="view/imagem/icones/arrow_down.png" alt="seta">
                         </div>
                         <div class="linha_perguntas ">
                             <div class="segura_perguntas">
@@ -157,7 +147,7 @@
                                 Lorem ipsum dolor sit amet, consectetur 
                                 adipiscing elit. Nunc maximus, nulla ut </p>
                             </div>
-                            <img src="imagem/icones/seta_preta.png" alt="seta">
+                            <img src="view/imagem/icones/arrow_down.png" alt="seta">
                         </div>
                         
                     </div>
@@ -179,7 +169,62 @@
             </section>  
         </div>
         <footer class="cor_site_padrao">
-            <?php require_once('footer.php')?>
+            <!--  Caixas que contem o contato e o navegar pelo site -->
+            <div class="newsletter">
+                <div class="logo_mob">
+                    <img src="view/imagem/mob.png" alt="logo">
+                </div>
+                <div class="segura_newsletter">
+                    <form id="frmEmail">
+                        <h3>Quer receber noticias?</h3>
+                        <input type="text" placeholder="Insira seu email" class="input_newsletter">
+                        <button class="botao_newsletter">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contatos">
+                <div class="segura_mapa_contato">
+                    <div class="segura_contatos">
+                        <h3> Quer entrar em contato? </h3>
+                        <div id="telefone_email">
+                            <p><strong>Telefone</strong>: 0800 755 855</p>
+                            <p><strong>Telefone</strong>: 0800 755 855</p>
+                            <p><strong>E-mail</strong>: atendimento@mobshare.com.br</p>
+                        </div>
+                    </div>
+                    <div class="mapa_site">
+                        <h3> Navegue pelo site </h3>
+                        <div class="coluna_mapa">
+                            <p>Melhores avaliações</p>
+                            <p>Termos de uso</p>
+                            <p>Principais anúncio</p>
+                            <p>Tutorial</p>
+                            <p>Tabela de Preço</p>
+                        </div>
+                        <div class="coluna_mapa">
+                            <p>Detalhe dos valores</p>
+                            <p>Sobre a empresa</p>
+                            <p>F.A.Q</p>
+                            <p>Seja um parceio</p>                      
+                        </div>
+                    </div>
+                </div>
+                <!--  Caixas das redes sociais  -->
+                <div class="redes_sociais">
+                    <p>Siga nós nas redes</p>
+                    <div class="segura_rs" style="text-align: center;">
+                        <img src="view/imagem/rs/f.png">
+                        <img src="view/imagem/rs/i.png">
+                        <img src="view/imagem/rs/t.png">
+                    </div>
+                    <p>Baixe nosso aplicativo na playstore</p>
+                    <div class="playstore">
+                        <img class="center" style="display:block;" src="view/imagem/googleplay.png" width="128">
+                    </div>
+                </div>
+            </div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
