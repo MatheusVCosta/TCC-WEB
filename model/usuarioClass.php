@@ -1,16 +1,16 @@
 <?php
 
-    class Usuario{
+class Usuario{
 
-        private $id;
-        private $nome;
-        private $email;
-	private $senha;
-	private $id_niveis;
+   private $id;
+   private $nome;
+   private $email;
+   private $senha;
+   private $id_niveis;
 
-        public function __construct(){
+   public function __construct(){
 
-        }
+   }
 
 	/* Gets */
         
@@ -53,7 +53,19 @@
 		$this->id_niveis =  $id_niveis;
 		return $this;	
 	}
+	
+	/* Funções de login  */
 
-    }
+	// gera o hash da senha
+	public function genSenha(){
+		return password_hash( $this->senha ,CRYPT_BLOWFISH,['cost'=>12] );
+	}
+
+	// verifica se a senha passada por paramentro esta correta
+	public function verificar( $senha ){
+		return password_verify( $senha , $this->senha );
+	}
+
+ }
 
 ?>

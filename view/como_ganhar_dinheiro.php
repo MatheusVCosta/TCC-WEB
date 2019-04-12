@@ -11,36 +11,39 @@
 </head>
 <body>
     <header>
-            <div id="imgPretaRgb">
-                <nav class="cor_site_padrao">
-                    <div id="segura_nav">
-                        <div id="logo">
-                            <img src="view/imagem/mob.png" alt="logo" title="logo">
-                        </div>
+        <div id="imgPretaRgb">
+            <nav class="cor_site_padrao">
+                <div id="segura_nav">
+                    <div id="logo">
+                        <img src="view/imagem/mob.png" alt="logo" title="logo">
+                    </div>
+                    <div class="segura_menu">
+                        <ul>
+                            <li><a href="?home">INÍCIO</a></li>
+                            <li><a href="?melhores_anuncios">VEÍCULOS EM DESTAQUE</a></li>
+                            <li><a href="?principais_anuncios">VEÍCULOS A VENDA</a></li>
+                            <li><a href="?como_ganhar_dinheiro">GANHE DINHEIRO</a></li>
+                            <li><a href="?parceiros">SEJA UM PARCEIRO</a></li>
+                            <li><a href="?sobre">SOBRE NÓS</a></li>
+                        </ul>
+                    </div>
 
-                        <div class="segura_menu">
-                            <ul>
-                                <li><a href="?home">Início</a></li>
-                                <li><a href="?melhores_anuncios">Veículos em Destaques</a></li>
-                                <li><a href="?principais_anuncios">Veículos à Venda</a></li>
-                                <li><a href="?como_ganhar_dinheiro">Ganhe Dinheiro</a></li>
-                                <li><a href="?parceiros">Seja um Parceiro</a></li>
-                                <li><a href="?sobre">Sobre Nós</a></li>
-                            </ul>
+                    <div class="segura_login">
+                        <div class="login_cadastro" style="width: 110px;">
+                            <a href="#"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
                         </div>
-
-                        <div class="segura_login">
-                            <input type="button" name="btmLogin" id="btnLogin" class="cor_detalhe_site_padrao" value="Login">
-                            <input type="button" name="btmCadastro" id="btnCadastro" value="Cadastra-se" class="cor_detalhe_site_padrao">
+                        <div class="login_cadastro" style="width: 160px;">
+                            <a href="#"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
                         </div>
-                    </div>    
-                </nav>
-                <div class="caixa_texto_pages_all">
-                    <h1 class="texto_primario_h1">Ganhe Dinheiro</h1>
-                    <p class="texto_secundario_p"> Como ganhar dinheiro locando seu veículo na Mob'Share</p>
-                </div>
+                    </div>
+                </div>    
+            </nav>
+            <div class="caixa_texto_pages_all">
+                <h1 class="texto_primario_h1">Ganhe Dinheiro</h1>
+                <p class="texto_secundario_p">Como ganhar dinheiro locando seu veículo na Mob'Share</p>
             </div>
-        </header>
+        </div>
+    </header>
     <div id="principal_conteudo">
         <!-- ************************CADASTRAR VEICULOS******************** --> 
         <div id="sessao_cadastrar_veiculo">
@@ -257,25 +260,25 @@
                 <div class="segura_contatos">
                     <h3> Quer entrar em contato? </h3>
                     <div id="telefone_email">
-                        <p><strong>Telefone</strong>: 0800 755 855</p>
-                        <p><strong>Telefone</strong>: 0800 755 855</p>
-                        <p><strong>E-mail</strong>: atendimento@mobshare.com.br</p>
+                        <p>Telefone:  0800 755 855</p>
+                        <p>Telefone:  0800 755 855</p>
+                        <p>E-mail: atendimento@mobshare.com.br</p>
+                        <img src="view/imagem/cracha_branco.png" alt="cracha">
+                        <a href="?cms/home_cms">Área administrativa</a> 
                     </div>
                 </div>
                 <div class="mapa_site">
                     <h3> Navegue pelo site </h3>
                     <div class="coluna_mapa">
-                        <p>Melhores avaliações</p>
-                        <p>Termos de uso</p>
-                        <p>Principais anúncio</p>
-                        <p>Tutorial</p>
-                        <p>Tabela de Preço</p>
+                        <a href="?melhores_anuncios">Melhores avaliações</a><br>
+                        <a href="?termos_uso.php">Termos de uso</a><br>
+                        <a href="?principais_anuncios.php">Principais anúncio</a><br>
+                        <a href="?como_ganhar_dinheiro.php">Ganhe dinheiro</a><br>
                     </div>
                     <div class="coluna_mapa">
-                        <p>Detalhe dos valores</p>
-                        <p>Sobre a empresa</p>
-                        <p>F.A.Q</p>
-                        <p>Seja um parceio</p>                
+                        <a href="?sobre.php">Sobre a empresa</a><br>
+                        <a href="?faq.php">F.A.Q</a><br>
+                        <a href="?parceiros.php">Seja um parceio</a>                 
                     </div>
                 </div>
             </div>
@@ -283,13 +286,13 @@
             <div class="redes_sociais">
                 <p>Siga nós nas redes</p>
                 <div class="segura_rs" style="text-align: center;">
-                    <img src="view/imagem/f.png">
-                    <img src="view/imagem/i.png">
-                    <img src="view/imagem/t.png">
+                    <a href="https://www.instagram.com/?hl=pt-br"><img src="view/imagem/instagram.png" alt="Instagran" title="Instagran"></a>
+                    <a href="https://pt-br.facebook.com/"><img src="view/imagem/facebook.png" alt="facebook" title="Facebook"></a>
+                    <a href="https://twitter.com/login?lang=pt" ><img src="view/imagem/twitter.png" alt="Twitter" title="Twitter" ></a>
                 </div>
                 <p>Baixe nosso aplicativo na playstore</p>
                 <div class="playstore">
-                    <img class="center" style="display:block;" src="view/imagem/googleplay.png" width="128">
+                    <img class="center" style="display:block;" src="view/imagem/googleplay.png">
                 </div>
             </div>
         </div>

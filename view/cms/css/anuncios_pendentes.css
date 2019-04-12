@@ -1,0 +1,182 @@
+.tbl_anuncios_pendentes{
+    padding-top: 19px;
+    max-height: 700px;
+    width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    overflow-y: overlay;
+}
+.tbl_anuncios_pendentes table{
+    border-collapse: unset;
+    border-spacing: unset;
+    min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tbl_anuncios_pendentes table thead{
+    background-color: #f0f0f0;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+.tbl_anuncios_pendentes table tbody{
+    background-color: rgb(255, 255, 255);
+}
+.tbl_anuncios_pendentes table th{
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-collapse: unset;
+    border-spacing: 0px;
+    box-sizing: unset;
+    border-color: transparent;
+    border-collapse: unset;
+    border-spacing: unset;
+    border-right: solid 1px #ccc;
+}
+.tbl_anuncios_pendentes table tr{}
+.tbl_anuncios_pendentes table tbody tr td{
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.tbl_anuncios_pendentes table tbody button{
+    color: black;
+    background-color: #eee;
+    border: solid 1px #c7c7c7;
+    padding: 3px;
+    margin: 0px 5px;
+}
+.modal_anuncios{
+    margin: 6px;
+    height: 307px;
+    width: 635px;
+    background-color: #fff;
+}
+.modal_anuncios .imagem{
+    width: 235px;
+    display: inline-block;
+    float: left;
+    background-color: black;
+}
+.modal_anuncios .imagem .lista_imagens{
+    height: 54px;
+    overflow-x: scroll;
+ }
+.modal_anuncios .imagem .lista_imagens .item_imagem{
+    display: inline-block;
+}
+.modal_anuncios .imagem .lista_imagens .item_imagem img{
+    height: 32px;
+    min-width: 32px;
+}
+.modal_anuncios .imagem img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal_anuncios .descricao{
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+    padding-left: 3px;
+    height: 220px;
+    padding: 4px;
+}
+.modal_anuncios .descricao .caixa_inputs_anuncios{
+    width: auto;
+    overflow: hidden;
+    height: 204px;
+}
+.modal_anuncios .descricao .caixa_inputs_anuncios .caixa_campos{
+    text-align: left;
+}
+.modal_anuncios .descricao .caixa_inputs_anuncios .caixa_campos .campo_anuncios{
+    width: 50%;
+    float: left;
+}
+.modal_anuncios .descricao .caixa_inputs_anuncios .caixa_campos label{
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+}
+.modal_anuncios .descricao .caixa_inputs_anuncios .caixa_campos input{
+    border: solid 1px #e8e8e8;
+    margin: 3px 0px;
+    min-height: 25px;
+    width: 98%;
+    background-color: white;
+    text-indent: 4px;
+}
+.modal_anuncios .descricao .caixa_inputs_anuncios .caixa_campos textarea{
+    border: solid 1px #e8e8e8;
+    min-width: 99%;
+    resize: none;
+    min-height: 100px;
+    padding-top: 4px;
+    margin-top: 6px;
+    width: 374px;
+    padding-left: 10px;
+    background-color: white;
+}
+.modal_anuncios .descricao_veiculo_anuncios{
+    max-height: 75px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.modal_anuncios .descricao_veiculo_anuncios .caixas_veiculo_anuncios{
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    width: 606px;
+}
+.modal_anuncios .caixas_veiculo_anuncios .item_caixa_veiculo{
+    display: inline-block;
+    float: left;
+    font-size: 0.9em;
+    margin: 0px 4px;
+}
+.modal_anuncios .caixas_veiculo_anuncios .item_caixa_veiculo label{
+    font-weight: bold;
+}
+.modal_anuncios .caixas_veiculo_anuncios .item_caixa_veiculo input{
+    border: solid 1px #ccc;
+    display: block;
+    width: 92px;
+    text-align: center;
+    background-color: white;
+}
+.modal_anuncios input,textarea{
+    color:#625d5d;
+}
+.modal_anuncios .caixa_aprovacao{
+    padding: 5px;
+}
+.modal_anuncios .caixa_aprovacao button{
+    padding: 2px 6px;
+    background-color: white;
+    border: solid 1px #ccc;
+    margin: 3px;
+    font-size: 1.2em;
+}
+.modal_anuncios .descricao .caixa_inputs_anuncios .caixa_campos input:hover{
+    border-color:#004b50;
+    color:black;
+}
+.modal_anuncios .descricao .caixa_inputs_anuncios .caixa_campos textarea:hover{
+    border-color:#004b50;
+    color:black;
+}
+.modal_anuncios .caixas_veiculo_anuncios .item_caixa_veiculo input:hover{
+    color:black;
+    border-color:#004b50;
+}
+.modal_anuncios .caixa_aprovacao button:hover{
+    border-color:black;
+    color:#002334;
+}

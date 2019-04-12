@@ -61,20 +61,21 @@
 
             $select = $PDO_conex->query($sql);
                
-            $cont = 0;
+            $listar_niveis = array();
             //Carregar todos os dados que estão no banco e guardando dentro
             //de um array local
             while($rs_niveis = $select->fetch(PDO::FETCH_ASSOC)){
 
-                $listar_niveis[] = new Niveis();
-                $listar_niveis[$cont]->setId_niveis($rs_niveis['id_niveis']);
-                $listar_niveis[$cont]->setNome_nivel($rs_niveis['nome_nivel']);
-                $listar_niveis[$cont]->setDescricao($rs_niveis['descricao']);
-
-                $cont+=1;
-                
+                $niveis = new Niveis();
+                $niveis->setId_niveis($rs_niveis['id_niveis'])
+                       ->setNome_nivel($rs_niveis['nome_nivel'])
+                       ->setDescricao($rs_niveis['descricao']);           
+                        
+                $listar_niveis[] = $niveis;
             }
-        
+
+           
+
             $this->conex->close_database();
 
             return $listar_niveis;

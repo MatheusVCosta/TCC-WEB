@@ -10,10 +10,11 @@
 	if(count($_GET)>=1){// Verifica se foi passado um parametro 
 		
 		//Pegando o primeiro atributo get /?home ou /?home.php ou /?home.html
-
-		$nome_pagina = array_keys($_GET)[0];// Seria bom se verificase se em um valor!!
-
-
+		$nome_pagina = array_keys($_GET)[0];// Seria bom se verificase se tem um valor!!
+		
+		if(isset($_GET['pagina']))$nome_pagina = $_GET['pagina']; 
+		
+		
 		// Verificando ?pagina
 		if(file_exists( 'view/'.$nome_pagina.'.php' )){
 			
@@ -34,8 +35,8 @@
 			
 			require_once('view/' . substr($nome_pagina, 0 , -5).'.html');
 		
-		//Seria bom se eu  implementase pelo menos mais 1 
-		}else{
+		//Seria bom se eu  implementa se pelo menos mais 1 
+		} else {
 
 			echo "<pre> Pagina não Encontrada!! </pre>";
 

@@ -1,10 +1,41 @@
+@font-face{
+    font-family: "OpenSans-bold";
+    src:url("../font/Open_Sans/OpenSans-SemiBold.ttf");
+}
+@font-face{
+    font-family: "OpenSans-Regular";
+    src:url("../font/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roboto";
+    src:url("../font/GeoSans/Roboto-Thin.ttf");
+}
+@font-face{
+    font-family: "Roboto-medium";
+    src:url("../font/roboto/Roboto-Medium.ttf");
+}
+@font-face{
+    font-family: "Roboto-regular";
+    src:url("../font/roboto/Roboto-Regular.ttf");
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: #3a3a3a;
+    width:100%;
+    height:100vh;
+    background-image: url('../imagem/edgar-guerra-426747-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.fundo{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.603);
 }
 .principal{
     width:100%;
@@ -23,7 +54,7 @@ body{
 header{
     width:1348px;
     height: 180px;
-    background-color: #585858;
+    background-color: #00984a;
     padding-top: 1px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -46,7 +77,7 @@ header{
     border: 1px solid #fff;
     margin-top: 14px;
     margin-left: 900px;
-    background-color: #7b7b7b;
+    background-color: #006330;
     border-radius: 30px;
 }
 
@@ -129,7 +160,7 @@ nav{
     height: 718px;
     border-right: 1px solid black;
     float: left;
-    background-color: #7b7b7b;
+    background-color: #ffffff;
     border-bottom-left-radius: 10px;
 }
 #texto_menu{
@@ -141,8 +172,8 @@ nav{
 }
 .menu_lateral{
     width: 235px;
-    height: 645px;
-    /* border:1px solid black; */
+    height: 718px;
+
 }
 .item_menu{
     width: 235px;
@@ -150,17 +181,16 @@ nav{
     min-height: 60px;
     border-bottom:1px solid black;
     padding: 10px;
-    background-color: #7b7b7b;
+    background-color: #ffffff;
     cursor: pointer;
-    transition: 1s;
+
 }
 .item_menu:hover, .item_sub_menu:hover{
-    background-color: #8f8f8f;
+    background-color: #006330;
 }
 .item_menu img, .item_sub_menu img{
     width: 35px;
     height: 40px;
-    background-color: #7b7b7b;
     cursor: pointer;
     float: left;
     margin-left: 5px;
@@ -170,7 +200,7 @@ nav{
     font-family: verdana;
     margin-top: 10px;
     margin-left: 50px;
-    color:#fff;
+    color:rgb(0, 0, 0);
 
 }
 .item_sub_menu{
@@ -179,7 +209,7 @@ nav{
     min-height: 60px;
     border-bottom:1px solid black;
     padding: 10px 20px;
-    background-color: #7b7b7b;
+    background-color: #ffffff;
     cursor: pointer;
 }
 .item_sub_menu p{
@@ -187,7 +217,7 @@ nav{
     font-family: verdana;
     margin-top: 10px;
     margin-left: 50px;
-    color:#fff;
+    color:rgb(0, 0, 0);
 }
 .sub_menu{
     width:235px;
@@ -201,87 +231,9 @@ nav{
     height: 718px;
     border-bottom-right-radius: 10px;
     float: left;
-    background-color: #b3b3b3;
+    background-color: #ffffff;
 }
 
-
-
-
-
-
-
-/* area de cadastro de nivel */
-.titulo_pagina{
-    width:180px;
-    margin-top:-12px;
-    padding-left: 15px;
-    margin-left: 10px;
-    background-color: #b3b3b3;
-    font-family: Verdana;
-    font-size: 17px;
-    color:#fff
-}
-.segura_form{
-    width:1050px;
-    height: 670px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    border:1px solid black;
-    border-radius: 5px;
-    /* display: none; */
-}
-form{
-    width:600px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    border:1px solid black;
-    border-radius: 10px;
-}
-::-webkit-input-placeholder {
-    color: rgb(253, 253, 253);
- }
-.nome_nivel{
-    height: 35px;
-    outline: none;
-    border: none;
-    background: none;
-    color: rgb(255, 255, 255);
-    font-family: "verdana";
-    /* font-weight: bold; */
-    font-size: 17px;
-    font-size: 18px;
-    width: 400px;
-    margin: 20px auto;
-    padding: 25px 10px;
-    display: block;
-    resize: none;
-    border-radius: 1px;
-    border-bottom: 1px solid black;
-}
-.nome_nivel_slc{
-     height: 35px;
-     /* outline: none; */
-     border: none;
-     background: none;
-     color: rgb(255, 255, 255);
-     font-family: "verdana";
-     /* font-weight: bold; */
-     font-size: 17px;
-     font-size: 18px;
-     width: 400px;
-     margin: 20px auto;
-     /* padding: 25px 10px; */
-     display: block;
-     resize: none;
-     border-radius: 1px;
-     border-bottom: 1px solid black;
-}
-.nome_nivel_slc option{
-    color:black;
-}
 /* Usuario */
 .tbl_usuarios{
     width: 600px;
@@ -299,42 +251,7 @@ form{
     margin-left: 20px;
 
 }
-.check_box_menus{
-    width: 540px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    /* border:1px solid black; */
-    padding-left: 20px;
-    padding-top: 15px;
-}
-.check_box_menus label{
-    font-family: verdana;
-    font-size: 16px;
-    margin-left: 5px;
-}
-input[type='checkbox']{
-    position: absolute;
-    left:-1000em;
 
-}
-input[type='checkbox'] + label:before{
-    background-image: url(../imagem/icones/check0.png);
-    background-position: 0;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    content: "";
-    display: inline-block;
-    height: 20px;
-    padding-left: 5px;
-    position: relative;
-    vertical-align: top;
-    width:20px;
-
-}
-input[type='checkbox']:checked + label:before{
-    background-image: url(../imagem/icones/check1.png);
-}
 .btn_padrao{
     width: 150px;
     height: 40px;
@@ -348,45 +265,29 @@ input[type='checkbox']:checked + label:before{
     font-size: 15px;
 }
 
-/* Tabela */
-.tbl_niveis{
-    width:600px;
-    height: 280px;
-    border:1px solid black;
-    margin-right: auto;
+/********************************************************
+MODAL***************************************************/
+#container2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 999;
+    display: none;
+    top: 0;
+    text-align: center;
+}
+#modal{
+    width: auto;
+    min-width: 500px;
+    height: auto;
+    min-height: 200px;
+    background-color: #ffffff;
     margin-left: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-.linha_titulo{
-    width:600px;
-    height: 40px;
-    border-bottom: 1px solid black;
-}
-.col_titulo{
-    /* width:440px; */
-    height: 40px;
-    float: left;
-    text-align: center;
-    padding-top: 10px;
-    font-family: verdana;
-}
-.linha_resposta{
-    width:600px;
-    height: 50px;
-    border-bottom: 1px solid black;
-}
-.col_resposta{
-    /* width:440px; */
-    height: 50px;
-    text-align: center;
-    font-family: verdana;
-    float: left;
-}
-.col_resposta img{
-    width:42px;
-    height: 45px;
-    margin-left: 15px;
-    margin-top: 5px;
-    float: left;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 30px;
+    /* overflow-y: overlay; */
+    /* max-height: 500px:; */
+    display: inline-block;
 }

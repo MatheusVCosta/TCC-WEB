@@ -15,6 +15,7 @@
                 require_once('controller/controllerNiveis.php');
                 //instanciando a class controllerNiveis
                 $controller_niveis = new ControllerNiveis();
+                
                 switch($modo){
                     
                     case 'INSERIR':
@@ -26,37 +27,19 @@
                     case 'EXCLUIR':
                         $controller_niveis->excluir_nivel();
                     break;
+                    case "SELECTALL":
 
+                        $lista_niveis =  $controller_niveis->listar_niveis();
+
+                        require_once('view/cms/niveis/tabela.php');
+
+                    break;
                     case 'BUSCAR':
-                        
                         $Niveis = $controller_niveis->buscar_nivel();
                         require_once('view/cms/niveis/cadastro_niveis.php');
                         break; 
                     break;
-                    case "SELECTALL":
-                        //INSTANCIANDO A CLASS CONTROLLERNIVEIS.PHP btn_padrao
-                        $listar_niveis = new ControllerNiveis();
-                        //$listar_niveis recebendo O OBJETO DE RETORNO DO METODO LISTAR_NIVEIS()
-                        $lista = $listar_niveis->listar_niveis();
-
-                       if(!isset($_GET['json'])){
-                            
-                            require_once('view/cms/niveis/tabela.php');
-
-                       }else{
-                           
-                           $listaJSON = array();
-                           
-                           foreach($lista as $nivel){
-
-                                $listaJSON[] = $nivel->json_parse();
-
-                           }
-
-                           echo json_encode($listaJSON);
-                       }
-
-                       break;
+                   
              }
              break;
             /* Usuario */
@@ -93,9 +76,41 @@
                    case "SELECT":
                         
                         $usuario = $controller_usuario->getById();
-                        require_once('view/cms/usuarios/cadastro_usuarios.php');
+                        require_once('view/cms/usuarios/cadastro.php');
+                        break;
+                   case "LOGAR":
+
+                        $controller_usuario->logar();
+
+                        break;
                 }
  
+                break;
+              case "TIPO_VEICULO":
+                    
+                    require_once("controller/controllerTipo_veiculo.php");
+                    $controller_tipo_veiculo = new ControllerTipoVeiculo();
+
+                    switch($modo){
+                        case "INSERIR":
+                            
+                            $controller_tipo_veiculo->inserir_tipo();
+
+                            break;
+                        case "ATUALIZAR":
+                            
+                            $controller_tipo_veiculo->atualizar_tipo();
+
+                            break;
+                        case "SELECT":
+                            
+                            $tipo = $controller_tipo_veiculo->getById();
+
+                            require_once('view/cms/veiculos/tipo_veiculo.php');
+
+                            break;
+                    }
+                
                 break;
         }
       

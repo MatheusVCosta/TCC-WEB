@@ -1,0 +1,9 @@
+$('#abrir_cadastro_usuario').click(function(){
+    $.ajax({
+        type:'POST',
+        url:'?cms/usuarios/cadastro.php',
+        success:function(res){
+            modal(res.toString());
+        }
+    });
+});

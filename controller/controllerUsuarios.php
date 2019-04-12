@@ -63,6 +63,42 @@
 
         }
 
+        public function logar(){
+
+			$usuario  = new Usuario();
+			
+			var_dump($_POST);
+			
+			$usuario->setEmail($_POST['txtEmail'])
+					->setSenha($_POST['txtSenha']);
+
+			$logado = $this->usuariosDao->logar($usuario);
+			
+			if($logado){
+				
+				echo $logado->verificar($usuario->getSenha());
+				 
+				if($logado->verificar($usuario->getSenha())){
+					
+					echo "sucesso ao logar com o usuario";
+
+				}else{
+
+					echo "erro ao logar com o usuario email incorreto";
+
+				}
+				
+			
+			}else{
+			
+				echo "erro ao logar com o usuario";
+			
+			}
+
+        	return $this->usuariosDao->logar($usuario);
+
+        }
+
 
 
     }

@@ -18,20 +18,20 @@
     <div class="principal">
         <div id="container">
             <div class="login_painel">
-                <form class="login_painel_form">
+                <form id="frmLogar" class="login_painel_form" onsubmit="return logar(this)">
                     <div class="login_painel_form_legend"> Login </div>
                     <table>
                         <tr>
                             <td><label>E-mail:</label></td>
                         </tr>
                         <tr>
-                            <td><input></td>
+                            <td><input maxlength="100" type="email" pattern="^([a-z._\-0-9áéíóúàèìòùâêîôûãẽĩõũç]*@+([a-z0-9]+.+[a-z0-9])*)+$" name="txtEmail" required></td>
                         </tr>
                         <tr>
                             <td><label>Senha:</label></td>
                         </tr>
                         <tr>
-                            <td><input></td>
+                            <td><input name="txtSenha" required></td>
                         </tr>
                         <tr>
                             <td>

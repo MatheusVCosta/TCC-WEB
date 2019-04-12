@@ -1,0 +1,136 @@
+#conteudo_conversa{
+    width: 998px;
+    height: 703px;          
+    float: left; 
+    border: solid 1px;
+    margin-top: 5px;
+
+}
+
+#h2Border{
+    width: 140px;
+    height: 15px;
+    margin-top: -15px;
+    margin-left:50px; 
+    background-color:#fff;
+}
+#principal_conversa{
+    width: 990px;
+    height: 670px;
+    margin-left: 13px;
+    /* background-color: chocolate; */
+}
+#ultima_conversa{
+    width: 250px;
+    height: 50px;
+    border: solid 1px;
+    
+    margin-top: 80px;
+    
+    margin-left: 30px;
+}
+
+#titulo_conversa{
+    font-size: 20px;
+    font-family: verdana;
+    margin-left: 40px;
+    margin-top: -1px;
+}
+.segura_bolinhas{
+    width: 50px;
+    height: 300px;
+}
+.bolinha{
+    width: 50px;
+    height: 50px;
+   border: solid 1px;
+    border-radius: 100px;
+    margin-top: 28px;
+}
+.icone_bolinha{
+    width: 45px;
+    height: 45px;
+    margin-left: 3px;
+}
+.segura_conversa{
+    width: 235px;
+    height: 300px;
+    margin-left: 56px;
+    margin-top: 166px;
+}
+.caixa_conversa{
+    width: 220px;
+    height: 40px;
+    border: solid 1px;
+    margin-left: 10px;
+    margin-top: 40px;
+  
+}
+.dialogo{
+    font-family: verdana;
+    font-size: 20px;
+
+}
+#linha_vertical{
+    width: 2px;
+    height: 400px;
+    background-color: #000;
+    margin-left: 400px;
+    margin-top: -377px;
+
+}
+.principal_dialogo{
+    width: 548px;
+    height: 240px;
+    border: solid 1px;
+    margin-top: -550px;
+}
+.caixa_texto{
+    width: 548px;
+    height: 100px;
+    border: solid 1px;
+    margin-top: 10px;
+}
+#caixa_icone{
+    width: 20px;
+    height: 20px;
+    margin-left: 530px;
+    margin-top: -238px;
+    float: left;
+}
+
+#segura_todo_dialogo{
+    width: 400px;
+    height: 350px;
+    margin-left:650px;
+    margin-top: 700px;
+}
+
+#icone_conversa{
+    width: 20px;
+    height: 20px;
+}
+
+.caixa_esquerda{
+    width: 200px;
+    height: 40px;
+    border: solid 1px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.caixa_direita{
+    width: 200px;
+    height: 40px;
+    border: solid 1px;
+    margin-left: 330px;
+    margin-top: 6px;
+ 
+}
+#inicio_conversa{
+    width: 50px;
+    height: 20px;
+    background-color: palevioletred;
+    font-family: verdana;
+    font-size: 20px;
+}

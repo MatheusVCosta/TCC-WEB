@@ -1,0 +1,9 @@
+.tbl_veiculos_pendentes{padding-top: 19px;max-height: 700px;width: 900px;display: block;margin-left: auto;margin-right: auto;height: auto;overflow-y: overlay;}
+.tbl_veiculos_pendentes table{min-width: 80%;margin-left: auto;margin-right: auto;text-align: center;}
+.tbl_veiculos_pendentes table thead{background-color: #fff;}
+.tbl_veiculos_pendentes table tbody{
+    background-color: #f5f3f3;
+}
+.tbl_veiculos_pendentes table tbody img{
+    max-width:32px;
+}

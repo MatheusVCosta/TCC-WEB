@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Sobre</title>
+        <title>Mob'Share - Melhores Anuncios</title>
         <link rel="stylesheet" type="text/css" href="view/css/sobre.css">
     </head>
     <body>
@@ -14,27 +14,30 @@
                             <div id="logo">
                                 <img src="view/imagem/mob.png" alt="logo" title="logo">
                             </div>
-
                             <div class="segura_menu">
                                 <ul>
-                                    <li><a href="?home">Início</a></li>
-									<li><a href="?melhores_anuncios">Veículos em Destaques</a></li>
-									<li><a href="?principais_anuncios">Veículos à Venda</a></li>
-									<li><a href="?como_ganhar_dinheiro">Ganhe Dinheiro</a></li>
-									<li><a href="?parceiros">Seja um Parceiro</a></li>
-									<li><a href="?sobre">Sobre Nós</a></li>
+                                    <li><a href="?home">INÍCIO</a></li>
+                                    <li><a href="?melhores_anuncios">VEÍCULOS EM DESTAQUE</a></li>
+                                    <li><a href="?principais_anuncios">VEÍCULOS A VENDA</a></li>
+                                    <li><a href="?como_ganhar_dinheiro">GANHE DINHEIRO</a></li>
+                                    <li><a href="?parceiros">SEJA UM PARCEIRO</a></li>
+                                    <li><a href="?sobre">SOBRE NÓS</a></li>
                                 </ul>
                             </div>
 
                             <div class="segura_login">
-                                <input type="button" name="btmLogin" id="btnLogin" class="cor_detalhe_site_padrao" value="Login">
-                                <input type="button" name="btmCadastro" id="btnCadastro" value="Cadastra-se" class="cor_detalhe_site_padrao">
+                                <div class="login_cadastro" style="width: 110px;">
+                                    <a href="#"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
+                                </div>
+                                <div class="login_cadastro" style="width: 160px;">
+                                    <a href="#"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
+                                </div>
                             </div>
                         </div>    
                     </nav>
                     <div class="caixa_texto_pages_all">
-                        <h1 class="texto_primario_h1">Principais Anúncios</h1>
-                        <p class="texto_secundario_p"> Os Principais Anúncios  Principais Anúncios Principais Anúncios Principais Anúncios</p>
+                        <h1 class="texto_primario_h1">Sobre a empresa</h1>
+                        <p class="texto_secundario_p">Sobre a empresa Mob'share</p>
                     </div>
                 </div>
             </header>
@@ -99,62 +102,62 @@
                 </div>
             </section>
             <footer class="cor_site_padrao">
-        <!--  Caixas que contem o contato e o navegar pelo site -->
-        <div class="newsletter">
-            <div class="logo_mob">
-                <img src="view/imagem/mob.png" alt="logo">
-            </div>
-            <div class="segura_newsletter">
-                <form id="frmEmail">
-                    <h3>Quer receber noticias?</h3>
-                    <input type="text" placeholder="Insira seu email" class="input_newsletter">
-                    <button class="botao_newsletter">Enviar</button>
-                </form>
-            </div>
-        </div>
+                <!--  Caixas que contem o contato e o navegar pelo site -->
+                <div class="newsletter">
+                    <div class="logo_mob">
+                        <img src="view/imagem/mob.png" alt="logo">
+                    </div>
+                    <div class="segura_newsletter">
+                        <form id="frmEmail">
+                            <h3>Quer receber noticias?</h3>
+                            <input type="text" placeholder="Insira seu email" class="input_newsletter">
+                            <button class="botao_newsletter">Enviar</button>
+                        </form>
+                    </div>
+                </div>
 
-        <div class="contatos">
-            <div class="segura_mapa_contato">
-                <div class="segura_contatos">
-                    <h3> Quer entrar em contato? </h3>
-                    <div id="telefone_email">
-                        <p><strong>Telefone</strong>: 0800 755 855</p>
-                        <p><strong>Telefone</strong>: 0800 755 855</p>
-                        <p><strong>E-mail</strong>: atendimento@mobshare.com.br</p>
+                <div class="contatos">
+                    <div class="segura_mapa_contato">
+                        <div class="segura_contatos">
+                            <h3> Quer entrar em contato? </h3>
+                            <div id="telefone_email">
+                                <p>Telefone:  0800 755 855</p>
+                                <p>Telefone:  0800 755 855</p>
+                                <p>E-mail: atendimento@mobshare.com.br</p>
+                                <img src="view/imagem/cracha_branco.png" alt="cracha">
+                                <a href="?cms/home_cms">Área administrativa</a> 
+                            </div>
+                        </div>
+                        <div class="mapa_site">
+                            <h3> Navegue pelo site </h3>
+                            <div class="coluna_mapa">
+                                <a href="?melhores_anuncios">Melhores avaliações</a><br>
+                                <a href="?termos_uso.php">Termos de uso</a><br>
+                                <a href="?principais_anuncios.php">Principais anúncio</a><br>
+                                <a href="?como_ganhar_dinheiro.php">Ganhe dinheiro</a><br>
+                            </div>
+                            <div class="coluna_mapa">
+                                <a href="?sobre.php">Sobre a empresa</a><br>
+                                <a href="?faq.php">F.A.Q</a><br>
+                                <a href="?parceiros.php">Seja um parceio</a>                 
+                            </div>
+                        </div>
+                    </div>
+                    <!--  Caixas das redes sociais  -->
+                    <div class="redes_sociais">
+                        <p>Siga nós nas redes</p>
+                        <div class="segura_rs" style="text-align: center;">
+                            <a href="https://www.instagram.com/?hl=pt-br"><img src="view/imagem/instagram.png" alt="Instagran" title="Instagran"></a>
+                            <a href="https://pt-br.facebook.com/"><img src="view/imagem/facebook.png" alt="facebook" title="Facebook"></a>
+                            <a href="https://twitter.com/login?lang=pt" ><img src="view/imagem/twitter.png" alt="Twitter" title="Twitter" ></a>
+                        </div>
+                        <p>Baixe nosso aplicativo na playstore</p>
+                        <div class="playstore">
+                            <img class="center" style="display:block;" src="view/imagem/googleplay.png">
+                        </div>
                     </div>
                 </div>
-                <div class="mapa_site">
-                    <h3> Navegue pelo site </h3>
-                    <div class="coluna_mapa">
-                        <p>Melhores avaliações</p>
-                        <p>Termos de uso</p>
-                        <p>Principais anúncio</p>
-                        <p>Tutorial</p>
-                        <p>Tabela de Preço</p>
-                    </div>
-                    <div class="coluna_mapa">
-                        <p>Detalhe dos valores</p>
-                        <p>Sobre a empresa</p>
-                        <p>F.A.Q</p>
-                        <p>Seja um parceio</p>                     
-                    </div>
-                </div>
-            </div>
-            <!--  Caixas das redes sociais  -->
-            <div class="redes_sociais">
-                <p>Siga nós nas redes</p>
-                <div class="segura_rs" style="text-align: center;">
-                    <img src="view/imagem/f.png">
-                    <img src="view/imagem/i.png">
-                    <img src="view/imagem/t.png">
-                </div>
-                <p>Baixe nosso aplicativo na playstore</p>
-                <div class="playstore">
-                    <img class="center" style="display:block;" src="view/imagem/googleplay.png" width="128">
-                </div>
-            </div>
-        </div>
-    </footer>
+            </footer>
         </div>
     </body> 
 </html>

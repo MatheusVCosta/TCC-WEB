@@ -1,0 +1,182 @@
+
+/*css*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/*div principal*/
+#principal{
+    width: 1200px;
+    height: 922px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px;
+}
+/*cabeçalho*/
+header{
+    width: 1200px;
+    height: 200px;
+    background-color: whitesmoke;
+}
+/*todo conteudo do cabeçalho*/
+#conteudo_header{
+    width: 1160px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+     padding-top: 20px;
+}
+
+/*imagem do logo*/
+.img_logo{
+   width: 200px;
+    height: 150px;
+    float: left;
+}
+
+/*parte do bem vindo*/
+#bemvindo{
+    width: 150px;
+    height: 75px;
+    float: left;
+    margin-left: 600px;
+}
+h1{
+    font-family: verdana;
+    font-size: 20px;
+}
+
+
+
+/*foto do usurio*/
+.img_usuario{
+    width: 150px;
+    height: 150px;
+    margin-left: 45px;
+    border-radius: 100px; 
+    border: solid 3px;
+}
+
+
+/*div que segura os icones*/
+#segura_icones{
+  width: 200px;
+    margin-left: 775px;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.icone{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    float: left;
+    margin-top: -20px;
+    
+}
+
+.img_icone{
+    width: 40px;
+    height: 40px;
+}
+
+/*menu*/
+nav{
+    width: 200px;
+    height: auto;
+    min-height: 720px;
+    background-color: whitesmoke;
+    float: left;
+    
+}
+h5{
+    font-family: verdana;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.caixa_menu{
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+.menu_icone{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    float: left;
+    
+}
+.menu_titulo{
+    width: 160px;
+    height: 40px;
+    margin-left: 40px;
+    font-family: verdana;
+    font-size: 15px;
+}
+p{
+   padding-top: 12px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*conteudo*/
+#conteudo{
+    width: 998px;
+    height: 708px;          
+    float: left; 
+/*    border: solid 1px;*/
+    margin-top: 13px;
+}
+
+
+
+
+
+/* conteudo de outras paginas*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

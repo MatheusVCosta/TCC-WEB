@@ -20,7 +20,7 @@
     src:url("../font/roboto/Roboto-Regular.ttf");
 }
 .cor_site_padrao{
-    background-color: #000000;
+    background-color: #00984A;
 }
 .cor_detalhe_site_padrao{
     background-color: #306b2c;
@@ -37,28 +37,12 @@ html{
     list-style: none; 
     text-decoration: none;
 }
-#header_home{
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(../imagem/fundo.jpg);
-}
-header{
-    width: 100%;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(../imagem/fundo.jpg);
-}
+
+
 .texto_chamativo{
     width: 550px;
     height: 240px;
-    background-color: rgba(0, 0, 0, 0.501);
+    background-color: rgba(0, 0, 0, 0.21);
     position: absolute;
     left: 50%;
     top: 30%;
@@ -75,29 +59,26 @@ header{
     background-color: rgba(0, 0, 0, 0.501);
 }
 .caixa_texto_pages_all{
-    width: 900px;
+    width: 700px;
     height: 140px;
-    position: relative;
-    left: 50%;
-    top: 30%;
-    margin-left: -520px;
-    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
 
 }
 .texto_primario_h1{
     color:#ffffff;
-    font-size: 78px;
+    font-size: 28px;
     text-align: center;
-    font-family: "Roboto-regular";
-    /* font-weight: bold; */
+    font-family: "Roboto";
+    font-weight: bold;
 }
 .texto_secundario_p{
     color:#ffffff;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
-    font-family: "Roboto-regular";
-/*    margin-left: 110px;*/
-    /* font-weight: bold; */
+    font-family: "Roboto";
+
 }
 .texto_primario{
     color:#ffffff;
@@ -115,7 +96,7 @@ header{
     font-weight: bold;
 }
 .btn_anunciar{
-    width:150px;
+    width:130px;
     height: 50px;
     cursor: pointer;
     background-color: #306b2c;
@@ -126,7 +107,7 @@ header{
 }
 .btn_anunciar:hover{
     transition: 1s;
-    background: #34b236;
+    background: #D4DB26;
 }
 .btn_anunciar a{
     color: #fff;
@@ -138,17 +119,14 @@ nav{
     height: 100px;
 }
 #segura_nav{
-    width:1500px;
+    width:1300px;
     height: inherit;
     margin: 0 auto;
 }
 #logo{
-    width:140px;
+    width:120px;
     height: 100px;
-    /* border:1px solid black; */
     float: left;
-    /* margin-top:px; */
-    
 }
 #logo img{
     width:inherit;
@@ -157,117 +135,67 @@ nav{
     display: block;
 }
 .segura_menu{
-    width: 895px;
+    width: 805px;
     height: inherit;
     float: left;
     padding-top: 45px;
+    margin-left: 10px;
 }
 .segura_menu a{
    color:white;
 }
 .segura_menu a:hover{
-    color:#306b2c;
+    color:#D4DB26;
 }
 .segura_menu li{
     float: left;
-    margin-left: 30px;
-    font-family: "Roboto";
-    font-weight: bold;    
-    font-size: 16px;   
+    margin-left: 25px;
+    font-family: "OpenSans-Regular";
+    /* font-weight: bold;     */
+    font-size: 14px;
 }
 .menu_mais{
     color:white;
     cursor: pointer;
 
 }
-.sub_menu{
-    width: 181px;
-    height: 160px;
-    color: #fff;
-    position: relative;
-    display: none;
-    background-color: #306b2c;
-    border-radius: 10px;
-    margin-top: 4px;
-}
-.seta-baixo::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 5px;
-    margin-top: -2px;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #fff;
-}
-.sub_menu li{
-    width:181px;
-    height: 40px;
-    padding-left: 15px;
-    padding-top: 10px;
-    background-color: #272727;
-    margin-left: 0px;
-    font-size: 14px;
-}
-.sub_menu li:hover{
-    background: rgb(128, 128, 128);
-}
-.sub_menu a:hover{
-    color:#ffffff; 
-}
-.menu_mais:hover > .sub_menu{
-    display: block;
-}
-
-
 .segura_login{
-    width: 256px;
+    width: 300px;
     height: inherit;
     float: left;
-    padding-top: 35px;
-    
+    padding-top: 30px;
+    margin-left: 20px;   
 }
-#btnLogin{
-    border:none;
-    outline: none;
+.login_cadastro{
+    width: 110px;
+    height: 45px;
     float: left;
-    color:white;
-    width:100px;
-    height: 43px;
-    border-radius:7px;
-    font-family: "Roboto";
-    font-weight: bold;  
-    cursor: pointer;
 }
-#btnLogin:hover{
-    transition: 1s;
-    background: #34b236;
-}
-#btnCadastro{
-    border:none;
-    outline: none;
+.login_cadastro img{
+    width: 45px;
+    height: 45px;
     float: left;
-    color:white;
-    width:130px;
-    height: 43px;
-    border-radius:7px;
-    margin-left: 25px;
-    cursor: pointer;
-    font-family: "Roboto";
-    font-weight: bold;  
 }
-#btnCadastro:hover{
-    transition: 1s;
-    background: #34b236;
-   
-/* Fim cabeçalho */
+.login_cadastro p{
+    margin-left: 50px;
+    margin-top: 15px;
+    color:#fff;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    cursor: pointer;
+}  
+.login_cadastro p:hover{
+    color:#D4DB26;
+} 
 
-}
+
+
 /* footer */
 
 footer{
     width:100%;
     height: 375px;
+    padding-left: 30px;
 }
 .newsletter{
     width: 1300px;
@@ -294,7 +222,7 @@ footer{
     padding: 5px 15px; 
 }
 .segura_newsletter h3{
-   font-family: Arial;
+    font-family: "OpenSans-Regular";
     font-size: 16px;
     color:#fff;
 }
@@ -316,9 +244,12 @@ footer{
     margin-left: 5px;
     border-radius:5px;
     border:none;
-    background-color: #306b2c;
+    background-color: #008039;
     color:#fff;
     outline: none;
+}
+.botao_newsletter:hover{
+    background-color: #2f9428;
 }
 .contatos{
     width: 1300px;
@@ -326,7 +257,7 @@ footer{
     margin: 10px auto;
 }
 .segura_mapa_contato{
-    width: 832px;
+    width: 900px;
     height: 235px;
     float:left;
     /* border:1px solid #fff; */
@@ -342,8 +273,8 @@ footer{
 }
 .segura_contatos h3{
     /* text-align: center; */
-    font-family: arial;
-    font-size: 18px;
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
 }
 #telefone_email{
     width: 340px;
@@ -352,53 +283,72 @@ footer{
     padding: 10px 0px;
     /* border:1px solid #fff; */
     line-height: 30px;
-    font-family: arial;
+    font-family: "OpenSans-Regular";
     font-size: 16px;
 }
+#telefone_email img{
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+#telefone_email a{
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    color: white;
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+}
+#telefone_email a:hover{
+    color:#D4DB26;
+}
 .mapa_site{
-    width: 480px;
+    width: 460px;
     height: 235px;
     float: left;
     color: white;
     padding: 20px 0px;
+    margin-left: 50px;
   
     /* border:1px solid red; */
 }
 .mapa_site h3{
     /* text-align: center; */
-    font-family: arial;
+    font-family: "OpenSans-Regular";
     font-size: 18px;
 }
 .coluna_mapa{
     width:230px;
     height: 200px;
     padding: 25px 0px;
-    /* margin-left: 5px; */
     float: left;
-    /* border:1px solid #fff; */
 }
-.coluna_mapa p{
+.coluna_mapa a{
     line-height: 30px;
-    /* margin-left: 20px; */
-    font-family: arial;
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    color: #fff;
+}
+.coluna_mapa a:hover{
+    color: #D4DB26;
 }
 .redes_sociais{
-    width: 465px;
+    width: 400px;
     height: 235px;
     float:left;
-    padding: 25px 0px;
+    padding: 20px 0px;
 }
 .redes_sociais p{
     text-align: center;
     color: white;
-    font-family: arial;
-    font-size: 18px;
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
 }
 .segura_rs{
-    width:465px;
+    width:400px;
     height: 50px;
     /* border:1px solid black;  */
-    padding: 5px 150px;
+    padding-left: 130px;
     margin: 10px 0px;
    
 }
@@ -406,15 +356,23 @@ footer{
   float:left;
   width:40px;
   height: 40px;
-  margin-left: 10px;
+  margin-left: 5px;
+}
+.segura_rs img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .playstore{
-    width:465px;
+    width:400px;
     height: 50px;
 }
 .playstore img{
     width:165px;
     height: 50px;
     margin: 10px auto;
+}
+.playstore img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 /* fim section 6 */

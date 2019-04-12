@@ -1,0 +1,40 @@
+#descarregarConteudo{
+    height: 90px;
+    width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+#titulos{
+    height: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+#titulos h2{
+   float: left;
+}
+.itensMensagens{
+    height: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.email{
+    width: 250px;
+    float: left;
+    text-align: center;
+}
+.mensagem{
+    width: 400px;
+    float: left;
+    text-align: center;
+}
+.abrir{
+    width: 250px;
+    float: left;
+    text-align: center;
+    margin-left: 100px;
+}
