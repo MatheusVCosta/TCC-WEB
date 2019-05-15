@@ -25,13 +25,13 @@
                             <td><label>E-mail:</label></td>
                         </tr>
                         <tr>
-                            <td><input maxlength="100" type="email" pattern="^([a-z._\-0-9áéíóúàèìòùâêîôûãẽĩõũç]*@+([a-z0-9]+.+[a-z0-9])*)+$" name="txtEmail" required></td>
+                            <td><input maxlength="100" placeholder="admin@mobshare.com" type="email" pattern="^([a-z._\-0-9áéíóúàèìòùâêîôûãẽĩõũç]*@+([a-z0-9]+.+[a-z0-9])*)+$" name="txtEmail" required></td>
                         </tr>
                         <tr>
                             <td><label>Senha:</label></td>
                         </tr>
                         <tr>
-                            <td><input name="txtSenha" required></td>
+                            <td><input type="password" placeholder="123" name="txtSenha" required></td>
                         </tr>
                         <tr>
                             <td>

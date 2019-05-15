@@ -33,7 +33,22 @@
         public function excluir_usuarios(){
             $id_usuario = $_GET['id'];
 
-            $this->usuariosDao->delete($id_usuario);
+            if( $this->usuariosDao->delete($id_usuario) ){
+            	
+            	if(!isset($_SESSION))session_start();
+
+            	if(isset($_SESSION['usuario'])){
+
+            		$usuario = unserialize($_SESSION['usuario']);
+        			if($usuario->getId() == $_GET['id']){
+						//guarda na session o usuario
+						unset($_SESSION['usuario']);
+
+
+						header("location: ./");
+        			}
+            	}
+            }
         }
         public function atualizar_usuarios(){
 			//verificar se o metodo que esta chegando é GET ou POST
@@ -67,38 +82,54 @@
 
 			$usuario  = new Usuario();
 			
-			var_dump($_POST);
-			
 			$usuario->setEmail($_POST['txtEmail'])
 					->setSenha($_POST['txtSenha']);
 
-			$logado = $this->usuariosDao->logar($usuario);
 			
-			if($logado){
+			if($logado = $this->usuariosDao->logar($usuario)){
 				
-				echo $logado->verificar($usuario->getSenha());
 				 
 				if($logado->verificar($usuario->getSenha())){
+
+					// Verificando se a session esta ativa
+                    if(!isset($_SESSION))session_start();
+                 
+
+                    //guarda na session o usuario
+                    $_SESSION['usuario'] = serialize($logado);
 					
-					echo "sucesso ao logar com o usuario";
+					echo " sucesso ao logar com o usuario";
 
 				}else{
 
-					echo "erro ao logar com o usuario email incorreto";
+					echo "Erro ao logar com o usuario senha incorreta";
 
 				}
 				
 			
 			}else{
-			
-				echo "erro ao logar com o usuario";
+			   
+			   echo " Erro !!!! ";
+				
 			
 			}
 
         	return $this->usuariosDao->logar($usuario);
 
         }
+		
+		public function deslogar(){
 
+			if(!isset($_SESSION))session_start();
+                 
+
+			//guarda na session o usuario
+			unset($_SESSION['usuario']);
+
+
+			header("location: ./");
+					
+		}
 
 
     }

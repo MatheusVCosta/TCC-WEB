@@ -29,21 +29,37 @@
                 echo "<img class='img_not_find' alt='Nada encontrado' src='view/imagem/magnify.gif'>";
                 echo " <p class='aviso_tabela'> Nenhum nível encontrado!</p> ";
             }
+            $count = 0;
+            ?>
+            <?php foreach($lista_niveis as $lista){ ?>
+                <?php
+                    if($lista->getExcluido() == 1){
+                      $count++;
+                      if($count == count($lista_niveis)){
+                          echo "<img class='img_not_find' alt='Nada encontrado' src='view/imagem/magnify.gif'>";
+                          echo " <p class='aviso_tabela'> Nenhum nível encontrado!</p> ";
+                      }
+                      break;
+                    }
+                ?>
+                <div class="linha_resposta">
+                    <div class="col_resposta" style="padding-top: 10px; width:180px;"><?php echo($lista->getNome_nivel())?></div>
+                    <div class="col_resposta" style="padding-top: 10px; width:280px;  border-left: 1px solid black;">
+                        <?php if(count($lista->getListaMenu()) < 1){ ?>
+                                <p> Nenhum acesso encontrado </p>
+                        <?php } else {?>
+                            <?php foreach($lista->getListaMenu() as $menuNiveis ){?>
+                                <?=@$menuNiveis->getNome().","?>
+                            <?php } ?>
+                        <?php } ?>
+                    </div>
+                    <div class="col_resposta" style="padding-top: 10px; width:400px;  border-left: 1px solid black;"><?php echo($lista->getDescricao())?></div>
+                    <div class="col_resposta" style="width:130px;  border-left: 1px solid black;">
+                        <img src="view/cms/imagem/icones/edit.png" alt="edit" title="Editar" onclick="buscar_dados('niveis', 'buscar', <?php echo($lista->getId_niveis())?>)">
+                        <img src="view/cms/imagem/icones/delete.png" alt="delete" title="Excluir" onclick="excluir_niveis('niveis', 'excluir', <?php echo($lista->getId_niveis())?>)">
 
-            foreach($lista_niveis as $lista){
-            
-        ?>
-
-        <div class="linha_resposta">
-            <div class="col_resposta" style="padding-top: 10px; width:180px;"><?php echo($lista->getNome_nivel())?></div>
-            <div class="col_resposta" style="padding-top: 10px; width:280px;  border-left: 1px solid black;"><?php echo($lista->getDescricao())?></div>
-            <div class="col_resposta" style="padding-top: 10px; width:400px;  border-left: 1px solid black;">Teste, Teste, Teste</div>
-            <div class="col_resposta" style="width:130px;  border-left: 1px solid black;">
-                <img src="view/cms/imagem/icones/edit.png" alt="edit" title="Editar" onclick="buscar_dados('niveis', 'buscar', <?php echo($lista->getId_niveis())?>)">
-                <img src="view/cms/imagem/icones/delete.png" alt="delete" title="Excluir" onclick="excluir_niveis('niveis', 'excluir', <?php echo($lista->getId_niveis())?>)">
-                
-            </div>
-        </div>
+                    </div>
+                </div>
 
         <?php
             }

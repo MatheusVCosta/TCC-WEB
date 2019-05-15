@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>Mob'Share - Melhores Anuncios</title>
         <link rel="stylesheet" type="text/css" href="view/css/sobre.css">
+        <script src="view/js/libs/jquery/jquery-3.3.1.js"></script>
+        <script src="view/js/notify.js"></script>
+        <script src="view/js/main.js"></script>
     </head>
     <body>
         <div id="main">
@@ -26,11 +29,11 @@
                             </div>
 
                             <div class="segura_login">
-                                <div class="login_cadastro" style="width: 110px;">
-                                    <a href="#"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
+                                <div class="login_cadastro" id="login" style="width: 110px;">
+                                    <a href="javascript:getLogin()"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
                                 </div>
                                 <div class="login_cadastro" style="width: 160px;">
-                                    <a href="#"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
+                                    <a href="javascript:getCadastro()"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
                                 </div>
                             </div>
                         </div>    
@@ -42,19 +45,30 @@
                 </div>
             </header>
             <section>
+
+            <?php 
+                require_once('controller/controllerSobre.php');
+
+                $controller_sobre = new ControllerSobre();
+
+                $registro =  $controller_sobre->listar_sobre();
+
+            ?>
                 <div id="sobreEmpresaImgText">
                     <div id="textSobreEmpresa">
-                        <h2>MOB'SHARE</h2>
+                        <h2><?=@$registro->getTitulo_sobre()?></h2>
                         <br>
                         <p>
-                            <span>&nbsp&nbsp&nbsp</span>A empresa Mob’Share nasceu de uma iniciativa privada que atua em parceria  com  prefeituras  em  todo  o  território  nacional  com  o  objetivo  de auxiliar as prefeituras em projetos de mobilidade e urbanismo.
+                            <?=@$registro->getTexto_sobre()?>
+                           <!-- <span>&nbsp&nbsp&nbsp</span>A empresa Mob’Share nasceu de uma iniciativa privada que atua em parceria  com  prefeituras  em  todo  o  território  nacional  com  o  objetivo  de auxiliar as prefeituras em projetos de mobilidade e urbanismo.
                             <br>
                             <span>&nbsp&nbsp&nbsp</span>A  empresa  está  localizada  no Pq  Industrial  em  Santo  André  no grande  ABC,  em  prédio  próprio,  contendo  os  setores administrativos  da organização.
                             <br>
                             <span>&nbsp&nbsp&nbsp</span>O principal foco da empresa está no processo de compartilhamento de  transporte  pessoal,  além  das  empresas  já  conhecidas  e  renomadas  no mercado  atual  como  UBER,  99Taxis,  entre  outras,  o  nosso  negócio  visa conscientizar  as  pessoas  que  podemos  compartilhar  o  nosso  meio  de transporte que estiver parado, podendo gerar renda pessoal. 
+                            -->
                         </p>  
                     </div>
-                    <figure id="imgEmpresa"> 
+                    <figure id="imgEmpresa" style="background-image: url(view/upload/<?=@$registro->getFoto_sobre()?>);"> 
                     </figure>
                 </div>
             </section>
@@ -73,30 +87,30 @@
                         <h2> MISSÃO</h2>
                         <br>
                         <figure>
-                          <img src="view/imagem/missao.jpg" alt="The Pulpit Rock" width="200px" height="200px">
+                          <img src="view/upload/<?php echo($registro->getFoto_missao_sobre())?>" alt="The Pulpit Rock" width="200px" height="200px">
                         </figure>
                         <p>
-                            Ser a maior empresa em soluções tecnológicas para mobilidade no Brasil e no mundo, com excelência e eficiência em seus produtos e serviços.
+                            <?=@$registro->getTexto_missao_sobre()?>
                         </p>
                     </div>
                     <div class="imgTextMVV">
                         <h2> VISÃO</h2>
                         <br>
                         <figure>
-                          <img src="view/imagem/visao.jpg" alt="The Pulpit Rock" width="200px" height="200px">
+                          <img src="view/upload/<?php echo($registro->getFoto_visao_sobre())?>" alt="The Pulpit Rock" width="200px" height="200px">
                         </figure>
                         <p>
-                            Viabilizar o sucesso dos nossos clientes não só oferecendo produtos e serviços, mas soluções inovadoras em Tecnologia e Mobilidade.
+                           <?=@$registro->getTexto_visao_sobre()?>
                         </p>
                     </div>
                     <div class="imgTextMVV">
                         <h2> VALORES</h2>
                         <br>
                         <figure>
-                          <img src="view/imagem/valores.jpg" alt="The Pulpit Rock" width="200px" height="200px">
+                          <img src="view/upload/<?php echo($registro->getFoto_valores_sobre())?>" alt="The Pulpit Rock" width="200px" height="200px">
                         </figure>
                         <p>
-                            Modernidade, eficiência, excelência e respeito não só para toda equipe que engloba a Empresa, mas para todos os nossos clientes.
+                           <?=@$registro->getTexto_valores_sobre()?>
                         </p>
                     </div>
                 </div>
@@ -108,9 +122,9 @@
                         <img src="view/imagem/mob.png" alt="logo">
                     </div>
                     <div class="segura_newsletter">
-                        <form id="frmEmail">
+                        <form id="frmEmail" onsubmit="email_marketing_enviar(this)" action="router.php?controller=EMAIL_MARKETING&modo=INSERIR" method="POST">
                             <h3>Quer receber noticias?</h3>
-                            <input type="text" placeholder="Insira seu email" class="input_newsletter">
+                            <input type="text" name="txtEmail" placeholder="Insira seu email" class="input_newsletter">
                             <button class="botao_newsletter">Enviar</button>
                         </form>
                     </div>

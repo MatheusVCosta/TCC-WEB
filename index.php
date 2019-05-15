@@ -1,5 +1,5 @@
 <?php
-	
+	header("Access-Control-Allow-Origin: *");
 	/* Atenção só não melhorei isso para que todos comprendesem !! */
 	/*  
 		Faz o redirecionamento de pagina baseado no primeiro parametro

@@ -7,6 +7,7 @@
     $nome   =   '';
     $percentual =   '';
     $id =   '';
+    $id_tipo_veiculo = 0;
     $submit = 'tipo_veiculo_cadastro(this)';
 
     if(isset($tipo)){
@@ -14,7 +15,7 @@
         $modo = 'atualizar';
 
         $id = '&id=' . $tipo->getId();
-
+        $id_tipo_veiculo = $tipo->getId();
         /* DADOS */
         $nome = $tipo->getNome();
         $percentual = $tipo->getPercentual();
@@ -31,11 +32,16 @@
 
         <input  name="txtNome" type="text" id="nome"    value="<?=@$nome?>"  required>
         <input  name="txtPercentual" id="porcentual"    value="<?=@$percentual?>"  placeholder="10%" pattern="([0-9]*)" required>
+        
+        <?php if(isset($tipo)){?>
 
-        <p class="tipo_veiculo_comentario" onclick="chamaModalAcessorios()"> Adicinar acessorio ao tipo de veiculo </p>
-        <p class="tipo_veiculo_comentario" onclick="chamaModalModelos()"> Adicinar modelo ao tipo de veiculo </p>
+            <p class="tipo_veiculo_comentario" onclick="chamaModalAcessorios(<?=@$id_tipo_veiculo?>)"> Adicionar acessorio ao tipo de veiculo </p>
+            <p class="tipo_veiculo_comentario" onclick="chamaModalModelos(<?=@$id_tipo_veiculo?>)"> Adicionar modelo ao tipo de veiculo </p>
+            <p class="tipo_veiculo_comentario" onclick="chamaModalFip(<?=@$id_tipo_veiculo?>)"> Exportar dados da tabela Fip </p>
 
-        <input type="submit" name="btn_salvar" class="btn_padrao" value="Salvar">
+        <?php } ?>
+
+        <input type="submit" name="btn_salvar" class="btn_padrao" id="btnTipoVeiculo" value="Salvar">
 
     </form>
 

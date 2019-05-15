@@ -1,0 +1,256 @@
+.home-gerenciar{
+    overflow: auto;
+    width: auto;
+    height: 718px;
+}
+.home-capecario2{width: 100%;display: block;height: 47px;background-color: #006330;}
+.home-capecario2 h2{width: 100%;height: 43px;background-color: #006330;display: inline-block;float: left;text-transform: uppercase;color: #fff;padding-top: 7px;padding-left: 17px;}
+
+.sessao-desativada{
+    box-shadow: 7px 5px 13px 5px rgba(120,135,182,.1);
+    opacity: 0.7;
+} 
+.home-sessao{
+    height: auto;
+    overflow: auto;
+    float: left;
+}
+.mascara-imagem{
+    display: none;
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.21);
+    background-image: url(../imagem/icones/upload.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-operacoes{height: auto;overflow: auto;float: right;height: 259px;vertical-align: middle;justify-items: center;align-items: center;text-align: center;}
+.home-operacoes button{display: block;background-color: #eee;width: 100%;min-width: 127px;font-size: 1.2em;padding: 8px 27px;height: 56px;border: solid 0.1px #eee;cursor: pointer;outline: none;font-size: 1.3em;background-color: #00984A;color: #fff;transition: background 2s;}
+
+.home-painel-como-funciona{display: block;height: auto;overflow: auto;margin-left: auto;margin-right: auto;width: 838px;padding: 5px 0px;background-color: #f9f9f9;margin-top: 0px;border-bottom: solid .1px #ccc;}
+.home-painel-como-funciona .home-sessao{width: 684px;}
+.home-painel-como-funciona .home-sessao .home-painel-como-funciona-titulo{
+    font-size:1.6em;
+    text-align: center;
+    padding: 7px 0px;
+}
+.home-painel-como-funciona .home-sessao .home-painel-como-funciona-texto{
+    float: left;
+    width: 321px;
+    height: 213px;
+    overflow: auto;
+    font-size: 1.1em;
+    padding: 2px 11px;
+}
+.home-painel-como-funciona .home-sessao .home-painel-como-funciona-imagem{
+    float: left;
+}
+.home-painel-como-funciona .home-sessao .home-painel-como-funciona-imagem img{float: left;width: 362px;height: 222px;}
+.home-painel-como-funciona .home-sessao .home-painel-como-funciona-imagem .mascara-imagem{
+    display: none;
+    cursor:pointer;
+}
+.home-painel-como-funciona .home-sessao .home-painel-como-funciona-imagem:hover>.mascara-imagem{
+    display:block;
+    position: relative;
+    height: 222px;
+    width: 362px;
+    background-size: 71px 72px;
+}
+.home-painel-como-funciona .home-operacoes{padding-top: 50px;}
+.home-painel-como-funciona .home-operacoes button{
+}
+/* Oque pode ser alugado */
+.home-painel-oque-pode-ser{
+    display: block;
+    height: auto;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 838px;
+    padding: 10px 0px;
+    background-color: #f9f9f9;
+    margin-top: 2px;
+    border-bottom: solid .1px #ccc;
+}
+.home-painel-oque-pode-ser .home-sessao{
+    width: 688px;
+    height: 320px;
+}
+.home-sessao .home-painel-oque-pode-ser-titulo{
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    width: 100%;
+}
+.home-sessao .home-painel-oque-pode-ser-topicos{
+    padding-top: 15px;
+    text-align: center;
+}
+.home-painel-oque-pode-ser-topico{
+    width: 218px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+.home-painel-oque-pode-ser-topico .home-painel-oque-pode-ser-topico-img{
+
+}
+.home-painel-oque-pode-ser-topico .home-painel-oque-pode-ser-topico-img img{
+    width: 127px;
+    height: 127px;
+    background: #00984a;
+    border-radius: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.home-painel-oque-pode-ser-topico .home-painel-oque-pode-ser-topico-img:hover>.mascara-imagem{
+    display:block;
+    position: relative;
+    background-size: 71px 72px;
+    width: 127px;
+    height: 127px;
+    border-radius: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -127px;
+}
+.home-painel-oque-pode-ser-topico .home-painel-oque-pode-ser-topico-titulo{
+    font-family: "Roboto-medium";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+}
+.home-painel-oque-pode-ser-topico .home-painel-oque-pode-ser-topico-desc{
+    font-family: "Roboto-medium";
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 25px;
+    height: 96px;
+    overflow: auto;
+}
+.home-painel-oque-pode-ser .home-operacoes{padding-top: 53px;}
+/* POR QUE anunciar */
+.home-painel-por-que-anunciar{
+    display: block;
+    height: auto;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 838px;
+    padding: 10px 0px 10px 11px;
+    background-color: #f9f9f9;
+    margin-top: 2px;
+    border-bottom: solid .1px #ccc;
+}
+.home-painel-por-que-anunciar .home-sessao{
+
+}
+.home-painel-por-que-anunciar .home-operacoes{padding-top: 46px;}
+
+.home-painel-por-que-anunciar-titulo{text-align: center;font-family: "Roboto";font-weight: bold;font-size: 26px;color: black;width: 671px;}
+.home-painel-por-que-anunciar-img{width: 294px;height: 240px;margin-left: 2px;float: left;}
+.home-painel-por-que-anunciar-img img{
+    width: 291px;
+    height: 221px;
+}
+.home-painel-por-que-anunciar-img:hover> .mascara-imagem{
+    width: 289px;
+    height: 220px;
+    display: block;
+    position: relative;
+    margin-top: -226px;
+}
+.home-painel-por-que-anunciar-desc{width: 371px;height: 226px;margin-left: 5px;font-family: "Roboto";font-weight: bold;font-size: 15px;color: #000;line-height: 25px;padding-top: 5px;text-align: justify;float: left;overflow: auto;}
+/* Quer Anunciar Seu veiculo */
+.home-painel-quer-anunciar{display: block;height: auto;overflow: auto;margin-left: auto;margin-right: auto;width: 838px;padding: 10px 0px 10px 11px;background-color: #f9f9f9;margin-top: 2px;border-bottom: solid .1px #ccc;}
+.home-painel-quer-anunciar .home-sessao{
+
+}
+.home-painel-quer-anunciar-titulo{margin: 20px 10px;font-family: "Roboto";font-weight: bold;font-size: 31px;text-align: center;}
+.home-painel-quer-anunciar-subtitulo{text-align: center;font-family: "Roboto";font-size: 16px;font-weight: bold;margin-top: 12px;margin-bottom: 7px;}
+.home-painel-quer-anunciar-topicos{width: 671px;height: 299px;overflow: auto;}
+.home-painel-quer-anunciar-topico{width: 161px;float: left;}
+.home-painel-quer-anunciar-topico-img{
+
+}
+.home-painel-quer-anunciar-topico-img img{width: 135px;height: 124px;margin-left: auto;margin-right: auto;display: block;margin-top: 0px;border-radius: 20px;cursor: pointer;}
+.home-painel-quer-anunciar-topico-titulo{margin-top: -1px;text-align: center;font-size: 16px;color: black;word-break: break-all;}
+.home-painel-quer-anunciar-topico-desc{
+    width: auto;
+    height: 125px;
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9px;
+    text-align: center;
+    font-family: "Roboto-regular";
+    font-size: 14px;
+    word-break: break-word;
+}
+.home-painel-quer-anunciar .home-operacoes{
+    padding-top: 61px;
+}
+.home-operacoes .home-btnSalvar{
+    display:none;
+}
+.home-operacoes button:hover{
+    background-color: #0eaf5c;
+}
+/* Sessao Banner da pagina */
+.home-painel-banner{display: block;height: auto;overflow: auto;margin-left: auto;margin-right: auto;width: 838px;padding: 5px 0px;background-color: #f9f9f9;margin-top: 0px;border-bottom: solid .1px #ccc;}
+.home-painel-banner .home-sessao{width: 688px;}
+.home-painel-banner .home-operacoes{
+    
+}
+.home-painel-banner-imagem{display: block;position: relative;margin-top: -332px;}
+.home-painel-banner-imagem img{width: 100%;height: 500px;}
+.home-painel-banner-imagem:hover>.mascara-imagem{
+    display:block;
+    height: 496px;
+    position: relative;
+    margin-top: -497px;
+}
+
+.home-painel-banner-texto{position: relative;display: block;z-index: 2;margin-top: 146px;margin-left: 97px;width: 305px;height: 172px;border-radius: 10px;background-color: rgba(0, 0, 0, 0.53);padding: 13px;color: white;overflow: hidden;word-break: break-all;}
+.home-painel-banner-texto button{
+    
+}
+.home-painel-banner-texto-primario{
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    overflow: auto;
+    max-height: 62px;
+    font-family: "Roboto-regular";
+    word-break: break-all;
+}
+.home-painel-banner-texto-secundario{
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    min-height: 16px;
+    word-break: break-all;
+}
+.home-painel-banner-btn_anunciar{
+    width: 121px;
+    height: 48px;
+    cursor: pointer;
+    background-color: #306b2c;
+    border-radius: 10px;
+    margin-top: 16px;
+    padding: 12px 29px;
+    float: right;
+}
+.home-painel-banner-btn_anunciar a{
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: bold;
+}

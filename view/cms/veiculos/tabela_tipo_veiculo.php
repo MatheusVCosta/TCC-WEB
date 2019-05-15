@@ -28,7 +28,8 @@
                 <td>
                     <img alt="edit" title="Editar"  onclick="tipo_veiculo_getById(<?=@$tipo->getId()?>)"
                          src="view/cms/imagem/icones/edit.png">
-                    <img alt="delete" title="Excluir" src="view/cms/imagem/icones/delete.png">
+                    <img alt="delete" onclick="tipo_veiculo_excluir(<?=@$tipo->getId()?>)" 
+                         title="Excluir" src="view/cms/imagem/icones/delete.png">
                 </td>
             </tr>
 

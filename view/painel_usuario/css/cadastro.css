@@ -1,0 +1,92 @@
+html{
+    background-color:#f1f1f1;
+}
+#frmCliente{
+    background: #fff;
+    color: #444;
+    margin: 140px auto 25px;
+    padding: 20px 20px 10px 20px;
+    max-width: 700px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    display: block;
+    height: auto;
+    overflow: auto;
+    min-height: 259px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#frmCliente .titulo{
+    text-align: inherit;
+    margin-bottom: 20px;
+    border-bottom: solid 0.2px #c5c5c5;
+    font-size:  1.5em;
+    color:#6d6c6c;
+}
+#frmCliente fieldset{
+    border: solid 0.8px;
+    border-radius: 4.6px;
+    margin: 10px 0px;
+    text-align: inherit;
+    padding: 8px 19px;
+    background-color: #fff;
+    border-width: 1px 0px 0px;
+    border-radius: 0px;
+    border-color: #c5c5c5;
+}
+#frmCliente legend{
+    FONT-SIZE: 1.2em;
+    display: contents;
+}
+#frmCliente table{margin-left: auto;margin-right: auto;}
+#frmCliente table tr{
+
+}
+
+#frmCliente table td{}
+
+#frmCliente table tr td input{width: 100%;border: solid 1px #e6e6e6;border-radius: 1px;padding: 3px;/* border-width: 0px 0px 1px 0px; */outline: none;margin: 2px 0px;}
+#frmCliente table tr td label{
+    font-size: 1em;
+    font-weight: bold;
+}
+#frmCliente table tr td h4{
+    text-align:center;
+}
+#frmCliente table tr td .imagem_foto{
+    width: 148px;
+    height: 129px;
+    min-width: 35px;
+    max-width: 225px;
+    min-height: 100px;
+    max-height: 179px;
+    border: solid 1.2px #d0d0d0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#frmCliente button{
+    float: right;
+    margin: 3px;
+    padding: 6px 13px;
+    background-color: transparent;
+    border: solid 1.2px #d6d6d6;
+    font-size: 1.3em;
+    outline:none;
+}
+#frmCliente button:hover{
+    border-color:#eee;
+    color:#6d6c6c;
+    cursor:pointer;
+}
+#frmCliente table tr td input:hover{
+    border-color:#adacac;
+}
+#frmCliente table tr td input:focus{
+    border-color:#adacac;
+}

@@ -4,7 +4,7 @@
     $modo = 'inserir';
 ?>
 <div class="segura_form">  
-    <h3 class="titulo_pagina">veiculos Pendentes</h3>
+    <h3 class="titulo_pagina verde">veiculos Pendentes</h3>
     
     <div class="tbl_veiculos_pendentes">
 

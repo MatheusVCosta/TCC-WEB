@@ -1,4 +1,5 @@
 var marcas = {};
+
 $.get('https://fipeapi.appspot.com/api/1/carros/marcas.json').then(function(res){
 	
 	console.log("RESPOSTA",res);

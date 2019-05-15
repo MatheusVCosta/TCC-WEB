@@ -23,13 +23,18 @@
                 $listUsuarios =  $controller_usuario->listar_usuarios();
 
 
-                if(count($listUsuarios) < 1){
-                  echo "<img class='img_not_find alt='Nada encontrado' src='view/imagem/magnify.gif'>";
-                  echo " <p class='aviso_tabela'> Nenhum usuário encontrado!</p> ";
+                if(count($listUsuarios) < 1){?>
+                <tr>
+                    <td colspan="3">
+                      <img style=" width: auto; height: auto; " class='img_not_find' alt='Nada encontrado' src='view/imagem/magnify.gif'>
+                      <p class='aviso_tabela'> Nenhum usuário encontrado!</p>
+                    </td>
+                </tr>
+<?php
                 }
 
                 foreach($listUsuarios as $usuario){
-            ?>
+?>
 
                   <tr>
                       <td><?=@$usuario->getNome()?></td>

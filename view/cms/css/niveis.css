@@ -6,14 +6,13 @@
 }
 /* area de cadastro de nivel */
 .titulo_pagina{
-    width:180px;
-    margin-top:-12px;
-    padding-left: 15px;
-    margin-left: 10px;
-    background-color: #fff;
+    width: 599px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     font-family: "OpenSans-Regular";
-    font-size: 17px;
-    color:rgb(0, 0, 0);
+    background-color: #00984A;
+    font-size: 30px;
+    color: white;
 }
 segura_form{
     width:900px;
@@ -27,12 +26,13 @@ segura_form{
 }
 form{
     width:600px;
-    height: 300px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     border:1px solid black;
     border-radius: 10px;
+    background-color: #fff;
 }
 ::-webkit-input-placeholder {
     font-size: 15px;
@@ -156,6 +156,8 @@ form{
     text-align: center;
     font-family: "OpenSans-Regular";
     float: left;
+    overflow: hidden;
+    word-break: break-all;
 }
 .col_resposta img{
     width:42px;
@@ -179,4 +181,7 @@ form{
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+.selectize-control.multi .selectize-input > div{
+    color:black;
 }

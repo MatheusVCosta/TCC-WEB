@@ -55,6 +55,7 @@
     font-weight: bold;
     font-size: 40px;
     color:black;
+    background-color: transparent;
 }
 .alugar_veiculo{
     width: 1000px;
@@ -95,7 +96,9 @@
     padding-top: 25px;
     text-align: justify;
 }
-
+.alugar_veiculo .area_texto * {
+    background-color:transparent;
+}
 .section_conteudo{
     width: 100%;
     height: auto;
@@ -137,6 +140,9 @@
     margin-right: auto;
     padding-top: 30px;
    
+}
+#segura_como_funciona .area_texto_maior *{
+    background-color: transparent!important;
 }
 /* .area_texto_maior li{ 
     list-style: circle;
@@ -193,17 +199,19 @@
 }
 .tipos_veiculos h3{
     font-family: "Roboto-medium";
-    font-weight: bold;  
+    font-weight: bold;
     font-size: 20px;
     text-align: center;
     margin-top: 15px;
+    background-color: transparent;
 }
-.tipos_veiculos p{
+.tipos_veiculos p,.tipos_veiculos div{
     font-family: "Roboto-medium";
     font-size: 15px;
     text-align: center;
     margin-top: 10px;
     line-height: 25px
+    background-color:transparent!important;
 }
 
 /* fim section 3 */
@@ -229,10 +237,11 @@
 .titulo_left{
     margin: 20px 10px;
     font-family: "Roboto";
-    font-weight: bold;  
+    font-weight: bold;
     font-size: 40px;
     text-align: center;
     /* font-weight: 900; */
+    background-color: transparent;
 }
 #explicao_como_alugar{
     width:900px;
@@ -424,8 +433,9 @@
     text-align: center;
     font-family: "Roboto";
     font-size: 20px;
-    font-weight: bold;  
+    font-weight: bold;
     margin-top: 20px;
+    background-color: transparent;
 }
 .div_passos{
     width:300px;
@@ -451,6 +461,7 @@
     text-align: center;
     font-family: "Roboto";
     font-size: 17px;
+    background-color: transparent;
 }
 .texto_como_anunciar{
     width:250px;
@@ -462,16 +473,17 @@
     text-align: center;
     font-family: "Roboto-regular";
     font-size: 16px;
+    background-color: transparent;
 }
 /* fim section 5 */
 /* section 6 */
 .section_fale_conosco{
     width: 100%;
-    height: 650px;
+    height: 702px;
     margin: 0px auto;
     padding-top:50px;
     background-color: #ededed;
-/*    box-shadow: -7px -8px 91px 0px #848484;*/
+    /*    box-shadow: -7px -8px 91px 0px #848484;*/
 }
 
 .section_fale_conosco h2{

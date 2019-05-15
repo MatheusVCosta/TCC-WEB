@@ -2,7 +2,7 @@
 <head>
   <link rel="stylesheet" 
           type="text/css"
-          href="view/painel_usuario/css/agendamento.css"/>
+          href="view/painel_usuario/locacao/css/agendamento.css"/>
 </head>
 
 <!-- conteudo agendamento -->
@@ -67,37 +67,8 @@
                                 <img class="icones"src="view/painel_usuario/imagem/editar.png" title="icone de editar" alt="icone de editar">
                                 
                                  <img class="icones"src="view/painel_usuario/imagem/editar.png" title="icone de editar" alt="icone de editar">
-                                     
-
-
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="segura_coluna">
-                        <div class="coluna">
-
-                        </div>
-
-                        <div class="coluna"></div>
-
-                        <div class="coluna"></div>
-
-                        <div class="coluna"></div>
-
-                        <div class="coluna"></div>
-
-                        <div class="coluna"></div>
-
-                    </div>
-
-
-
-                    
+                    </div>                   
                 </div>
-
-
-                
-            
-            </div>
+</div>

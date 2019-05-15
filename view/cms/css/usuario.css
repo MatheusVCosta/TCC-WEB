@@ -33,6 +33,9 @@
     padding-left: 7px;
     outline: none;
 }
+.segura_form_cadastro select option.excluido{
+    color: brown;
+}
 .usuario_slc option{
     color:black;
 }

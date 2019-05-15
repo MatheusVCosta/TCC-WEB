@@ -6,6 +6,8 @@
     <title>Mob'Share-Home</title>
     <link rel="stylesheet" type="text/css" media="screen" href="view/css/faq.css"/>
     <script src="view/js/libs/jquery/jquery-3.3.1.js"></script>
+    <script src="view/js/notify.js"></script>
+    <script src="view/js/main.js"></script>
     <script src="view/js/faq.js"></script>
 </head>
 <body>
@@ -30,10 +32,10 @@
 
                         <div class="segura_login">
                             <div class="login_cadastro" style="width: 110px;">
-                                <a href="#"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
+                                <a href="javascript:getLogin()"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
                             </div>
                             <div class="login_cadastro" style="width: 160px;">
-                                <a href="#"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
+                                <a href="javascript:getCadastro()"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
                             </div>
                         </div>
                     </div>    
@@ -45,102 +47,50 @@
             </div>
         </header>
         <div id="principal">
-            <div class="menu_faq">
-                <div class="segura_item">
-                    <div class="menu_item"><p>Duvidas</p></div>
-                    <div class="menu_item"><p>Como anunciar</p></div>
-                    <div class="menu_item"><p>Como criar conta</p></div>
-                    <div class="menu_item"><p>Chat</p></div>
-                    <div class="menu_item"><p>Moto</p></div>
-                    <div class="menu_item"><p>Carro</p></div>
-                </div>
-            </div>
             <section class="conteudo_faq">
-                <div id="conteudo">
-                    <h2>FAQ</h2>
-                    <div class="texto_faq">
-                        <p>Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                        </p>
-                    </div>
-                    
+                <div id="conteudo">                    
                     <div class="caixa_faq">
                         <div class="titulos_perguntas">
                             <h2 class="perguntas_frequentes">As perguntas mais frequentes</h2>
                         </div>
-                        <div class="linha_perguntas">
-                            <div class="segura_perguntas">
-                                <h3>Pergntas sobre carros</h3>
-                                <p>Respostas: Lorem ipsum dolor sit amet, consectetur 
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit. Nunc maximus, nulla ut </p>
-                            </div>
-                            <img src="view/imagem/arrow_down.png" alt="seta">
-                        </div>
-                        <div class="linha_perguntas">
-                            <div class="segura_perguntas">
-                                <h3>Pergntas sobre carros</h3>
-                                <p>Respostas: Lorem ipsum dolor sit amet, consectetur 
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit. Nunc maximus, nulla ut </p>
-                            </div>
-                            <img src="view/imagem/arrow_down.png" alt="seta">
-                        </div>
-                        <div class="linha_perguntas">
-                            <div class="segura_perguntas">
-                                <h3>Pergntas sobre carros</h3>
-                                <p>Respostas: Lorem ipsum dolor sit amet, consectetur 
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit. Nunc maximus, nulla ut </p>
-                            </div>
-                            <img src="view/imagem/arrow_down.png" alt="seta">
-                        </div>
-                        <div class="linha_perguntas">
-                            <div class="segura_perguntas">
-                                <h3>Pergntas sobre carros</h3>
-                                <p>Respostas: Lorem ipsum dolor sit amet, consectetur 
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit. Nunc maximus, nulla ut 
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit. Nunc maximus, nulla ut</p>
-                            </div>
-                            <img src="view/imagem/arrow_down.png" alt="seta">
-                        </div>
-                        <div class="linha_perguntas ">
-                            <div class="segura_perguntas">
-                                <h3>Pergntas sobre carros</h3>
-                                <p>Respostas: Lorem ipsum dolor sit amet, consectetur 
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit. Nunc maximus, nulla ut
-                                Respostas: Lorem ipsum dolor sit amet, consectetur 
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit. Nunc maximus, nulla ut </p>
-                            </div>
-                            <img src="view/imagem/arrow_down.png" id="seta" alt="seta">
-                        </div>
-                        
+                         <?php 
+                            require_once('controller/controllerFaq.php');
+
+                                $controller_faq = new ControllerFaq();
+
+                                $listFaq =  $controller_faq->listar_faq();
+
+
+                                if(count($listFaq) < 1){
+                                  echo "<img style='width: 279px; display: block; margin-left: auto; margin-right: auto; margin-top: 13px;' class='img_not_find' alt='Nada encontrado' src='view/imagem/magnify.gif'>";
+                                  echo " <p style='text-align: center;' class='aviso_tabela'> Nenhum registro encontrado!</p> ";
+                                }
+                                $acc = 0 ;
+                            ?>
+                        <?php foreach($listFaq as $registro){ ?>
+                                <?php if($registro->getStatus() == 1){ ?>
+                                    <div class="linha_perguntas ">
+                                        <div class="segura_perguntas">
+                                            <h3><?=@$registro->getPerguntas()?></h3>
+                                            <p>Resposta:&nbsp<?=@$registro->getRespostas()?></p>
+                                        </div>
+                                        <img src="view/imagem/arrow_down.png" onclick="ver_resposta_completa(this)" id="seta" alt="seta">
+                                    </div>
+                                <?php }else{ 
+                                        $acc++;
+                                      }?>
+                        <?php } ?>
+                        <?php if(count($listFaq) == $acc){ ?>
+                                <script>
+                                    setTimeout(function(){
+                                        $(".caixa_faq").notify(
+                                          "Sem dados!", 
+                                          { position:"top" }
+                                        );    
+                                    },400);
+                                    
+                                </script>
+                        <?php } ?>
                     </div>
                     <div class="paginacao">
                         <div class="paginacao_item"><p>Prev</p></div>
@@ -166,9 +116,9 @@
                     <img src="view/imagem/mob.png" alt="logo">
                 </div>
                 <div class="segura_newsletter">
-                    <form id="frmEmail">
+                    <form id="frmEmail" onsubmit="email_marketing_enviar(this)" action="router.php?controller=EMAIL_MARKETING&modo=INSERIR" method="POST">
                         <h3>Quer receber noticias?</h3>
-                        <input type="text" placeholder="Insira seu email" class="input_newsletter">
+                        <input type="text" name="txtEmail" placeholder="Insira seu email" class="input_newsletter">
                         <button class="botao_newsletter">Enviar</button>
                     </form>
                 </div>

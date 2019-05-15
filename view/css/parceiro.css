@@ -24,7 +24,11 @@
     z-index: 10;
 }
 #seja-parceiro button{padding: 10px;margin: 23px 0px 23px 0px;}
-#seja-parceiro p {
+#seja-parceiro p ,#seja-parceiro div{
+    font-size: 0.8em;
+}
+#seja-parceiro div *{
+    background-color:transparent;
     font-size: 0.8em;
 }
 #seja-parceiro img{

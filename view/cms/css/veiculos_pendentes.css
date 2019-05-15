@@ -5,5 +5,172 @@
     background-color: #f5f3f3;
 }
 .tbl_veiculos_pendentes table tbody img{
-    max-width:32px;
+    max-width: 15px;
+}
+.titulo_pagina.verde{
+    width: 100%;
+    height: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    background-color: #006330;
+    color: white;
+    font-size: 2.2em;
+    text-indent: 9px;
+    float: left;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-family: "OpenSans-Regular";
+}
+.modal_veiculos{
+    margin: 6px;
+    min-height: 321px;
+    height: auto;
+    width: 635px;
+    overflow: auto;
+    background-color: #fff;
+}
+.modal_veiculos .imagem{
+    width: 235px;
+    display: inline-block;
+    float: left;
+    background-color: black;
+}
+.modal_veiculos .imagem .lista_imagens{
+    height: 54px;
+    overflow-x: scroll;
+ }
+.modal_veiculos .imagem .lista_imagens .item_imagem{
+    display: inline-block;
+}
+.modal_veiculos .imagem .lista_imagens .item_imagem img{
+    height: 32px;
+    min-width: 32px;
+}
+.modal_veiculos .imagem img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal_veiculos .descricao{
+    display: inline-block;
+    float: left;
+    padding-top: 0px;
+    padding-left: 3px;
+    height: 220px;
+    padding: 4px;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos{
+    width: auto;
+    overflow: hidden;
+    height: 204px;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos{
+    text-align: left;
+    display: block;
+    height: auto;
+    overflow: auto;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos .campo_veiculos{
+    width: 50%;
+    float: left;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos label{
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos input{
+    border: solid 1px #e8e8e8;
+    margin: 3px 0px;
+    min-height: 25px;
+    width: 98%;
+    background-color: white;
+    text-indent: 4px;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos textarea{
+    border: solid 1px #e8e8e8;
+    min-width: 99%;
+    resize: none;
+    min-height: 91px;
+    padding-top: 4px;
+    margin-top: 6px;
+    width: 374px;
+    padding-left: 10px;
+    background-color: white;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos .caixa_acessorios{
+    display: block;
+    height: 98px;
+    max-height: 100px;
+    overflow: auto;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos .caixa_acessorios .item_acessorio{
+    font-weight: bold;
+    padding: 0px 13px;
+    display: inline-block;
+    float: left;
+}
+.modal_veiculos .descricao_veiculo_pendentes{
+    max-height: 75px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.modal_veiculos .descricao_veiculo_pendentes .caixas_veiculo_pendentes{
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    width: 606px;
+}
+.modal_veiculos .caixas_veiculo_pendentes .item_caixa_veiculo{
+    display: inline-block;
+    float: left;
+    font-size: 0.9em;
+    margin: 0px 4px;
+}
+.modal_veiculos .caixas_veiculo_pendentes .item_caixa_veiculo label{
+    font-weight: bold;
+}
+.modal_veiculos .caixas_veiculo_pendentes .item_caixa_veiculo input{
+    border: solid 1px #ccc;
+    display: block;
+    width: 92px;
+    text-align: center;
+    background-color: white;
+}
+.modal_veiculos input,textarea{
+    color:#625d5d;
+}
+.modal_veiculos .caixa_aprovacao{
+    padding: 5px;
+    display: block;
+    /* height: 32px; */
+    width: auto;
+}
+.modal_veiculos .caixa_aprovacao button{
+    padding: 2px 6px;
+    background-color: white;
+    border: solid 1px #ccc;
+    margin: 3px;
+    font-size: 1.2em;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos input:hover{
+    border-color:#004b50;
+    color:black;
+}
+.modal_veiculos .descricao .caixa_inputs_veiculos .caixa_campos textarea:hover{
+    border-color:#004b50;
+    color:black;
+}
+.modal_veiculos .caixas_veiculo_pendentes .item_caixa_veiculo input:hover{
+    color:black;
+    border-color:#004b50;
+}
+.modal_veiculos .caixa_aprovacao button:hover{
+    border-color:black;
+    color:#002334;
 }

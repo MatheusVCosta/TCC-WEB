@@ -1,3 +1,30 @@
+<?php
+    
+    $cliente = null;
+    $boolean = "false";
+    require_once('controller/controllerHome.php');
+    require_once('model/clienteClass.php');
+
+    $controllerHome = new controllerHome();
+    $pagina = $controllerHome->getPage();
+    
+    // Pegando o Cliente Logado
+    if(!isset($_SESSION))session_start();
+
+    if(isset($_POST['logout'])){
+        echo "Sucesso";
+        $boolean = false;
+        session_destroy();
+    }
+   
+    if(isset($_SESSION['cliente'])){
+        $cliente = unserialize($_SESSION['cliente']);
+        $boolean = true;
+    }
+        
+    
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,10 +33,32 @@
     <title>Mob'Share</title>
     <link rel="stylesheet" type="text/css" media="screen" href="view/css/home.css"/>
     <script src="view/js/libs/jquery/jquery-3.3.1.js"></script>
+    <script src="view/js/notify.js"></script>
+    <script src="view/js/libs/jqueryMask/jquery.mask.js"></script>
+    <script src="view/js/main.js"></script>
 </head>
 <body>
+<script>
+    $(document).ready(function(){
+        if(<?php echo $boolean?>)
+            headerLogado();
+        else
+            headerNaoLogado();
+    });
+</script>
+<div id="principal">
+    <div class="container">
+        <div class="modal">
+
+        </div>
+    </div>
     <div id="principal">
-        <header id="header_home">
+        <div class="container">
+            <div class="modal">
+
+            </div>
+        </div>
+        <header id="header_home" style="background-image: url(view/upload/<?=@$pagina->getBanner()->getFoto()?>);<?=@($pagina->getBanner()->getStatus() == 0)?'height: 100px;':''?>">
             <nav class="cor_site_padrao">
                 <div id="segura_nav">
                     <div id="logo">
@@ -25,122 +74,114 @@
                             <li><a href="?sobre">SOBRE NÓS</a></li>
                         </ul>
                     </div>
+                    <div class="modoLogin" onload="verificarLogin(<?php $cliente ?>)">
                     <div class="segura_login">
-                        <div class="login_cadastro" style="width: 110px;">
-                            <a href="#"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
+                        <div class="login_cadastro" id="login" style="width: 110px;">
+                            <a href="javascript:efetuarLogin()"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
                         </div>
                         <div class="login_cadastro" style="width: 160px;">
-                            <a href="#"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
+                            <a href="javascript:getCadastro()"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
                         </div>
                     </div>
                 </div>    
             </nav>
-            <div class="texto_chamativo">
-                <p class="texto_primario">Ganhar dinheiro compartilhando seu veículo nunca foi tão fácil!</p>
-                <p class="texto_secundario">#anuncienamobshare</p>
+            <div class="texto_chamativo" style="<?=@($pagina->getBanner()->getStatus() == 0)?'display:none;':''?>">
+                <p class="texto_primario"><?=@$pagina->getBanner()->getTexto()?></p>
+                <p class="texto_secundario"><?=@$pagina->getBanner()->getTexto2()?></p>
                 <div class="btn_anunciar">
                     <a href="#">Anuncie!</a>
-                    <!-- <a href="#">ANUNCIE!</a> -->
                 </div>
             </div>
         </header>
         <div id="conteudo">
-            <section class="section_conteudo">
+            <section class="section_conteudo" style="<?=@($pagina->getComofunciona()->getStatus() == 0)?'display:none;':''?>">
                 <div class="como_funciona" id="como_funciona">
-                    <h2 class="titulo_section font_white" >Como funciona?</h2>
+                    <h2 class="titulo_section font_white" ><?=@$pagina->getComofunciona()->getTitulo()?></h2>
 
                     <div id="segura_como_funciona">
                         <div class="area_texto_maior">
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            </ul>
+                            <?=@$pagina->getComofunciona()->getTexto()?>
+                            
                         </div >
-                        <img class="imagem_como_funciona" src="view/imagem/carr.jpg" alt="carro" title="">   
+                        <img class="imagem_como_funciona" src="view/upload/<?=@$pagina->getComofunciona()->getFoto()?>" alt="carro" title="">   
                     </div>
                 </div>
             </section>   
-            <section class="section_conteudo2" style="height:450px;">
-                <h2 class="titulo_section" style="margin-top:30px;">O que pode ser alugador?</h2>
+            <section class="section_conteudo2" style="height:450px; <?=@($pagina->getOquePodeAlugar()->getStatus() == 0)?'display:none;':''?>">
+                <h2 class="titulo_section" style="margin-top:30px;"><?=@$pagina->getOquePodeAlugar()->getTitulo()?></h2>
                 <div class="area_tipo_veiculo" >
                     <div class="tipos_veiculos">
 
-                        <a href="#"><img class="imagem_tipo" src="view/imagem/bike.png"></a>
-                        <h3>Bicicletas</h3>
+                        <a href="#"><img class="imagem_tipo" src="view/upload/<?=@$pagina->getOquePodeAlugar()->getFoto1()?>"></a>
+                        <h3><?=@$pagina->getOquePodeAlugar()->getTitulo1()?></h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus.
+                            <?=@$pagina->getOquePodeAlugar()->getTexto1()?>
                         </p>
                     </div>
                     <div class="tipos_veiculos">
-                        <a href="#"><img class="imagem_tipo"  src="view/imagem/moto.png"></a>   
-                        <h3>Motos</h3>
+                        <a href="#"><img class="imagem_tipo"  src="view/upload/<?=@$pagina->getOquePodeAlugar()->getFoto2()?>"></a>   
+                        <h3><?=@$pagina->getOquePodeAlugar()->getTitulo2()?></h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus.
+                            <?=@$pagina->getOquePodeAlugar()->getTexto2()?>
                         </p>     
                     </div>
                     <div class="tipos_veiculos">
-                        <a href="#"><img class="imagem_tipo" src="view/imagem/car.png"></a>
-                        <h3>Carros</h3>
+                        <a href="#"><img class="imagem_tipo" src="view/upload/<?=@$pagina->getOquePodeAlugar()->getFoto3()?>"></a>
+                        <h3><?=@$pagina->getOquePodeAlugar()->getTitulo3()?></h3>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus.
-                            
+                            <?=@$pagina->getOquePodeAlugar()->getTexto3()?>
                         </p>
                     </div>
                 </div>
             </section>
-            <section class="section_anuncios">
+            <section class="section_anuncios" style="<?=@($pagina->getPorQueAnunciar()->getStatus() == 0)?'display:none;':''?>">
                 <div id="div_anuncio">
-                    <h2 class="titulo_section font_white">Por que anúnciar seu veículo?</h2>
+                    <h2 class="titulo_section font_white"><?=@$pagina->getPorQueAnunciar()->getTitulo()?></h2>
                     <div class="alugar_veiculo">
                         <div class="imagem_alugar_veiculo">
-                            <img  src="view/imagem/slider/carro_dinheiro.jpg" alt="" title=""> 
+                            <img  src="view/upload/<?=@$pagina->getPorQueAnunciar()->getFoto()?>" alt="" title=""> 
                         </div>
                         <div class="area_texto">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo 
+                                <?=@$pagina->getPorQueAnunciar()->getTexto()?>
                             </p>
                         </div>
                     
                     </div>
                 </div>
             </section>
-            <section class="section_anunciar fundo_white" id="anuncie_veiculo">
+            <section class="section_anunciar fundo_white" style="<?=@($pagina->getQuerAnunciar()->getStatus() == 0)?'display:none;':''?>" id="anuncie_veiculo">
                 <div id="segura_conteudo">
-                    <h2 class="titulo_left">Quer anúnciar seu veículo?</h2>
+                    <h2 class="titulo_left"><?=@$pagina->getQuerAnunciar()->getTitulo()?></h2>
                     <div class="anunciar_veiculo">
-                        <h2>Siga os passos abaixo e anuncie seu veículo!</h2>
+                        <h2><?=@$pagina->getQuerAnunciar()->getSubTitulo()?></h2>
+                        
                         <div class="div_passos">
-                            <img src="view/imagem/user.png" alt="teste">
-                            <h2>Criar uma conta</h2>
+                            <img src="view/upload/<?=@$pagina->getQuerAnunciar()->getFoto1()?>" alt="teste">
+                            <h2><?=@$pagina->getQuerAnunciar()->getSubTitulo1()?></h2>
                             <div class="texto_como_anunciar">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo
+                                <?=@$pagina->getQuerAnunciar()->getTexto1()?>
                             </div>
                         </div>
                         <div class="div_passos">
-                            <img src="view/imagem/key.png" alt="teste">
-                            <h2>Cadastre seu veículo</h2>
+                            <img src="view/upload/<?=@$pagina->getQuerAnunciar()->getFoto2()?>" alt="teste">
+                            <h2><?=@$pagina->getQuerAnunciar()->getSubTitulo2()?></h2>
                             <div class="texto_como_anunciar">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo
+                                <?=@$pagina->getQuerAnunciar()->getTexto2()?>
                             </div>
                         </div>
                         <div class="div_passos">
-                            <img src="view/imagem/ad.png" alt="teste">
-                            <h2>Crie um anúncio</h2>
+                            <img src="view/upload/<?=@$pagina->getQuerAnunciar()->getFoto3()?>" alt="teste">
+                            <h2><?=@$pagina->getQuerAnunciar()->getSubTitulo3()?></h2>
                             <div class="texto_como_anunciar">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo
+                                <?=@$pagina->getQuerAnunciar()->getTexto3()?>
                             </div>
                         </div>
                         <div class="div_passos">
-                            <img src="view/imagem/esperar.png" alt="teste">
-                            <h2>Espere os interessados</h2>
+                            <img src="view/upload/<?=@$pagina->getQuerAnunciar()->getFoto4()?>" alt="teste">
+                            <h2><?=@$pagina->getQuerAnunciar()->getSubTitulo4()?></h2>
                             <div class="texto_como_anunciar">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo
+                                <?=@$pagina->getQuerAnunciar()->getTexto4()?>
                             </div>
                         </div>
                     </div>
@@ -351,30 +392,33 @@
                     </div>
                 </div>
             </section>
+
             <section class="section_fale_conosco" id="fale_conosco">
                 <h2>Fale conosco</h2>
                 <div class="fale_conosco">
-                    <form name="formFaleConosco" action="" method="POST">
+                    <form name="formFaleConosco" onsubmit="fale_conosco_enviar(this)" action="router.php?controller=FALE_CONOSCO&modo=inserir" method="POST">
                         <div class="formulario">
                             <div class="input_form">
-                                <input type="text" name="txtNome" placeholder="Nome">
+                                <input type="text" name="txtNome" maxlength="100" pattern="[a-z A-Z ã ç á é í õ ó ê è ì Ç Ã Õ Á É Ó À È Ò Ù ú ù]*" placeholder="Nome">
                             </div>
                             <div class="input_form">
-                                <input type="text" name="txtNome" placeholder="E-mail" >
+                                <input type="email" name="txtEmail" maxlength="100" pattern="^([a-z._\-0-9áéíóúàèìòùâêîôûãẽĩõũç]*@+([a-z0-9]+.+[a-z0-9])*)+$" placeholder="E-mail" >
                             </div>
                             <div class="input_form">
-                                <input type="text" name="txtNome" placeholder="Celular">
+                                <input type="text" id="txtTelefone" pattern="^(\((1[1-9]|2[12478]|3[1234578]|4[1-9]|5[1345]|6[1-9]|7[134579]|8[1-9]|9[1-9])\)([0-9]{4}[-][0-9]{4}))+$" name="txtTelefone" maxlength="20" placeholder="Telefone">
                             </div>
                             <div class="input_form">
-                                <textarea style="height: 100px;" placeholder="Mensagem"></textarea>
+                                <input type="text" id="txtCelular" name="txtCelular" maxlength="20" pattern="^(\((1[1-9]|2[12478]|3[1234578]|4[1-9]|5[1345]|6[1-9]|7[134579]|8[1-9]|9[1-9])\)(9[0-9]{4}[-][0-9]{4}))+$"  placeholder="Celular">
+                            </div>
+                            <div class="input_form">
+                                <textarea style="height: 100px;" name="menssagem" placeholder="Mensagem"></textarea>
                             </div>
                             <input type="submit" name="btnEnviar" value="Enviar" id="buttonEnviar">
                         </div>
-                       
-
                     </form>
                 </div>
             </section>
+            
         </div>
     </div>
     <footer class="cor_site_padrao">
@@ -384,10 +428,11 @@
                 <img src="view/imagem/mob.png" alt="logo">
             </div>
             <div class="segura_newsletter">
-                <form id="frmEmail">
+                <form id="frmEmail" onsubmit="email_marketing_enviar(this)" action="router.php?controller=EMAIL_MARKETING&modo=INSERIR" method="POST" >
                     <h3>Quer receber noticias?</h3>
-                    <input type="text" placeholder="Insira seu email" class="input_newsletter">
-                    <button class="botao_newsletter">Enviar</button>
+                    <input type="email" name="txtEmail" placeholder="Insira seu email" class="input_newsletter">
+<!--                     <button type="submit" name="btnEnviar" class="botao_newsletter">Enviar</button> -->
+                    <input class="botao_newsletter" type="submit" name="btnEnviar" value="Enviar">
                 </form>
             </div>
         </div>
@@ -401,7 +446,7 @@
                         <p>Telefone:  0800 755 855</p>
                         <p>E-mail: atendimento@mobshare.com.br</p>
                         <img src="view/imagem/cracha_branco.png" alt="cracha">
-                        <a href="?cms/home_cms">Área administrativa</a> 
+                        <a href="?cms/login">Área administrativa</a> 
                     </div>
                 </div>
                 <div class="mapa_site">
@@ -434,5 +479,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        jQuery("#txtTelefone").mask("(99)9999-9999");
+        jQuery("#txtCelular").mask("(99)99999-9999");
+       
+    </script>
 </body>
 </html>

@@ -38,8 +38,11 @@
 }
 .tbl_anuncios_pendentes table tr{}
 .tbl_anuncios_pendentes table tbody tr td{
+    max-height: 53px;
     padding: 5px;
     border-bottom: 1px solid #ddd;
+    max-width: 172px;
+    word-break: break-word;
 }
 .tbl_anuncios_pendentes table tbody button{
     color: black;
@@ -50,7 +53,7 @@
 }
 .modal_anuncios{
     margin: 6px;
-    height: 307px;
+    height: auto;
     width: 635px;
     background-color: #fff;
 }
@@ -59,6 +62,9 @@
     display: inline-block;
     float: left;
     background-color: black;
+}
+.modal_anuncios .imagem .principalImagem{
+    max-height:153px;
 }
 .modal_anuncios .imagem .lista_imagens{
     height: 54px;
@@ -79,7 +85,7 @@
 .modal_anuncios .descricao{
     display: inline-block;
     float: left;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-left: 3px;
     height: 220px;
     padding: 4px;
@@ -113,7 +119,7 @@
     border: solid 1px #e8e8e8;
     min-width: 99%;
     resize: none;
-    min-height: 100px;
+    min-height: 91px;
     padding-top: 4px;
     margin-top: 6px;
     width: 374px;
@@ -121,7 +127,7 @@
     background-color: white;
 }
 .modal_anuncios .descricao_veiculo_anuncios{
-    max-height: 75px;
+    max-height: 83px;
     overflow: hidden;
     display: block;
     width: 100%;
@@ -140,6 +146,7 @@
     float: left;
     font-size: 0.9em;
     margin: 0px 4px;
+    text-align: center;
 }
 .modal_anuncios .caixas_veiculo_anuncios .item_caixa_veiculo label{
     font-weight: bold;
@@ -150,6 +157,7 @@
     width: 92px;
     text-align: center;
     background-color: white;
+    align-items: center;
 }
 .modal_anuncios input,textarea{
     color:#625d5d;

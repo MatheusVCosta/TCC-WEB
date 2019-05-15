@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="view/css/como_ganhar_dinheiro.css">
     <link rel="stylesheet" type="text/css" media="screen" href="view/css/header.css">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <!-- <script src="main.js"></script> -->
+    <script src="view/js/libs/jquery/jquery-3.3.1.js"></script>
+    <script src="view/js/notify.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -27,13 +29,12 @@
                             <li><a href="?sobre">SOBRE NÓS</a></li>
                         </ul>
                     </div>
-
                     <div class="segura_login">
-                        <div class="login_cadastro" style="width: 110px;">
-                            <a href="#"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
+                        <div class="login_cadastro" id="login" style="width: 110px;">
+                            <a href="javascript:getLogin()"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
                         </div>
                         <div class="login_cadastro" style="width: 160px;">
-                            <a href="#"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
+                            <a href="javascript:getCadastro()"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
                         </div>
                     </div>
                 </div>    
@@ -44,127 +45,54 @@
             </div>
         </div>
     </header>
+    		
     <div id="principal_conteudo">
+    	<?php 
+        require_once('controller/controllerComo_ganhar_dinheiro.php');
+
+            $controller_como_ganhar_dinheiro = new ControllerComo_ganhar_dinheiro();
+
+            $como_ganhar_dinheiro =  $controller_como_ganhar_dinheiro->getPage();
+
+        ?>
         <!-- ************************CADASTRAR VEICULOS******************** --> 
-        <div id="sessao_cadastrar_veiculo">
-            <div id='titulo_cadastrar_veiculo'>
-                <h2>Como cadastrar seu veículo?</h2>
-            </div>
-            <div class="lista_cadastrar_veiculo">
-                <img src="view/imagem/de_tempo.png" alt="lista_cadastrar">
-            </div>
-            <div class="lista_cadastrar_veiculo">
-                <img src="view/imagem/de_tempo.png" alt="lista_cadastrar">
-            </div>
-            <div id="botao">
-                <button class="link_pagina">Saiba mais</button>
-            </div>
-        </div>
-        <!-- ************************SESSÃO ANUNCIOS******************** -->
-        <div id="sessao_anuncios">
-            <div id='titulo_cadastrar_anuncio'>
-                <h2>Como cadastrar um anuncio?</h2>
-            </div>
-            <div class="lista_cadastrar_anuncio">
-                <img src="view/imagem/lista_cadastrar.png" alt="lista_cadastrar">
-            </div>
-            <div class="lista_cadastrar_anuncio">
-                <img src="view/imagem/lista_cadastrar.png" alt="lista_cadastrar">
-            </div>
-            <div id="botao_anuncio">
-                <button class="link_pagina">Saiba mais</button>
-            </div>
-        </div>
-        <!-- ************************SESSÃO PAGAMENTOS******************** -->
-        <div id="sessao_pagamentos">
-            <div id='titulo_cadastrar_pagamento'>
-                <h2>Como cadastrar um anuncio?</h2>
-            </div>
-            <div class="lista_cadastrar_pagamento">
-                <img src="view/imagem/de_tempo.png" alt="lista_cadastrar">
-            </div>
-            <div class="lista_cadastrar_pagamento">
-                <img src="view/imagem/de_tempo.png" alt="lista_cadastrar">
-            </div>
-            <div id="botao_pagamento">
-                <button class="link_pagina">Saiba mais</button>
-            </div>
-
-        </div>
-        <!-- ************************SESSÃO AVALIACAO******************** -->
-        <div id="sessao_avaliacao">
-        <div id='titulo_cadastrar_avaliacao'>
-            <h2>Como cadastrar um anuncio?</h2>
-        </div>
-        <div class="lista_cadastrar_avaliacao">
-            <img src="view/imagem/lista_cadastrar.png" alt="lista_cadastrar">
-        </div>
-        <div class="lista_cadastrar_avaliacao">
-            <img src="view/imagem/lista_cadastrar.png" alt="lista_cadastrar">
-        </div>
-        <div id="botao_avaliacao">
-            <button class="link_pagina">Saiba mais</button>
-        </div>
-    </div>
-        <div id="principal">
-            <section class="sobre_tabela">
-                <h2>Sobre a tabela de percentual</h2>
-                <div class="texto_tabela">
-                    <p>Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Nunc maximus, nulla ut 
-                        commodo sagittis, sapien dui mattis dui, 
-                        non pulvinar lorem felis nec erat
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Nunc maximus, nulla ut 
-                        commodo sagittis, sapien dui mattis dui, 
-                        non pulvinar lorem felis nec erat
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Nunc maximus, nulla ut 
-                        commodo sagittis, sapien dui mattis dui, 
-                        non pulvinar lorem felis nec erat
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Nunc maximus, nulla ut 
-                        commodo sagittis, sapien dui mattis dui, 
-                        non pulvinar lorem felis nec erat
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Nunc maximus, nulla ut 
-                        commodo sagittis, sapien dui mattis dui, 
-                        non pulvinar lorem felis nec erat
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Nunc maximus, nulla ut 
-                        commodo sagittis, sapien dui mattis dui, 
-                        non pulvinar lorem felis nec erat</p>
-                </div>
-
-            </section>
-            <section class="tabela_percentual">
-                <h2>Como a tabela funciona</h2>
+		<section id="sessao_cadastrar_veiculo">
+			<div id="titulo_cadastrar_veiculo">
+				<h2><?=@$como_ganhar_dinheiro->getTitulo_sessao1()?></h2>
+			</div>
+			<div class="lista_cadastrar_veiculo">
+				<?=@$como_ganhar_dinheiro->getLista1_sessao1()?>
+			</div>
+			<div  class="lista_cadastrar_veiculo_img">
+				<img src="view/upload/<?=@$como_ganhar_dinheiro->getImg1_sessao1()?>" height="300px" width="400px">
+        	</div>
+			<div class="lista_cadastrar_veiculo">
+                <?=@$como_ganhar_dinheiro->getLista2_sessao1()?>
+			</div>
+		</section>
+         <!-- ************************CADASTRAR ANUNCIO******************** --> 
+		<section id="sessao_cadastrar_anuncio">
+			<div id="titulo_cadastrar_anuncio">
+				<h2><?=@$como_ganhar_dinheiro->getTitulo_sessao2()?></h2>
+			</div>
+			<div  class="lista_cadastrar_anuncio">
+            <img src="view/upload/<?=@$como_ganhar_dinheiro->getImg1_sessao2()?>" height="300px" width="300px"></div>
+			<div class="lista_cadastrar_anuncio">
+				<?=@$como_ganhar_dinheiro->getLista1_sessao2()?>
+			</div>
+			<div  class="lista_cadastrar_anuncio">
+            <img src="view/upload/<?=@$como_ganhar_dinheiro->getImg2_sessao2()?>" height="300px" width="300px">
+			</div>
+			<div class="lista_cadastrar_anuncio">
+				<?=@$como_ganhar_dinheiro->getLista2_sessao2()?>
+			</div>
+		</section>
+		 <!-- ************************TABELA DE PERCENTUAL******************** --> 
+		<section class="tabela_percentual">
+                <h2><?=@$como_ganhar_dinheiro->getTitulo_sessao3()?></h2>
                 <div class="hold_tabela">
                     <div class="texto_como_funciona">
-                        <p>Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Nunc maximus, nulla ut 
-                            commodo sagittis, sapien dui mattis dui, 
-                            non pulvinar lorem felis nec erat
+                        <p><?=@$como_ganhar_dinheiro->getTexto_sessao3()?>
                         </p>
                     </div>
                     <div class="tabela">
@@ -179,67 +107,36 @@
                                 <p>Data atualizado</p>
                             </div>
                         </div>
+                        <?php
 
+							require_once("controller/controllerTipo_veiculo.php");
+
+							$controllerTipo = new ControllerTipoVeiculo();
+
+							$lista = $controllerTipo->listar_tipo();
+
+							if(count($lista)< 1 ){
+								echo "<img class='img_not_find' alt='Nada encontrado' src='view/imagem/magnify.gif'>";
+								echo " <p class='aviso_tabela'> Nenhum tipo encontrado!</p> ";
+						}
+
+						foreach($lista as $tipo){?>
                         <div class="linha_resultados">
                             <div class="col_titulo">
-                                <p>Carro esportivo</p>
+                                <p><?=@$tipo->getNome()?></p>
                             </div>
                             <div class="col_titulo">
-                                <p>15%</p>
+                                <p><?=@$tipo->getPercentual()?>%</p>
                             </div>
                             <div class="col_titulo">
-                                <p>12/02/2019</p>
+                                <p><?=@$tipo->getData("br")?></p>
                             </div>
                         </div>
-                        <div class="linha_resultados">
-                            <div class="col_titulo">
-                                <p>Motocross</p>
-                            </div>
-                            <div class="col_titulo">
-                                <p>12%</p>
-                            </div>
-                            <div class="col_titulo">
-                                <p>12/02/2019</p>
-                            </div>
-                        </div>
-                        <div class="linha_resultados">
-                            <div class="col_titulo">
-                                <p>Bicicleta-bike</p>
-                            </div>
-                            <div class="col_titulo">
-                                <p>8%</p>
-                            </div>
-                            <div class="col_titulo">
-                                <p>12/02/2019</p>
-                            </div>
-                        </div>
-                        <div class="linha_resultados">
-                            <div class="col_titulo">
-                                <p>Carro esportivo</p>
-                            </div>
-                            <div class="col_titulo">
-                                <p>15%</p>
-                            </div>
-                            <div class="col_titulo">
-                                <p>12/02/2019</p>
-                            </div>
-                        </div>
-                        <div class="linha_resultados">
-                            <div class="col_titulo">
-                                <p>Motocross</p>
-                            </div>
-                            <div class="col_titulo">
-                                <p>12%</p>
-                            </div>
-                            <div class="col_titulo">
-                                <p>12/02/2019</p>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </section>
-        </div>
-    </div>
+	</div>
     <footer class="cor_site_padrao">
         <!--  Caixas que contem o contato e o navegar pelo site -->
         <div class="newsletter">
@@ -247,9 +144,9 @@
                 <img src="view/imagem/mob.png" alt="logo">
             </div>
             <div class="segura_newsletter">
-                <form id="frmEmail">
+                <form id="frmEmail" onsubmit="email_marketing_enviar(this)" action="router.php?controller=EMAIL_MARKETING&modo=INSERIR" method="POST">
                     <h3>Quer receber noticias?</h3>
-                    <input type="text" placeholder="Insira seu email" class="input_newsletter">
+                    <input type="text" name="txtEmail" placeholder="Insira seu email" class="input_newsletter">
                     <button class="botao_newsletter">Enviar</button>
                 </form>
             </div>

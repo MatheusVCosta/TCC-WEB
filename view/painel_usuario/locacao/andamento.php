@@ -1,12 +1,19 @@
+<?php
+    
+    require_once('controller/controllerAnuncios.php');
 
+    $controller_anuncios = new ControllerAnuncios();
 
-<head>
+    $anuncios_processados = $controller_anuncios->listar_anunciosProcesssados();
+
+    $router = "router.php?controller=anuncios&modo=PROCESSADOS";
+    
+?>
+<ead>
   <link rel="stylesheet" 
           type="text/css"
-          href="view/painel_usuario/css/andamento.css"/>
+          href="view/painel_usuario/locacao/css/andamento.css"/>
 </head>
-
- 
 <div id="conteudo_andamento"> 
                 
     <h2 id="h2Border">Em andamento</h2>
@@ -30,51 +37,34 @@
             </div>
         </div>
 
-
-
         <div class="segura_coluna">
+        <form method="POST" id="formAnunciosProcessados" name="formmAnunciosProcessados"  action="<?=@$router?>" >
+            <?php
+                //$router = "router.php?controller=anuncios&modo=PROCESSADOS";
+
+                $list_tipo =  $controller_anuncios->listar_anunciosProcesssados();
+
+                foreach($list_tipo as $anuncio){
+            ?>
             <div class="coluna">
-                <div id="nome"> Mikaela </div>
+                <div id="nome"></div>
             </div>
 
             <div class="coluna">
-                <div id="veiculo">Camaro </div>
+                <div id="veiculo"><?=@$anuncio->getVeiculo()->getModelo()->getNome()?></div>
             </div>
 
             <div class="coluna">
-                <div id="retirada_data">10/02/2019-10:30 </div>
+                <div id="retirada_data"><?=@$anuncio->getHorarioInicio()?></div>
             </div>
 
             <div class="coluna">
-                <div id="devolucao_data">10/02/2019-10:30 </div>
+                <div id="devolucao_data"><?=@$anuncio->getHorarioTermino()?></div>
             </div>
-        </div>
-
-
-        <div class="segura_coluna">
-            <div class="coluna">
-
-            </div>
-
-            <div class="coluna"></div>
-
-            <div class="coluna"></div>
-
-            <div class="coluna"></div>
-        </div>
-
-
-
-        <div class="segura_coluna">
-            <div class="coluna">
-
-            </div>
-
-            <div class="coluna"></div>
-
-            <div class="coluna"></div>
-
-            <div class="coluna"></div>
+            <?php
+                }
+            ?>
+        </form>
         </div>
     </div>
 

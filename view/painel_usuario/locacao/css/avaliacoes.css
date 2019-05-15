@@ -1,0 +1,34 @@
+#conteudo_andamento{
+    width: 962px;
+    height: 703px;
+    float: left;
+    border: solid 1px;
+    margin-top: 15px;
+}
+
+#h2Border{
+    width: 253px;
+    height: 15px;
+    margin-top: -15px;
+    margin-left:50px;
+    background-color:#fff;
+}
+#principal_andamento{
+    width: 940px;
+    height: 670px;
+    margin-left: 10px;
+}
+
+.segura_coluna{
+    width: 100%;
+    height: 60px;
+}
+
+.coluna{
+    width: 154px;
+    height: 60px;
+    float:left;
+    border: solid 1px;
+    font-family: verdana;
+    font-size: 18px;
+}

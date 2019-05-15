@@ -3,8 +3,10 @@
     $controller = 'veiculo_pendentes';
     $modo = 'inserir';
 ?>
-<div class="segura_form">  
-    <h3 class="titulo_pagina"> Aprovados Anuncios </h3>
+<div class="segura_form">
+    <div class="segura_text_button">
+        <h2> Anúncios Aprovados</h2>
+    </div>
     
     <div class="tbl_anuncios_pendentes">
 

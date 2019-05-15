@@ -1,10 +1,13 @@
 /* Sobescrevendo parte do body  para essa pagina */
 body{
     background-color: #929292;
+    background-image: url('../imagem/bglogin.jpg');
+    background-size: cover;
 }
 
 .login_painel{
     text-align: center;
+    margin-top: 76px;
 }
 .login_painel_form{
     height: auto;

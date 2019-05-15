@@ -11,17 +11,14 @@
     height: 60px;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 10px; */
     background-color: #006330;
 }
 .segura_tabela_email{
     width:100%;
-    height: 600px;
+    height: 580px;
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
-    /* border:1px solid black;
-    border-radius: 5px; */
 }
 .segura_text_button h2{
     float: left;
@@ -70,7 +67,7 @@
 }
 .tabela_dados{
     width: 1000px;
-    height: 528px;
+    height: 508px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -88,9 +85,25 @@
 }
 .btn_exportar{
     width:150px;
-    height: 45px;
-    margin-top: 7px;
-    margin-left: 900px; 
+    height: 35px;
+    margin-top: 20px;
+    border:none;
+    background-color: #00984A;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "OpenSans-Regular";
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    outline: none;
+    margin: 2px 20px;
+    /* margin-left: 341px; */
+}
+.btn_enviar_email{
+    width:150px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 900px;
     border:none;
     background-color: #00984A;
     color: #fff;
@@ -105,4 +118,6 @@
     background-position-x: 95px;
     background-position-y: 3px;
     outline: none;
+    float: left;
 }
+

@@ -1,69 +1,145 @@
+@font-face{
+    font-family: "OpenSans-bold";
+    src:url("../../font/Open_Sans/OpenSans-SemiBold.ttf");
+}
+@font-face{
+    font-family: "OpenSans-Regular";
+    src:url("../../font/Open_Sans/OpenSans-Regular.ttf");
+}
 
+
+.cor_site_padrao{
+    background-color: #00984A;
+}
+.cor_detalhe_site_padrao{
+    background-color: #306b2c;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; 
+    text-decoration: none;
+}
 /*css*/
 body{
-    margin: 0px;
-    padding: 0px;
+    width:100%;
+    height: 100vh;
+    background-image: url('../../imagem/edgar-guerra-426747-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*div principal*/
 #principal{
-    width: 1200px;
+    width: 1350px;
     height: 922px;
     margin-left: auto;
     margin-right: auto;
     border: solid 1px;
+    margin-top: 25px;
+    border-radius: 20px;
 }
 /*cabeçalho*/
 header{
-    width: 1200px;
-    height: 200px;
-    background-color: whitesmoke;
+    width: 1350px;
+    height: 205px;
+    background-color: #00984a;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 /*todo conteudo do cabeçalho*/
 #conteudo_header{
-    width: 1160px;
-    height: 200px;
+    width: 1350px;
+    height: 205px;
     margin-left: auto;
     margin-right: auto;
-     padding-top: 20px;
 }
 
 /*imagem do logo*/
 .img_logo{
-   width: 200px;
+    width: 200px;
     height: 150px;
+    margin-left: 25px;
+    margin-top: 15px;
     float: left;
 }
-
+.img_logo img{
+    width: 200px;
+    height: 150px;
+   
+}
+.boasVindas{
+    width: 490px;
+    height: 185px;
+    /* background-color: #006330; */
+    border:2px solid white;
+    border-radius: 30px;
+    margin-left: 610px;
+    margin-top: 10px;
+    float: left;
+}
 /*parte do bem vindo*/
-#bemvindo{
-    width: 150px;
-    height: 75px;
+#bemVindo{
+    width: 260px;
+    height: 180px;
     float: left;
-    margin-left: 600px;
+    text-align: center;
+    padding-top: 40px;
 }
-h1{
-    font-family: verdana;
+#bemVindo h3{
+    color: #fff;
+    font-family: "OpenSans-bold";
     font-size: 20px;
 }
-
-
-
+#bemVindo p{
+    color: #fff;
+    font-family: "OpenSans-bold";
+    font-size: 15px;
+}
 /*foto do usurio*/
-.img_usuario{
+.img_cliente{
+    width: 170px;
+    height: 170px;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+.editarPerfil{
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 40px;
+    margin-top: 110px;
+    position: absolute;
+    margin-left: -10px;
+}
+#imgEditarPerfil{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 8px;
+   
+}
+.img_cliente img{
     width: 150px;
     height: 150px;
-    margin-left: 45px;
     border-radius: 100px; 
-    border: solid 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
 }
 
 
 /*div que segura os icones*/
 #segura_icones{
-  width: 200px;
-    margin-left: 775px;
-    margin-top: 80px;
-    padding-bottom: 100px;
+    width: 250px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-left: 40px;
 }
 
 .icone{
@@ -71,7 +147,7 @@ h1{
     height: 40px;
     margin-left: 10px;
     float: left;
-    margin-top: -20px;
+    
     
 }
 
@@ -82,12 +158,73 @@ h1{
 
 /*menu*/
 nav{
-    width: 200px;
-    height: auto;
-    min-height: 720px;
-    background-color: whitesmoke;
+    width: 236px;
+    height: 715px;
+    border-right: 1px solid black;
     float: left;
-    
+    border-bottom-left-radius: 20px;
+    background-color: #fff;
+}
+#texto_menu{
+    font-family: verdana;
+    font-size: 19px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-bottom:1px solid black;
+}
+.menu_lateral{
+    width: 235px;
+    height: 639px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.item_menu{
+    width: 235px;
+    height: auto;
+    min-height: 60px;
+    border-bottom:1px solid black;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.item_menu img, .item_sub_menu img{
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+    float: left;
+    margin-left: 5px;
+}
+.item_menu p{
+    font-size: 16px;
+    font-family: verdana;
+    margin-top: 3px;
+    margin-left: 50px;
+    color:rgb(0, 0, 0);
+}
+.item_sub_menu{
+    width: 235px;
+    height: auto;
+    min-height: 60px;
+    border-bottom:1px solid black;
+    padding: 3px 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.item_sub_menu p{
+    font-size: 15px;
+    font-family: verdana;
+    margin-top: 3px;
+    margin-left: 50px;
+    color:rgb(0, 0, 0);
+}
+.sub_menu{
+    width:235px;
+    height: 0px;
+    display: none;
+}
+.item_menu:hover, 
+.item_sub_menu:hover{
+    background-color: #006330;
 }
 h5{
     font-family: verdana;
@@ -126,57 +263,11 @@ a{
 
 /*conteudo*/
 #conteudo{
-    width: 998px;
-    height: 708px;          
-    float: left; 
-/*    border: solid 1px;*/
-    margin-top: 13px;
+    width: 1112px;
+    height: 715px;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
 }
-
-
-
-
-
-/* conteudo de outras paginas*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

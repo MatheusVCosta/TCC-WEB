@@ -11,33 +11,23 @@
     font-family: "OpenSans-Regular";
     src:url("../font/Open_Sans/OpenSans-Regular.ttf");
 }
-
-@font-face{
-    font-family: "Roboto";
-    src:url("../font/GeoSans/Roboto-Thin.ttf");
-}
-@font-face{
-    font-family: "Roboto-medium";
-    src:url("../font/roboto/Roboto-Medium.ttf");
-}
-@font-face{
-    font-family: "Roboto-regular";
-    src:url("../font/roboto/Roboto-Regular.ttf");
-}
 /************DIV PRINCIPAL**********************************************/
+*{
+    font-family: "OpenSans-Regular";
+}
 #principal_conteudo{
     width: 1380px;
-    height: 2600px;
-    background-color: blue;
+    height: auto;
+    min-height: auto;
     margin-right: auto;
     margin-left: auto;
 }
 /*****************************SESSAO CADASTRAR VEICULO*****************/
 #sessao_cadastrar_veiculo{
-    width: 1380px;
+    width: 1397px;
     height: 400px;
     background-color: white;
-    
+    margin-top: 20px;
 }
 #titulo_cadastrar_veiculo{
     width: 400px;
@@ -49,150 +39,43 @@
 .lista_cadastrar_veiculo{
     width: 400px;
     height: 300px;
-   
     color: black;
-    background-color: white;
+    margin-left: 20px;
     float: left;
-    margin-left: 85px;
-    margin-top: 30px;
-    border-radius: 10px;
 }
-img{
+.lista_cadastrar_veiculo_img{
     width: 400px;
-    height: 300px; 
-}
-#botao{
-    width: 200px;
-    height: 100px;
+    height: 300px;
     color: black;
-    background-color: white;
+    margin-left: 20px;
     float: left;
-    margin-left: 150px;
-    margin-top: 229px;
-}
-.link_pagina{
-    width:80px;
-    height: 35px;
-    margin-left: 5px;
-    border-radius:5px;
-    border:none;
-    background-color: #306b2c;
-    color:#fff;
-    outline: none;
-    margin-top: 60px;
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*****************************SESSAO CADASTRAR ANUNCIO*****************/
-#sessao_anuncios{
+#sessao_cadastrar_anuncio{
     width: 1380px;
-    height: 400px;
-    background-color: black;
+    height: 370px;
+    background-color: white;
     margin-right: auto;
     margin-left: auto;
 }
 #titulo_cadastrar_anuncio{
     width: 400px;
     height: 50px;
-    color: #306b2c;
     padding-top: 5px;
     margin: auto;
+    color: #306b2c;
 }
 .lista_cadastrar_anuncio{
-    width: 400px;
-    height: 300px;
-  
-    border-radius: 10px;
-    color: black;
-    background-color: white;
-    float: left;
-    margin-left: 85px;
-    margin-top: 30px;
-}
-#botao_anuncio{
-    width: 200px;
-    height: 100px;
-    color: black;
-    float: left;
-    margin-left: 150px;
-    margin-top: 229px;
-}
-
-/*****************************SESSAO CADASTRAR PAGAMENTO*****************/
-#sessao_pagamentos{
-    width: 1380px;
-    height: 400px;
-    background-color: white;
-    margin-right: auto;
-    margin-left: auto;
-}
-#titulo_cadastrar_pagamento{
-    width: 400px;
-    height: 50px;
-    color: #306b2c;
-    padding-top: 5px;
-    margin: auto;
-}
-.lista_cadastrar_pagamento{
-    width: 400px;
+    width: 300px;
     height: 300px;
     color: black;
-    background-color: white;
+    margin-left: 20px;
     float: left;
-    margin-left: 85px;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-#botao_pagamento{
-    width: 200px;
-    height: 100px;
-    color: black;
-    float: left;
-    margin-left: 150px;
-    margin-top: 229px;
-}
-/*****************************SESSAO CADASTRAR AVALIACAO*****************/
-#sessao_avaliacao{
-    width: 1380px;
-    height: 400px;
-    background-color: black;
-    margin-right: auto;
-    margin-left: auto;
-}
-#titulo_cadastrar_avaliacao{
-    width: 400px;
-    height: 50px;
-    color: green;
-    padding-top: 5px;
-    margin: auto;
-}
-.lista_cadastrar_avaliacao{
-    width: 400px;
-    height: 300px;
-   
-    color: black;
-    background-color: white;
-    float: left;
-    margin-left: 85px;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-#botao_avaliacao{
-    width: 200px;
-    height: 100px;
-    color: black;
-    float: left;
-    margin-left: 150px;
-    margin-top: 229px;
 }
 /*TABELA DE PREÇOS*/
-#principal{
-    width:100%;
-    height: auto;
-    min-height: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    background-color: #d4d4d4;
-}
 .sobre_tabela{
     width:100%;
     height: auto;
@@ -240,14 +123,14 @@ img{
 .hold_tabela{
     width:1300px;
     height: auto;
-    min-height: 600px; 
+    min-height: 500px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
 }
 .texto_como_funciona{
-    width:600px;
-    height: 500px;
+    width: 550px;
+    height: 510px;
     padding: 30px 30px;
     float: left;
 }
@@ -260,7 +143,7 @@ img{
 }
 .tabela{
     width:600px;
-    height: 500px;
+    height: 470px;
     margin-left: 50px;
     margin-top: 40px;
     float: left;

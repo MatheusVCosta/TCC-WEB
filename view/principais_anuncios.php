@@ -6,6 +6,9 @@
         <title>Mob'Share-Home</title>
         <link rel="stylesheet" type="text/css" media="screen" href="view/css/principais_anuncios.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="view/js/libs/jquery/jquery-3.3.1.js"></script>
+        <script src="view/js/notify.js"></script>
+        <script src="view/js/main.js"></script>
     </head>
     <body>
         <div id="principal">
@@ -28,11 +31,11 @@
                             </div>
 
                             <div class="segura_login">
-                                <div class="login_cadastro" style="width: 110px;">
-                                    <a href="#"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
+                                <div class="login_cadastro" id="login" style="width: 110px;">
+                                    <a href="javascript:getLogin()"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
                                 </div>
                                 <div class="login_cadastro" style="width: 160px;">
-                                    <a href="#"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
+                                    <a href="javascript:getCadastro()"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
                                 </div>
                             </div>
                         </div>    
@@ -219,9 +222,9 @@
                     <img src="view/imagem/mob.png" alt="logo">
                 </div>
                 <div class="segura_newsletter">
-                    <form id="frmEmail">
+                    <form id="frmEmail" onsubmit="email_marketing_enviar(this)" action="router.php?controller=EMAIL_MARKETING&modo=INSERIR" method="POST">
                         <h3>Quer receber noticias?</h3>
-                        <input type="text" placeholder="Insira seu email" class="input_newsletter">
+                        <input type="text" name="txtEmail" placeholder="Insira seu email" class="input_newsletter">
                         <button class="botao_newsletter">Enviar</button>
                     </form>
                 </div>

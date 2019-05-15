@@ -1,0 +1,273 @@
+/*css cadaastrar anuncio*/
+
+
+#conteudo_anuncio{
+    width: 100%;
+    height: 700px;
+    float: left;
+    border: solid 1px;
+    margin-top: 15px;
+}
+
+#h2Border{
+    width: 198px;
+    height: 15px;
+    margin-top: -15px;
+    margin-left:50px; 
+    background-color:#fff;
+}
+
+.base{
+    width:100%;
+    height:680;
+/*     background-color:red; */
+    margin-top:25px;
+}
+
+.conteudo_esquerda{
+    width:355px;
+    height:680px;
+    /*     border:solid 1px; */
+    float: left;
+    margin-left: 20px;
+}
+#titulo{
+    width: 100px;
+    height: 20px;
+/*    background-color: lightcoral;*/
+    font-size: 15px;
+    margin-left:20px;
+    font-family: verdana;
+    margin-top:10px;
+    display:block;
+
+}
+
+#titulo2{
+    width: 100px;
+    height: 20px;
+/*     background-color: lightcoral; */
+    font-size: 12px;
+    margin-left:20px;
+    font-family: verdana;
+    margin-top:30px;
+    display:block;
+ 
+}
+
+#cb_veiculos{
+    width:300px;
+    height:30px;
+    margin-left: 20px;
+    margin-top:-50px;
+   
+}
+
+.conteudo_direita{
+     width: 595px;
+     height: 680px;
+     /* background-color: pink; */
+     float: left;
+     margin-left: 100px;
+}
+    
+.principal_segura_conteudo{
+    width: 100%;
+    height: 100px;
+/*    background-color: red;*/
+}
+
+.segura_checkbox{
+    width: 15px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0);
+    margin-left: 20px;
+    float: left;
+}
+.dias_semana{
+    width:110px;
+    height: 100px;
+    background-color: rgba(255, 192, 203, 0);
+    margin-left: 5px;
+    float: left;
+}
+.dia{
+    width: 100%;
+    height: 14px;
+/*    background-color: cadetblue;*/
+    margin-top: 6px;
+    font-family: verdana;
+    font-size: 12px;
+    /* margin-top: 20px; */
+    /* line-height: 1.759; */
+    display: block;
+}
+
+.caixinha_checkbox{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    float: left;
+}
+.segura_hora{
+    width: 50%;
+    height: 50px;
+/*     background-color: chocolate; */
+    float:left;
+}
+.caixa_texto_veiculo{
+    width: 128px;
+    height: 25px;
+    margin-left: 20px;
+}
+#titulo_veiculo{
+    width: 170px;
+    height: 20px;
+/*     background-color: lightcoral; */
+    font-size: 15px;
+   margin-left:24px;
+    font-family: verdana;
+    margin-top:5px;
+/*     display:block; */
+/*     float: left; */
+
+}
+#titulo_veiculo_entrega{
+    width: 170px;
+    height: 20px;
+    /*  background-color: lightcoral; */
+    font-size: 15px;
+    margin-left: 23px;
+    font-family: verdana;
+    margin-top:5px;
+/*       display:block;  */
+    /*  float: left; */
+}
+
+.caixa_texto_veiculo_entrega{
+    background-color:pink;
+    width: 110px;
+    height: 25px;
+    margin-left: 20px;
+    
+}
+ .segura_descricao{
+    width:100%;
+    height:318px;
+/*     background-color:blue; */
+    margin-top:120px;   
+} 
+.descricao{
+    font-family:verdana;
+    margin-left:20px;
+    font-size:15px;
+}
+.descricao_text{
+    width:310px;
+    height:150px;
+    margin-top:10px;
+    margin-left:20px;
+    border-radius:3px;
+}
+
+.botao_salvar{
+    width:150px;
+    height:40px;
+/*  background-color:aqua; */
+    margin-left:100px;
+    margin-top:65px;
+
+}
+.segura_caixas{
+    width: 100%;
+    height: 300px;
+    /* background-color: yellow; */
+    margin-top: 19px;
+}
+.caixa_veiculo{
+     width: 244px;
+     height: 296px;
+     border: solid 1px;
+     float: left;
+     margin-left: 53px;
+}
+.segura_img{
+    width: 210px;
+    height:150px;
+    border:solid 1px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 15p;
+}
+
+.nome_veiculo{
+    width: 100%;
+    height: 30px;
+    /* background-color: yellowgreen; */
+    text-align: center;
+    font-family: verdana;
+    font-size: 18px;
+}
+.informacao{
+    font-family: verdana;
+    font-size: :15px;
+    margin-left: 20px;
+  
+}
+.informacao_text{
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.segura_botoes{
+    width: 350px;
+    height: 30px;
+    /* background-color: rebeccapurple; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.btn{
+    width: 105px;
+    height: 30px;
+    margin-left: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

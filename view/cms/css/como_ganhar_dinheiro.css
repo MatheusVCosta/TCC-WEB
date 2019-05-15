@@ -1,0 +1,207 @@
+.btn_padrao {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    font-family: verdana;
+    font-size: 15px;
+    color: white;
+    background-color: #00984A;
+    float: right;
+    margin-top: 0px;
+}
+.segura_text_button{
+    width:100%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 10px; */
+    background-color: #006330;
+}
+.segura_text_button h2{
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 75px;
+}
+.adicionar_nivel{
+    width:180px;
+    height: 45px;
+    margin-top: 7px;
+    margin-left: 10px;
+    border:none;
+    background-color: #00984A;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "OpenSans-Regular";
+    font-size: 15px;
+    cursor: pointer;
+    padding-right: 20px;
+    background-image: url('../imagem/icones/add.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position-x: 148px;
+    background-position-y: 14px;
+    outline: none;
+    float: left;
+}
+.segura_tabela{
+    width:100%;
+    height: 630px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7px;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+/* Tabela */
+.tabela_niveis{
+    width:1000px;
+    height: 280px;
+    /* border:1px solid black; */
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.linha_titulo{
+    width:1000px;
+    height: 50px;
+    border:1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #00984a;
+    color: #fff;
+}
+.col_titulo{
+    /* width:440px; */
+    height: 50px;
+    float: left;
+    text-align: center;
+    padding-top: 12px;
+    font-family: "OpenSans-Regular";
+    text-transform: uppercase;
+}
+.linha_resposta{
+    width:1000px;
+    height: 50px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.linha_resposta:hover{
+   background-color: #cccccc;
+}
+.col_resposta{
+    /* width:440px; */
+    height: 50px;
+    text-align: center;
+    font-family: "OpenSans-Regular";
+    float: left;
+}
+.col_resposta_button{
+    /* width:440px; */
+    height: 50px;
+    text-align: center;
+    font-family: "OpenSans-Regular";
+    float: left;
+}
+.col_resposta img{
+    width:42px;
+    height: 45px;
+    margin-left: 15px;
+    margin-top: 5px;
+    float: left;
+}
+/* Mensagem de aviso */
+.aviso_tabela{
+    text-align: center;
+    font-family: "OpenSans-Regular";
+    font-size: 20px;
+    margin-top: 20px;
+    color:rgb(0, 0, 0);
+}
+.img_not_find{
+    width:70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.segura_form{
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border:1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+form{
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: scroll;
+    display: contents;
+}
+::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+.segura_form_cadastro{
+    width: 517px;
+    height: auto;
+    margin-left: AUTO;
+    margin-right: auto;
+    margin-top: 7px;
+    float: left;
+    overflow: auto;
+    display: contents;
+}
+ .segura_form_cadastro label{
+    font-family: "OpenSans-Regular";
+    font-size: 17px;
+    line-height: 30px;
+ }
+.segura_form_cadastro input{
+   width:350px;
+   height: 35px;
+   border:1px solid #7a7a7a;
+   border-radius: 5px;
+   padding-left: 7px;
+   outline: none;
+}
+.segura_form_cadastro input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #98c9fd;
+    box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+}
+.titulo_pagina.verde{
+    width: 100%;
+    height: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    background-color: #006330;
+    color: white;
+    font-size: 2.2em;
+    text-indent: 9px;
+    float: left;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-family: "OpenSans-Regular";
+}

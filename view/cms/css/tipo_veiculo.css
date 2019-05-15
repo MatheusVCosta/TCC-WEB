@@ -3,6 +3,9 @@
     float: left;
     margin-left: 11px;
 }
+#btnTipoVeiculo{
+    margin-top: 22px;
+}
 .titulo_pagina.verde{
     width: 100%;
     height: 49px;
@@ -51,24 +54,24 @@
     text-align: center;
 }
 .tipo_slc{
-     height: 35px;
-     /* outline: none; */
-     border: none;
-     background: none;
-     color: rgb(255, 255, 255);
-     font-family: "verdana";
-     /* font-weight: bold; */
-     font-size: 17px;
-     font-size: 18px;
-     width: 310px;
-     margin: 20px auto;
-     /* padding: 25px 10px; */
-     display: block;
-     resize: none;
-     border-radius: 1px;
-     border-bottom: 1px solid black;
-     display: inline-block;
-     margin-left: 22px;
+    height: 35px;
+    /* outline: none; */
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-family: "verdana";
+    /* font-weight: bold; */
+    font-size: 17px;
+    font-size: 18px;
+    width: 310px;
+    margin: 20px auto;
+    /* padding: 25px 10px; */
+    display: block;
+    resize: none;
+    border-radius: 1px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin-left: 22px;
 }
 .tipo_slc option{
     color:black;
@@ -158,10 +161,10 @@ table.tbl_tipos_veiculos tbody tr td img{
     width: 24px;
 }
 table.tbl_tipos_veiculos tbody tr:nth-child(even) {
-  background-color: #fff;
+    background-color: #fff;
 }
 table.tbl_tipos_veiculos tbody tr:nth-child(odd) {
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 table.tbl_tipos_veiculos tbody tr:hover{
     background-image: -moz-linear-gradient(top, rgb(239,239,239), rgb(232,232,232));
@@ -175,6 +178,370 @@ table.tbl_tipos_veiculos tbody tr:hover{
 }
 table.tbl_tipos_veiculos tbody tr td:hover{
     color:#000000;
-    /*background-color:black;
-    color: #0ce8c6;*/
+}
+
+.modal_modelos_crud{
+
+    height: auto;
+
+    background-color: #fff;
+
+    overflow: auto;
+
+    padding: 10px 7px;
+
+    border-radius: 9px;
+}
+.modal_modelos_crud h3{
+
+    border-bottom: solid  0.1px;
+
+    margin-bottom: 15px;
+}
+.modal_modelos_crud .campo{
+
+    text-align: initial;
+
+    margin: 10px 2px;
+}
+.modal_modelos_crud .campo label{
+
+    width: 213px;
+
+    display: inline-block;
+
+    font-weight: bold;
+}
+.modal_modelos_crud .campo input , .modal_modelos_crud .campo select{
+    width: 219px;
+    border: solid 0.3px #dcdcdc;
+    padding: 5px;
+}
+.modal_modelos_crud .campo input{    
+    outline: none;
+}
+.modal_modelos_crud .campo select{
+
+    border-width: 0px 0px 1px 0px;
+
+    outline: none;
+
+    background-color: #fff;
+}
+.modal_modelos_crud .campo button{
+    
+    float: right;
+
+    padding: 4px 15px;
+
+    background: transparent;
+
+    font-size: 1.2em;
+
+    font-weight: bold;
+
+    border: solid 1.2px #e0e0e0;
+
+    cursor:pointer;
+
+    border-radius: 5.1px;
+}
+
+.modal_modelos_crud .campo button:hover{
+    border: solid 1.2px #000;
+}
+.modal_marcas_crud{
+
+    height: auto;
+
+    background-color: #fff;
+
+    overflow: auto;
+
+    padding: 10px 7px;
+
+    border-radius: 9px;
+}
+.modal_marcas_crud h3{
+
+    border-bottom: solid  0.1px;
+
+    margin-bottom: 15px;
+}
+.modal_marcas_crud .campo{
+
+    text-align: initial;
+
+    margin: 10px 2px;
+}
+.modal_marcas_crud .campo label{
+
+    width: 213px;
+
+    display: inline-block;
+
+    font-weight: bold;
+}
+.modal_marcas_crud .campo input , .modal_modelos_crud .campo select{
+    width: 219px;
+    border: solid 0.3px #dcdcdc;
+    padding: 5px;
+}
+.modal_marcas_crud .campo input{    
+    outline: none;
+}
+.modal_marcas_crud .campo select{
+
+    border-width: 0px 0px 1px 0px;
+
+    outline: none;
+
+    background-color: #fff;
+}
+.modal_marcas_crud .campo button{
+    
+    float: right;
+
+    padding: 4px 15px;
+
+    background: transparent;
+
+    font-size: 1.2em;
+
+    font-weight: bold;
+
+    border: solid 1.2px #e0e0e0;
+
+    cursor:pointer;
+
+    border-radius: 5.1px;
+}
+.modal_marcas_crud .campo button:hover{
+    border: solid 1.2px #000;
+}
+.modal_fip{
+
+background-color: #fbfbfb;
+
+padding-bottom: 8px;
+}
+.modal_fip .fip_descricao{
+
+margin: 12px 16px;
+
+max-width: 528px;
+
+text-align: center;
+}
+.modal_fip .fip_descricao img{
+
+}
+.modal_fip .fip_descricao p{
+
+overflow-y: hidden;
+
+font-size: 1.3em;
+
+color: #717171;
+
+word-break: break-all;
+
+height: 57px;
+}
+.modal_fip .btn_fip_exportar{
+    
+background-color: #fff;
+    
+border: solid 1px #dadada;
+    
+padding: 8px 6px;
+    
+cursor: pointer;
+}
+.modal_acessorios{
+    background-color:white;
+    padding: 15px;
+}
+.caixa_acessorios{
+    background-color: #fdfdfd;
+    border-top: solid 0.1px black;
+    padding: 2px 15px;
+    height: auto;
+    overflow-y: auto;
+    background-color:#e8e8e8;
+}
+.caixa_acessorios input[type="checkbox"]{/* Mateus usou na linha 312  da home_cms.css */
+    /* Contra reação */
+    /* Contra reação */
+}
+.caixa_acessorios .caixa_item{
+    width: 32%;
+    text-align: center;
+    float: left;
+}
+.caixa_acessorios .caixa_item .item{
+    width: auto;
+    /* margin: 4px 0px; */
+    font-size: 20px;
+    border: solid 0.8px black;
+    border-radius: 1px;
+    padding: 4px 0px;
+    background-color: #fff;
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#ffffff",GradientType=1);
+    height: auto;
+    overflow-y: -webkit-paged-y;
+}
+.caixa_acessorios .caixa_item .item label{
+    
+text-align: center;
+    
+width: 84px;
+    
+word-break: break-all;
+    
+max-width: 84px;
+    
+max-height: 48px;
+    
+overflow: hidden;
+    
+display: inline-block;
+    
+/* float: left; */
+}
+.caixa_acessorios .caixa_item .item img{
+    width:18px;
+    margin-bottom: -3px;
+    /* float: left; */
+}
+.caixa_acessorios .caixa_item .item:hover{
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    background: -webkit-linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    background: linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#d5d5d5",GradientType=1);
+}
+#frmAcessorio{
+
+}
+#frmAcessorio button{
+
+}
+.caixa_modelos{
+    background-color: #fdfdfd;
+    border-top: solid 0.1px black;
+    padding: 2px 15px;
+    height: 300px;
+    overflow-y: auto;
+    background-color:#e8e8e8;
+}
+.caixa_modelos input[type="checkbox"]{/* Mateus usou na linha 312  da home_cms.css */
+    left: auto;/* Contra reação */
+    position: initial;/* Contra reação */
+}
+.caixa_modelos .caixa_item{
+    width: 32%;
+    text-align: center;
+    display: inline-block;
+    cursor:pointer;
+    float: left;
+}
+.caixa_modelos .caixa_item .item{
+    width: auto;
+    /* margin: 4px 0px; */
+    font-size: 20px;
+    border: solid 0.8px black;
+    border-radius: 1px;
+    padding: 4px 0px;
+    background-color: #fff;
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#ffffff",GradientType=1);
+}
+.caixa_modelos .caixa_item .item label{
+    font-size:0.7em;
+}
+.caixa_modelos .caixa_item .item label strong{
+    max-width: 64px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    word-break: break-all;
+}
+.caixa_modelos .caixa_item .item img{
+    width:18px;
+    margin-bottom: -3px;
+    float:right;
+    margin-right: 5px;
+}
+.caixa_modelos .caixa_item .item:hover{
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    background: -webkit-linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    background: linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#d5d5d5",GradientType=1);
+}
+.caixa_marcas{
+    background-color: #fdfdfd;
+    border-top: solid 0.1px black;
+    padding: 2px 15px;
+    height: 300px;
+    width: 600px;
+    overflow-y: auto;
+    background-color:#e8e8e8;
+    text-align: center;
+}
+.caixa_marcas input[type="checkbox"]{/* Mateus usou na linha 312  da home_cms.css */
+    left: auto;/* Contra reação */
+    position: initial;/* Contra reação */
+}
+.caixa_marcas .caixa_item{
+    width: 32%;
+    text-align: center;
+    display:inline-block;
+    cursor:pointer;
+    float:left;
+}
+.caixa_marcas .caixa_item .item{
+    width: auto;
+    /* margin: 4px 0px; */
+    font-size: 20px;
+    border: solid 0.8px black;
+    border-radius: 1px;
+    padding: 4px 0px;
+    background-color: #fff;
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(8deg, rgba(238,238,238,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#ffffff",GradientType=1);
+}
+.caixa_marcas .caixa_item .item label{
+    font-size:0.7em;
+}
+.caixa_marcas .caixa_item .item label strong{
+    max-width: 55px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    word-break: break-all;
+}
+.caixa_marcas .caixa_item .item img{
+    width:18px;
+    margin-bottom: -3px;
+    float:right;
+    margin-right: 5px;
+}
+.caixa_marcas .caixa_item .item:hover{
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    background: -webkit-linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    background: linear-gradient(8deg, rgba(238,238,238,1) 25%, rgba(255,255,255,1) 48%, rgba(213,213,213,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#d5d5d5",GradientType=1);
 }

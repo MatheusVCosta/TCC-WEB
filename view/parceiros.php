@@ -1,3 +1,14 @@
+<?php
+    require_once('controller/controllerSejaParceiro.php');
+
+    $controller_seja_parceiro = new ControllerSejaParceiro();
+
+    $lista = $controller_seja_parceiro->listar_topicos();
+    
+    $banner = $controller_seja_parceiro->getBanner();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +18,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="view/css/parceiro.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="view/js/libs/jquery/jquery-3.3.1.js"></script>
+    <script src="view/js/notify.js"></script>
+    <script src="view/js/main.js"></script>
 </head>
 <body>
     <div id="principal">
@@ -29,11 +42,11 @@
                         </div>
 
                         <div class="segura_login">
-                            <div class="login_cadastro" style="width: 110px;">
-                                <a href="#"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
+                            <div class="login_cadastro" id="login" style="width: 110px;">
+                                <a href="javascript:getLogin()"><img src="view/imagem/login_amarelo.png" alt="login"><p>LOGIN</p></a>
                             </div>
                             <div class="login_cadastro" style="width: 160px;">
-                                <a href="#"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
+                                <a href="javascript:getCadastro()"><img src="view/imagem/downloads2/cadastrar.png" alt="login"><p>CADATRAR-SE</p></a>
                             </div>
                         </div>
                     </div>    
@@ -46,28 +59,64 @@
         </header>
         <div id="conteudo">
 
-             <div class="row" style=" height: 360px;">
+             <div class="row" style=" height: 360px; <?=($banner->getStatus() == 0)?'display:none;':''?>">
                 <div class="cold4 esquerda">
-                    <img src="view/imagem/bg-parceiros.jpg" style="height: 355px; width:100%;">
+                    <img src="view/upload/<?=@$banner->getFoto1()?>" style="height: 355px; width:100%;">
                 </div>
                 <div class="cold2 center" style="width: 29%;">
                     <div class="esquerda border-left"></div>
                     <div id="seja-parceiro" class="center" style="margin-top: 15px;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adi,suada nibh. Quisque placerat faucibus erat a sodales. Suspendisse condimentum vehicula dolor eu dapibus</p> 
-                        <button>Quero ser um Parceiro</button>
-                        <p>Lorem ipsum dolor sit amet, consectetur adi,suada nibh. Quisque placerat faucibus erat a sodales. Suspendisse condimentum vehicula dolor eu dapibus</p> 
-                        <img src="view/imagem/selo4.png" alt="sdssd" width="92">
+                        <div>
+                            <?=@$banner->getTexto1()?>
+                        </div> 
+                        <button><?=@$banner->getTexto2()?></button>
+                        <div>
+                            <?=@$banner->getTexto3()?>
+                        </div>
                     </div>
                     <div class="direita border-right"></div>
                 </div>
                 <div class="cold4 direita">
-                    <img src="view/imagem/bg-usuario.jpg"  style="height: 355px; width:100%;">
+                    <img src="view/upload/<?=@$banner->getFoto2()?>"  style="height: 355px; width:100%;">
                 </div>
 
              </div>
              
              <div id="beficiosBox" class="center">
-                 <div class="row center">
+               <?php 
+
+                    if(!count($lista) < 1){
+
+
+                         if(count($lista) <= 1){
+                         
+                            $lista_topicos =  array_chunk($lista,1);
+                         
+                         }else{
+
+                            $lista_topicos =  array_chunk($lista,3);
+
+                         }
+
+                        foreach($lista_topicos as $listaTopicos){?>
+                            <div class="row center">
+                                <?php foreach($listaTopicos as $topico){ ?>
+                                        <div class="cold3 center">
+                                            <div class="beneficio center">
+                                                <div class="img center">
+                                                    <img src="view/upload/<?=@$topico->getFoto()?>">
+                                                </div>
+                                                <div class="titulo"><?=@$topico->getTitulo()?></div>
+                                                <div class="desc">
+                                                    <?=@$topico->getTexto()?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <?php }?>
+                            </div>
+                 <?php } ?>
+               <?php } ?>
+                 <!--<div class="row center">
                     <div class="cold3 center">
                         <div class="beneficio center">
                             <div class="img center">
@@ -136,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                 </div>
+                 </div>-->
              </div>
         </div>
     </div>
@@ -147,9 +196,9 @@
                     <img src="view/imagem/mob.png" alt="logo">
                 </div>
                 <div class="segura_newsletter">
-                    <form id="frmEmail">
+                    <form id="frmEmail" onsubmit="email_marketing_enviar(this)" action="router.php?controller=EMAIL_MARKETING&modo=INSERIR" method="POST">
                         <h3>Quer receber noticias?</h3>
-                        <input type="text" placeholder="Insira seu email" class="input_newsletter">
+                        <input type="text" name="txtEmail" placeholder="Insira seu email" class="input_newsletter">
                         <button class="botao_newsletter">Enviar</button>
                     </form>
                 </div>

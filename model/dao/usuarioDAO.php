@@ -14,7 +14,7 @@
             $sql = "INSERT INTO tbl_usuario_cms(nome_usuario_cms,email_usuario_cms,senha,id_niveis)".
                    "values('". $usuario->getNome() ."','". $usuario->getEmail() ."',".
                    "'". $usuario->genSenha() ."',". $usuario->getNivel() ." )";
-            echo $sql;
+            
             //Abrido conexao com o BD
             $PDO_conex = $this->conex->connect_database();
 
@@ -27,7 +27,7 @@
         }
 
         public function delete($id){
-            $sql = " DELETE FROM tbl_usuario_cms where id_usuario_cms = $id ";
+            $sql = " UPDATE tbl_usuario_cms SET excluido = 1  WHERE id_usuario_cms = $id ";
 
             $PDO_conex = $this->conex->connect_database();
 
@@ -41,18 +41,26 @@
         }
 
         public function update($usuario){
-             
-             $sql = "UPDATE tbl_usuario_cms SET nome_usuario_cms = '" . $usuario->getNome() . "',".
-                    "email_usuario_cms= '" . $usuario->getEmail() . "',senha = '" . $usuario->genSenha() . "',id_niveis =" .  $usuario->getNivel() ." ".
-                    "WHERE id_usuario_cms = " .  $usuario->getId() . " ";
-                          
+
+             if($usuario->getSenha() == "5465464487754"){/* Senha padrão que vem no form de edição */
+                     $sql = "UPDATE tbl_usuario_cms SET nome_usuario_cms = '" . $usuario->getNome() . "',".
+                            "email_usuario_cms= '" . $usuario->getEmail() . "',id_niveis =" .  $usuario->getNivel() ." ".
+                            "WHERE id_usuario_cms = " .  $usuario->getId() . " ";
+             }else{
+                     $sql = "UPDATE tbl_usuario_cms SET nome_usuario_cms = '" . $usuario->getNome() . "',".
+                            "email_usuario_cms= '" . $usuario->getEmail() . "',senha = '" . $usuario->genSenha() . "',id_niveis =" .  $usuario->getNivel() ." ".
+                            "WHERE id_usuario_cms = " .  $usuario->getId() . " ";
+             }
+
             //Abrido conexao com o BD
             $PDO_conex = $this->conex->connect_database();
 
             if($PDO_conex->query($sql)){
                 echo "Update com sucesso";
+                return true;
             }else{
                 echo "Erro no script de update $sql";
+                return false;
             }
 
             $this->conex->close_database();
@@ -60,7 +68,7 @@
         
         public function selectAll(){
 
-            $sql = " SELECT * FROM tbl_usuario_cms";
+            $sql = " SELECT * FROM tbl_usuario_cms WHERE excluido = 0 ";
             
             $PDO_conex = $this->conex->connect_database();
 
@@ -115,7 +123,8 @@
 
         public function logar($usuario){
             
-            $sql = "SELECT * FROM tbl_usuario_cms where email_usuario_cms ='".$usuario->getEmail()."'";
+            $sql = "SELECT * FROM tbl_usuario_cms where email_usuario_cms ='".$usuario->getEmail()."' AND excluido = 0 ";
+
                 
             $PDO_conex = $this->conex->connect_database();
 
@@ -129,6 +138,7 @@
                         ->setEmail($rs_usuario['email_usuario_cms'])
                         ->setSenha($rs_usuario['senha'])
                         ->setNivel($rs_usuario['id_niveis']);
+                 echo "sdasdasdasd";
 
                 return $usuario;
 
